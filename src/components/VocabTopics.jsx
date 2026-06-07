@@ -1,18 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { vocabTopics } from '../vocabData';
+import SpeakButton from './SpeakButton';
 
 const VocabTopics = () => {
   const [selectedTopicId, setSelectedTopicId] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-
-  const playPronunciation = (word) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
-  };
 
   const handleTopicClick = (id) => {
     setSelectedTopicId(id);
@@ -102,23 +94,14 @@ const VocabTopics = () => {
                   <div className="vocab-word-header">
                     <span className="vocab-word-text">{item.word.replace(/^[A-Z\s]+/, '').trim()}</span>
                     {item.type && <span className="vocab-word-type">({item.type})</span>}
-                    <button 
-                      className="pronounce-btn" 
-                      onClick={(e) => { e.stopPropagation(); playPronunciation(item.word.replace(/^[A-Z\s]+/, '').trim()); }}
-                      title="Listen to pronunciation"
-                      style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem', marginLeft: '0.5rem', transition: 'transform 0.2s' }}
-                      onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
-                      onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-                    >
-                      🔊
-                    </button>
+                    <SpeakButton text={item.word.replace(/^[A-Z\s]+/, '').trim()} className="sm" size={18} />
                   </div>
-                  <div className="vocab-word-meaning">{item.meaning}</div>
-                  
+                  <div className="vocab-word-meaning" lang="vi">{item.meaning}</div>
+
                   {item.example && (
                     <div className="vocab-word-example-box">
                       <div className="vocab-word-example-en">💡 {item.example}</div>
-                      {item.example_vi && <div className="vocab-word-example-vi">{item.example_vi}</div>}
+                      {item.example_vi && <div className="vocab-word-example-vi" lang="vi">{item.example_vi}</div>}
                     </div>
                   )}
                 </div>

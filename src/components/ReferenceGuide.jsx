@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ReferenceGuide = ({ data }) => {
   const [activeSection, setActiveSection] = useState('why');

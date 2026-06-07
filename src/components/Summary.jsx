@@ -1,15 +1,6 @@
-import React from 'react';
+import SpeakButton from './SpeakButton';
 
 const Summary = ({ data }) => {
-  const playPronunciation = (word) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
-  };
-
   return (
     <div className="summary-container">
       <div className="summary-card">
@@ -40,16 +31,7 @@ const Summary = ({ data }) => {
           {data.vocabulary?.length > 0 ? data.vocabulary.map((vocab) => (
             <div key={vocab.id} className="vocab-item">
               <span className="vocab-word">{vocab.word}</span> <span style={{fontSize: "0.9rem", color: "var(--text-secondary)"}}>({vocab.type})</span>
-              <button 
-                className="pronounce-btn" 
-                onClick={(e) => { e.stopPropagation(); playPronunciation(vocab.word); }}
-                title="Listen to pronunciation"
-                style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem', marginLeft: '0.5rem', transition: 'transform 0.2s' }}
-                onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
-                onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-              >
-                🔊
-              </button>
+              <SpeakButton text={vocab.word} className="sm" size={18} />
               <div className="vocab-def">{vocab.definition}</div>
             </div>
           )) : <div style={{color: "var(--text-secondary)"}}>No vocabulary listed for this lesson.</div>}

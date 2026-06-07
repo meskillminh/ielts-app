@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Methodology = () => {
   return (
     <div className="summary-container" style={{maxWidth: '800px', margin: '0 auto'}}>

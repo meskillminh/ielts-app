@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
+import SpeakButton from './SpeakButton';
 
 const Flashcard = ({ data }) => {
   // Combine vocabulary and structures for practice
@@ -9,21 +10,7 @@ const Flashcard = ({ data }) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-
-  // Reset state when data (lesson) changes
-  useEffect(() => {
-    setCurrentIndex(0);
-    setIsFlipped(false);
-  }, [data]);
-
-  const playPronunciation = (word) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(word);
-      utterance.lang = 'en-US';
-      window.speechSynthesis.speak(utterance);
-    }
-  };
+  // State resets automatically: App remounts this component via `key` when the lesson changes.
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -59,16 +46,7 @@ const Flashcard = ({ data }) => {
             <span className="card-type">{currentItem.type}</span>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
               <h2 className="card-title" style={{ margin: 0 }}>{currentItem.front}</h2>
-              <button 
-                className="pronounce-btn" 
-                onClick={(e) => { e.stopPropagation(); playPronunciation(currentItem.front); }}
-                title="Listen to pronunciation"
-                style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.5rem', transition: 'transform 0.2s' }}
-                onMouseEnter={(e) => e.target.style.transform = 'scale(1.2)'}
-                onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
-              >
-                🔊
-              </button>
+              <SpeakButton text={currentItem.front} size={22} />
             </div>
             {currentItem.phonetic && <div className="card-pronunciation">{currentItem.phonetic}</div>}
             <div style={{ marginTop: '2rem', fontSize: '0.9rem', color: 'rgba(255,255,255,0.5)' }}>Click to flip</div>

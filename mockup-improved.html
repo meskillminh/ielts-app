@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IELTS Target 6.5 — Speaking &amp; Writing Study Guide</title>
+<meta name="description" content="Free IELTS study guide for Vietnamese learners — jump from Band 5 to 6.5+ with speaking, writing, vocabulary and flashcards." />
+<style>
+:root{
+  --bg:#0a0e1a; --surface:#141927; --surface-hover:#1e2640; --surface-elevated:#1a2035;
+  --text-primary:#f0f4ff; --text-secondary:#9aa6c4; /* brightened (#5) */
+  --blue:#4f8cff; --purple:#a855f7; --green:#22c55e; --orange:#f59e0b;
+  --gradient:linear-gradient(135deg,var(--blue),var(--purple));
+  --glass-border:rgba(255,255,255,.07);
+  --radius:16px; --radius-sm:10px;
+  --focus-ring:0 0 0 3px rgba(79,140,255,.55);
+  --tap:44px; --motion-fast:.18s;
+  --shadow-lg:0 12px 40px rgba(0,0,0,.35);
+  --sidebar-w:300px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased}
+button{font-family:inherit;cursor:pointer}
+.icon{width:18px;height:18px;flex:0 0 auto;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+:focus-visible{outline:none;box-shadow:var(--focus-ring);border-radius:8px}
+
+/* ---------- Layout ---------- */
+.app{display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);flex:0 0 auto;background:var(--surface);border-right:1px solid var(--glass-border);
+  padding:20px;display:flex;flex-direction:column;gap:14px;position:sticky;top:0;height:100vh;overflow-y:auto;z-index:100}
+.sidebar h2{font-size:18px;cursor:pointer}
+.vocab-bank{display:flex;align-items:center;gap:8px;padding:12px;border-radius:8px;border:none;width:100%;
+  background:rgba(34,197,94,.1);color:var(--green);font-weight:600;font-size:14px}
+.vocab-bank.active{background:var(--gradient);color:#fff}
+.stats{display:flex;justify-content:space-around;padding:12px;border-radius:10px;border:1px solid var(--glass-border);background:rgba(10,14,26,.4)}
+.stat{display:flex;flex-direction:column;align-items:center;gap:2px}
+.stat b{font-size:18px}
+.stat span{font-size:11px;color:var(--text-secondary)}
+.cat-head{display:flex;align-items:center;gap:8px;color:var(--text-secondary);font-size:12px;font-weight:600;letter-spacing:.06em;margin-top:6px}
+.lesson-list{list-style:none;display:flex;flex-direction:column;gap:2px}
+.lesson{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;font-size:13px;color:var(--text-primary);border:none;background:none;width:100%;text-align:left;transition:background .15s}
+.lesson:hover{background:var(--surface-hover)}
+.lesson.active{background:var(--surface-hover);font-weight:600;box-shadow:inset 3px 0 0 var(--blue)}
+.lesson .mark{width:16px;height:16px;flex:0 0 auto;display:grid;place-items:center}
+.lesson .dot{width:8px;height:8px;border-radius:50%;background:var(--text-secondary);opacity:.4}
+.lesson.active .dot{background:var(--blue);opacity:1}
+.lesson .check{width:16px;height:16px;color:var(--green)}
+.lesson.done{color:var(--text-secondary)}
+
+.main{flex:1 1 auto;padding:40px;max-width:1100px}
+.mobile-menu{display:none;position:fixed;top:12px;left:12px;z-index:120;align-items:center;gap:6px;
+  background:var(--surface);color:var(--text-primary);border:1px solid var(--glass-border);
+  padding:10px 14px;border-radius:8px;font-size:14px;backdrop-filter:blur(10px)}
+.backdrop{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);
+  opacity:0;pointer-events:none;transition:opacity .25s}
+
+/* ---------- Header ---------- */
+header{display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+.badge{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;padding:6px 12px;border-radius:20px;
+  border:1px solid var(--glass-border);background:var(--surface);color:var(--text-secondary);font-size:12px;font-weight:500}
+header h1{font-size:34px;line-height:1.1}
+header p{color:var(--text-secondary);font-size:15px}
+.progress-wrap{margin-top:4px;max-width:380px}
+.progress-label{font-size:12px;color:var(--text-secondary);font-weight:500;margin-bottom:6px}
+.progress-track{height:8px;border-radius:5px;background:var(--surface-hover);overflow:hidden}
+.progress-fill{height:100%;border-radius:5px;background:var(--gradient);transition:width .4s ease}
+
+/* ---------- Tabs ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap);padding:10px 16px;border-radius:30px;
+  border:1px solid var(--glass-border);background:var(--surface);color:var(--text-secondary);font-size:14px;font-weight:500;transition:background .15s,color .15s}
+.tab:hover{background:var(--surface-hover);color:var(--text-primary)}
+.tab[aria-selected="true"]{background:var(--gradient);color:#fff;border-color:transparent}
+
+/* ---------- Panels ---------- */
+.panel{animation:fadeIn var(--motion-fast) ease-out}
+.panel[hidden]{display:none}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.panel{animation:none}.progress-fill,.flashcard{transition:none}}
+
+.card{background:var(--surface);border:1px solid var(--glass-border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-lg);margin-bottom:20px}
+.card h3{font-size:18px;margin-bottom:4px}
+.card .sub{color:var(--text-secondary);font-size:13px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+
+.title-row{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:14px;font-size:12px;font-weight:500}
+.chip.blue{background:rgba(79,140,255,.15);color:var(--blue)}
+.chip.green{background:rgba(34,197,94,.15);color:var(--green)}
+
+/* word rows / vocab */
+.word-row{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:10px;background:rgba(10,14,26,.5);border:1px solid rgba(255,255,255,.05);margin-bottom:10px}
+.word-row .info{flex:1 1 auto}
+.word-row .w{font-size:16px;font-weight:600}
+.word-row .t{font-size:12px;color:var(--text-secondary);margin-left:6px}
+.word-row .m{font-size:13px;color:var(--text-secondary);margin-top:2px}
+.struct{padding:12px 14px;border-radius:10px;background:rgba(10,14,26,.5);border:1px solid rgba(255,255,255,.05);margin-bottom:10px}
+.struct .f{font-size:15px;font-weight:600;color:var(--blue)}
+.struct .e{font-size:13px;color:var(--text-secondary);margin-top:4px}
+
+.speak-btn{display:inline-grid;place-items:center;min-width:var(--tap);min-height:var(--tap);border-radius:50%;
+  background:rgba(79,140,255,.08);border:1.5px solid rgba(79,140,255,.35);color:var(--blue);transition:transform .2s,background .2s}
+.speak-btn:hover{transform:scale(1.12);background:rgba(79,140,255,.16)}
+.speak-btn:active{transform:scale(.95)}
+.speak-btn.sm{min-width:36px;min-height:36px}
+.speak-btn .icon{width:20px;height:20px}
+.speak-btn.sm .icon{width:18px;height:18px}
+
+/* vocab topic cards */
+.topic{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:24px;border-radius:var(--radius);
+  background:var(--surface);border:1px solid var(--glass-border);box-shadow:var(--shadow-lg);transition:transform .2s,border-color .2s}
+.topic:hover{transform:translateY(-4px);border-color:rgba(34,197,94,.3)}
+.topic .ti{width:34px;height:34px;color:var(--green)}
+.topic .tt{font-weight:600;font-size:15px}
+.topic .tc{font-size:12px;color:var(--text-secondary)}
+.topic-done{position:relative}
+.topic-done::after{content:"";position:absolute;top:10px;right:10px;width:18px;height:18px;border-radius:50%;background:var(--green)}
+
+.back-btn{display:inline-flex;align-items:center;gap:6px;min-height:var(--tap);padding:8px 14px;border-radius:8px;
+  background:var(--surface);border:1px solid var(--glass-border);color:var(--text-secondary);font-size:13px;margin-bottom:16px}
+.search{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;background:var(--surface);border:1px solid var(--glass-border);margin-bottom:16px;color:var(--text-secondary)}
+.search input{flex:1;background:none;border:none;color:var(--text-primary);font-size:14px;outline:none}
+.search input::placeholder{color:var(--text-secondary)}
+.vcard{background:var(--surface);border:1px solid var(--glass-border);border-radius:14px;padding:18px;margin-bottom:14px}
+.vcard .vh{display:flex;align-items:center;gap:10px}
+.vcard .vh .ttl{flex:1}
+.vcard .vh .vw{font-size:18px;font-weight:600}
+.vcard .mean{font-size:14px;color:var(--text-secondary);margin:8px 0}
+.ex{background:rgba(79,140,255,.06);border-radius:10px;padding:14px;font-size:13px}
+.ex .en{font-weight:500;margin-bottom:6px}
+.ex .vi{display:flex;align-items:center;gap:6px;color:var(--text-secondary);font-size:12px}
+.lang-tag{font-family:ui-monospace,monospace;font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(168,85,247,.18);color:var(--purple)}
+
+/* flashcards */
+.flash-wrap{display:flex;flex-direction:column;align-items:center;gap:24px;padding-top:10px}
+.flash-scene{perspective:1200px;width:100%;max-width:560px}
+.flashcard{position:relative;height:300px;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.4,0,.2,1);cursor:pointer}
+.flashcard.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:40px;text-align:center}
+.front{background:var(--gradient);color:#fff}
+.back{background:var(--surface-elevated);border:1px solid var(--glass-border);transform:rotateY(180deg)}
+.face .ctype{font-size:12px;font-weight:700;letter-spacing:.08em;opacity:.7}
+.front .word{font-size:40px;font-weight:700}
+.face .phon{font-size:18px;opacity:.85}
+.face .hint{font-size:13px;opacity:.55}
+.back .def{font-size:17px}
+.back .ex2{font-size:14px;color:var(--text-secondary)}
+.flash-controls{display:flex;align-items:center;gap:20px}
+.ctrl{min-width:48px;min-height:48px;display:grid;place-items:center;border-radius:50%;background:var(--surface);border:1px solid var(--glass-border);color:var(--text-secondary)}
+.ctrl.next{background:var(--gradient);color:#fff;border:none}
+.ctrl:disabled{opacity:.4;cursor:not-allowed}
+.flash-controls .count{font-size:15px;font-weight:500;color:var(--text-secondary)}
+
+/* ---------- Responsive (#2) ---------- */
+@media (max-width:1024px){
+  .sidebar{position:fixed;left:0;top:0;transform:translateX(-100%);transition:transform .28s ease;box-shadow:10px 0 30px rgba(0,0,0,.5)}
+  .sidebar.open{transform:translateX(0)}
+  .backdrop.open{opacity:1;pointer-events:auto}
+  .main{padding:64px 16px 40px;max-width:none}
+  .mobile-menu{display:inline-flex}
+  .grid{grid-template-columns:1fr 1fr}
+  header h1{font-size:26px}
+}
+@media (max-width:768px){
+  .grid{grid-template-columns:1fr}            /* collapse to 1 col (#2) */
+  header h1{font-size:22px}
+  .front .word{font-size:32px}
+  .flashcard{height:260px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <button class="mobile-menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <svg class="icon"><use href="#i-menu"/></svg> Menu
+  </button>
+  <div class="backdrop" id="backdrop"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <h2 id="brand">IELTS Target 6.5</h2>
+    <button class="vocab-bank" data-tab="vocabulary">
+      <svg class="icon"><use href="#i-bookm"/></svg> Vocabulary Bank
+    </button>
+    <div class="stats">
+      <div class="stat"><b>10</b><span>Lessons</span></div>
+      <div class="stat"><b>81</b><span>Vocab</span></div>
+      <div class="stat"><b>29</b><span>Structures</span></div>
+    </div>
+    <div class="cat-head"><svg class="icon" style="width:15px;height:15px;color:var(--blue)"><use href="#i-mic"/></svg> SPEAKING</div>
+    <ul class="lesson-list" id="speakingList"></ul>
+    <div class="cat-head"><svg class="icon" style="width:15px;height:15px;color:var(--purple)"><use href="#i-pen"/></svg> WRITING</div>
+    <ul class="lesson-list" id="writingList"></ul>
+  </aside>
+
+  <main class="main">
+    <header>
+      <span class="badge" id="hBadge"><svg class="icon" style="width:14px;height:14px"><use href="#i-clip"/></svg> <span id="hBadgeText">Lesson Summary</span></span>
+      <h1 id="hTitle">Speaking Band 6.5+ Target</h1>
+      <p id="hSub">Lesson 5 — Places + People</p>
+      <div class="progress-wrap">
+        <div class="progress-label" id="progLabel">Course progress · 0 / 10 lessons</div>
+        <div class="progress-track"><div class="progress-fill" id="progFill" style="width:0%"></div></div>
+      </div>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Lesson sections" id="tablist"></div>
+
+    <section class="panel" id="panel" role="tabpanel"></section>
+  </main>
+</div>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-bookopen"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></g>
+    <g id="i-clip"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6"/><path d="M9 16h4"/></g>
+    <g id="i-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></g>
+    <g id="i-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></g>
+    <g id="i-bookm"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M10 2v7l2-1.5L14 9V2"/></g>
+    <g id="i-layers"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></g>
+    <g id="i-speaker"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></g>
+    <g id="i-check"><path d="M20 6 9 17l-5-5"/></g>
+    <g id="i-menu"><path d="M4 6h16M4 12h16M4 18h16"/></g>
+    <g id="i-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+    <g id="i-back"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></g>
+    <g id="i-fwd"><path d="m12 5 7 7-7 7"/><path d="M5 12h14"/></g>
+    <g id="i-mic"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></g>
+    <g id="i-pen"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></g>
+  </defs>
+</svg>
+
+<script>
+/* ---------------- Data ---------------- */
+const lessons = {
+  speaking:[
+    {id:'s1',title:'Lesson 1 — Introduction'},
+    {id:'s2',title:'Lesson 2 — Expand the answer'},
+    {id:'s3',title:'Lesson 3 — Basic Information'},
+    {id:'s4',title:'Lesson 4 — Prefer'},
+    {id:'s5',title:'Lesson 5 — Places + People'},
+    {id:'s6',title:'Lesson 6 — Learn'},
+  ],
+  writing:[
+    {id:'w1',title:'Lesson 1 — Describe trends'},
+    {id:'w2',title:'Lesson 2 — Trends II'},
+    {id:'w3',title:'Lesson 3 — Paragraph'},
+    {id:'w4',title:'Lesson 4 — Line Graph'},
+  ]
+};
+const TOTAL_LESSONS = lessons.speaking.length + lessons.writing.length;
+const lessonContent = {
+  vocab:[
+    {w:'hometown',t:'n',m:'quê hương / nơi sinh ra'},
+    {w:'bustling',t:'adj',m:'nhộn nhịp, tấp nập'},
+    {w:'get along with',t:'phr',m:'hòa hợp với ai đó'},
+    {w:'picturesque',t:'adj',m:'đẹp như tranh vẽ'},
+  ],
+  structures:[
+    {f:'S + used to + V',e:'I used to live in a small coastal town.'},
+    {f:'Not only ... but also ...',e:'Not only is it lively, but also very friendly.'},
+  ]
+};
+const topics = [
+  {id:'media',title:'Media & Advertising',count:58,words:[
+    {w:'media',t:'n',m:'phương tiện truyền thông',en:'The media plays a big role in modern life.',vi:'Truyền thông đóng vai trò lớn trong cuộc sống hiện đại.'},
+    {w:'broadcast',t:'v/n',m:'phát sóng',en:'The match was broadcast live worldwide.',vi:'Trận đấu được phát sóng trực tiếp trên toàn thế giới.'},
+    {w:'advertisement',t:'n',m:'quảng cáo',en:'This advertisement targets young people.',vi:'Quảng cáo này nhắm đến giới trẻ.'},
+  ]},
+  {id:'education',title:'Education',count:64,words:[
+    {w:'curriculum',t:'n',m:'chương trình giảng dạy',en:'The school updated its curriculum this year.',vi:'Trường đã cập nhật chương trình giảng dạy trong năm nay.'},
+    {w:'tuition',t:'n',m:'học phí',en:'University tuition keeps rising.',vi:'Học phí đại học liên tục tăng.'},
+  ]},
+  {id:'environment',title:'Environment',count:71,words:[
+    {w:'pollution',t:'n',m:'sự ô nhiễm',en:'Air pollution is a serious problem in big cities.',vi:'Ô nhiễm không khí là vấn đề nghiêm trọng ở các thành phố lớn.'},
+    {w:'sustainable',t:'adj',m:'bền vững',en:'We need sustainable energy sources.',vi:'Chúng ta cần các nguồn năng lượng bền vững.'},
+  ]},
+  {id:'technology',title:'Technology',count:69,words:[
+    {w:'innovation',t:'n',m:'sự đổi mới',en:'Innovation drives economic growth.',vi:'Sự đổi mới thúc đẩy tăng trưởng kinh tế.'},
+    {w:'automation',t:'n',m:'tự động hóa',en:'Automation has changed many industries.',vi:'Tự động hóa đã thay đổi nhiều ngành công nghiệp.'},
+  ]},
+];
+const flashItems = [
+  {type:'Vocabulary',front:'bustling',phon:'/ˈbʌs.lɪŋ/',def:'Full of energetic and noisy activity.',ex:'The bustling market was full of tourists.'},
+  {type:'Vocabulary',front:'picturesque',phon:'/ˌpɪk.tʃərˈesk/',def:'Visually attractive, especially a place.',ex:'We stayed in a picturesque village by the sea.'},
+  {type:'Grammar',front:'Not only ... but also',phon:'structure',def:'Adds emphasis by linking two ideas.',ex:'Not only is it lively, but also very friendly.'},
+];
+const tabs = [
+  {id:'methodology',label:'How To Study',icon:'i-bookopen'},
+  {id:'summary',label:'Lesson Summary',icon:'i-clip'},
+  {id:'reference',label:'Reference Guide',icon:'i-book'},
+  {id:'practice',label:'Practice',icon:'i-target'},
+  {id:'vocabulary',label:'Vocabulary',icon:'i-bookm'},
+  {id:'flashcards',label:'Flashcards',icon:'i-layers'},
+];
+
+/* ---------------- State ---------------- */
+let active = 'summary';
+let selectedLesson = 's5';
+let completed = (()=>{try{return JSON.parse(localStorage.getItem('ielts.completed')||'{}')}catch(e){return {}}})();
+let topicId = null, flashIdx = 0, flashFlipped = false;
+
+const $ = s => document.querySelector(s);
+const ic = id => `<svg class="icon"><use href="#${id}"/></svg>`;
+
+function save(){try{localStorage.setItem('ielts.completed',JSON.stringify(completed))}catch(e){}}
+function speak(text){
+  if(!('speechSynthesis' in window)) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-GB'; u.rate = 0.9;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+
+/* ---------------- Sidebar ---------------- */
+function renderSidebar(){
+  const build = (arr,el)=>{
+    el.innerHTML = arr.map(l=>{
+      const done = completed[l.id];
+      const isActive = selectedLesson===l.id && active!=='methodology' && active!=='vocabulary';
+      const mark = done ? `<span class="mark">${ic('i-check')}</span>` : `<span class="mark"><span class="dot"></span></span>`;
+      return `<li><button class="lesson ${isActive?'active':''} ${done?'done':''}" data-lesson="${l.id}">${mark}${l.title}</button></li>`;
+    }).join('');
+  };
+  build(lessons.speaking,$('#speakingList'));
+  build(lessons.writing,$('#writingList'));
+  $('.vocab-bank').classList.toggle('active',active==='vocabulary');
+}
+function renderProgress(){
+  const n = Object.values(completed).filter(Boolean).length;
+  $('#progLabel').textContent = `Course progress · ${n} / ${TOTAL_LESSONS} lessons`;
+  $('#progFill').style.width = (n/TOTAL_LESSONS*100)+'%';
+}
+
+/* ---------------- Tabs ---------------- */
+function renderTabs(){
+  $('#tablist').innerHTML = tabs.map(t=>`
+    <button class="tab" role="tab" id="tab-${t.id}" data-tab="${t.id}"
+      aria-selected="${t.id===active}" aria-controls="panel" tabindex="${t.id===active?0:-1}">
+      ${ic(t.icon)} ${t.label}
+    </button>`).join('');
+}
+function onTabKey(e){
+  const ids = tabs.map(t=>t.id);
+  let i = ids.indexOf(active);
+  if(e.key==='ArrowRight'){i=(i+1)%ids.length}
+  else if(e.key==='ArrowLeft'){i=(i-1+ids.length)%ids.length}
+  else if(e.key==='Home'){i=0}
+  else if(e.key==='End'){i=ids.length-1}
+  else return;
+  e.preventDefault(); setTab(ids[i]); $('#tab-'+ids[i]).focus();
+}
+
+/* ---------------- Header ---------------- */
+function lessonById(id){return [...lessons.speaking,...lessons.writing].find(l=>l.id===id)}
+function setHeader(){
+  const map = {
+    methodology:{icon:'i-bookopen',badge:'Study Guide',title:'Learning Method',sub:'How to efficiently jump from Band 5 to Band 6.5+'},
+    vocabulary:{icon:'i-bookm',badge:'Vocabulary',title:'IELTS Vocabulary',sub:`Master essential vocabulary across ${topics.length} common IELTS topics`},
+  };
+  let h = map[active];
+  if(!h){
+    const l = lessonById(selectedLesson);
+    const sp = l.id.startsWith('s');
+    h = {icon:sp?'i-mic':'i-pen',badge:sp?'Speaking':'Writing',title:`${sp?'Speaking':'Writing'} Band 6.5+ Target`,sub:l.title};
+  }
+  $('#hBadge').innerHTML = `${ic(h.icon)} <span>${h.badge}</span>`;
+  $('#hTitle').textContent = h.title;
+  $('#hSub').textContent = h.sub;
+}
+
+/* ---------------- Panels ---------------- */
+function speakBtn(text,sm){return `<button class="speak-btn ${sm?'sm':''}" aria-label="Pronounce ${text}" onclick="event.stopPropagation();speak('${text.replace(/'/g,"\\'")}')">${ic('i-speaker')}</button>`}
+
+function panelSummary(){
+  const l = lessonById(selectedLesson);
+  const done = completed[selectedLesson];
+  return `
+  <div class="title-row">
+    <span class="chip blue">${ic('i-mic')} ${l.id.startsWith('s')?'Speaking':'Writing'}</span>
+    <span style="font-size:20px;font-weight:700">${l.title}</span>
+    <button class="tab" style="margin-left:auto" id="markBtn" aria-pressed="${!!done}">
+      ${ic('i-check')} ${done?'Completed':'Mark complete'}
+    </button>
+  </div>
+  <div class="card">
+    <h3>Key Vocabulary</h3>
+    <div class="sub">Tap the speaker to hear British pronunciation (0.9× speed).</div>
+    ${lessonContent.vocab.map(v=>`
+      <div class="word-row">
+        <div class="info"><span class="w">${v.w}</span><span class="t">(${v.t})</span><div class="m" lang="vi">${v.m}</div></div>
+        ${speakBtn(v.w,true)}
+      </div>`).join('')}
+  </div>
+  <div class="card">
+    <h3>Sentence Structures</h3>
+    <div class="sub">Reusable frames to raise your Grammatical Range score.</div>
+    ${lessonContent.structures.map(s=>`<div class="struct"><div class="f">${s.f}</div><div class="e">"${s.e}"</div></div>`).join('')}
+  </div>`;
+}
+
+function panelVocabList(){
+  return `
+  <div class="card" style="display:flex;align-items:center;gap:14px;background:rgba(34,197,94,.06);border-color:rgba(34,197,94,.15)">
+    <svg class="icon" style="width:32px;height:32px;color:var(--green)"><use href="#i-bookm"/></svg>
+    <div><h3 style="color:var(--green)">IELTS Vocabulary Bank</h3>
+    <div class="sub" style="margin:0">Master essential vocabulary across ${topics.length} common IELTS topics.</div></div>
+  </div>
+  <div class="grid">
+    ${topics.map(t=>`
+      <button class="topic ${completed['topic-'+t.id]?'topic-done':''}" data-topic="${t.id}">
+        <svg class="ti"><use href="#i-bookm"/></svg>
+        <span class="tt">${t.title}</span><span class="tc">${t.count} words</span>
+      </button>`).join('')}
+  </div>`;
+}
+function panelVocabDetail(){
+  const t = topics.find(x=>x.id===topicId);
+  return `
+  <button class="back-btn" id="backTopics">${ic('i-back')} Back to Topics</button>
+  <div class="title-row">
+    <span style="font-size:24px;font-weight:700">${t.title}</span>
+    <span class="chip green">${t.count} words</span>
+  </div>
+  <div class="search">${ic('i-search')}<input type="text" placeholder="Search words, meanings or examples…"></div>
+  ${t.words.map(v=>`
+    <div class="vcard">
+      <div class="vh"><div class="ttl"><span class="vw">${v.w}</span> <span class="t" style="color:var(--text-secondary);font-size:13px">(${v.t})</span></div>${speakBtn(v.w)}</div>
+      <div class="mean" lang="vi">${v.m}</div>
+      <div class="ex">
+        <div class="en">💡 ${v.en}</div>
+        <div class="vi"><span class="lang-tag">lang="vi"</span> <span lang="vi">${v.vi}</span></div>
+      </div>
+    </div>`).join('')}`;
+}
+function panelFlash(){
+  const it = flashItems[flashIdx];
+  return `
+  <div class="flash-wrap">
+    <div class="flash-scene"><div class="flashcard ${flashFlipped?'flipped':''}" id="flashcard">
+      <div class="face front">
+        <span class="ctype">${it.type}</span>
+        <div style="display:flex;align-items:center;gap:12px"><span class="word">${it.front}</span>${speakBtn(it.front)}</div>
+        <span class="phon">${it.phon}</span>
+        <span class="hint">Click to flip</span>
+      </div>
+      <div class="face back">
+        <span class="ctype">Definition &amp; Example</span>
+        <div class="def">${it.def}</div>
+        <div class="ex2">"${it.ex}"</div>
+      </div>
+    </div></div>
+    <div class="flash-controls">
+      <button class="ctrl" id="fPrev" ${flashIdx===0?'disabled':''} aria-label="Previous card">${ic('i-back')}</button>
+      <span class="count">${flashIdx+1} / ${flashItems.length}</span>
+      <button class="ctrl next" id="fNext" ${flashIdx===flashItems.length-1?'disabled':''} aria-label="Next card">${ic('i-fwd')}</button>
+    </div>
+  </div>`;
+}
+function panelGeneric(title,body){return `<div class="card"><h3>${title}</h3><div class="sub">${body}</div></div>`}
+
+function renderPanel(){
+  const p = $('#panel');
+  p.setAttribute('aria-labelledby','tab-'+active);
+  if(active==='summary') p.innerHTML = panelSummary();
+  else if(active==='vocabulary') p.innerHTML = topicId ? panelVocabDetail() : panelVocabList();
+  else if(active==='flashcards') p.innerHTML = panelFlash();
+  else if(active==='methodology') p.innerHTML = panelGeneric('Learning Method','Watch the lesson video, shadow the model answer, then drill vocabulary and structures with flashcards. Aim for 20 focused minutes a day.');
+  else if(active==='reference') p.innerHTML = panelGeneric('Reference Guide','Grammar references, linking phrases, and band-descriptor checklists for '+lessonById(selectedLesson).title+'.');
+  else if(active==='practice') p.innerHTML = panelGeneric('Practice','Sample questions and model answers with vocabulary highlights for '+lessonById(selectedLesson).title+'.');
+  // restart fade
+  p.style.animation='none'; void p.offsetWidth; p.style.animation='';
+  bindPanel();
+}
+function bindPanel(){
+  const mb = $('#markBtn');
+  if(mb) mb.onclick = ()=>{ completed[selectedLesson]=!completed[selectedLesson]; save(); renderSidebar(); renderProgress(); renderPanel(); };
+  document.querySelectorAll('[data-topic]').forEach(b=>b.onclick=()=>{topicId=b.dataset.topic; completed['topic-'+topicId]=true; save(); renderPanel();});
+  const bt = $('#backTopics'); if(bt) bt.onclick=()=>{topicId=null; renderPanel();};
+  const fc = $('#flashcard'); if(fc) fc.onclick=()=>{flashFlipped=!flashFlipped; fc.classList.toggle('flipped');};
+  const fp=$('#fPrev'); if(fp) fp.onclick=()=>{if(flashIdx>0){flashIdx--;flashFlipped=false;renderPanel();}};
+  const fn=$('#fNext'); if(fn) fn.onclick=()=>{if(flashIdx<flashItems.length-1){flashIdx++;flashFlipped=false;renderPanel();}};
+}
+
+/* ---------------- Tab switching ---------------- */
+function setTab(id){
+  active = id;
+  if(id!=='vocabulary') topicId=null;
+  document.querySelectorAll('.tab[role=tab]').forEach(t=>{
+    const on = t.dataset.tab===id;
+    t.setAttribute('aria-selected',on); t.tabIndex = on?0:-1;
+  });
+  setHeader(); renderSidebar(); renderPanel();
+}
+
+/* ---------------- Sidebar toggle ---------------- */
+function setSidebar(open){
+  $('#sidebar').classList.toggle('open',open);
+  $('#backdrop').classList.toggle('open',open);
+  $('#menuBtn').setAttribute('aria-expanded',open);
+}
+
+/* ---------------- Init ---------------- */
+function init(){
+  renderTabs(); renderSidebar(); renderProgress(); setHeader(); renderPanel();
+  $('#tablist').addEventListener('click',e=>{const b=e.target.closest('[data-tab]'); if(b) setTab(b.dataset.tab);});
+  $('#tablist').addEventListener('keydown',onTabKey);
+  document.querySelector('.vocab-bank').addEventListener('click',()=>{setTab('vocabulary'); setSidebar(false);});
+  $('#brand').addEventListener('click',()=>{setTab('methodology'); setSidebar(false);});
+  document.body.addEventListener('click',e=>{
+    const l=e.target.closest('[data-lesson]');
+    if(l){selectedLesson=l.dataset.lesson; if(active==='methodology'||active==='vocabulary') active='summary'; setTab(active==='vocabulary'?'summary':active); setSidebar(false);}
+  });
+  $('#menuBtn').onclick=()=>setSidebar(!$('#sidebar').classList.contains('open'));
+  $('#backdrop').onclick=()=>setSidebar(false);
+}
+init();
+</script>
+</body>
+</html>
