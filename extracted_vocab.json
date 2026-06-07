@@ -1,0 +1,4192 @@
+[
+  {
+    "id": "media_and_advertising",
+    "title": "MEDIA AND ADVERTISING",
+    "words": [
+      {
+        "word": "N media",
+        "type": "n",
+        "meaning": "phương tiện truyền thông",
+        "example": "The media plays a big role in modern life.",
+        "example_vi": "Truyền thông đóng vai trò lớn trong cuộc sống hiện đại. mass media (n) – truyền thông đại chúng"
+      },
+      {
+        "word": "mass media",
+        "type": "n",
+        "meaning": "truyền thông đại chúng",
+        "example": "Mass media influences people’s opinions.",
+        "example_vi": "Truyền thông đại chúng ảnh hưởng đến quan điểm của con người. journalism (n) – ngành báo chí"
+      },
+      {
+        "word": "journalism",
+        "type": "n",
+        "meaning": "ngành báo chí",
+        "example": "Journalism is important for a free society.",
+        "example_vi": "Báo chí rất quan trọng đối với một xã hội tự do. broadcast (v/n) – phát sóng"
+      },
+      {
+        "word": "broadcast",
+        "type": "v/n",
+        "meaning": "phát sóng",
+        "example": "The match was broadcast live on TV.",
+        "example_vi": "Trận đấu được phát sóng trực tiếp trên TV. press (n) – báo chí"
+      },
+      {
+        "word": "press",
+        "type": "n",
+        "meaning": "báo chí",
+        "example": "The press often reports celebrity news.",
+        "example_vi": "Báo chí thường đưa tin về người nổi tiếng. headline (n) – tiêu đề / tin nổi bật"
+      },
+      {
+        "word": "headline",
+        "type": "n",
+        "meaning": "tiêu đề / tin nổi bật",
+        "example": "The scandal made front-page headlines.",
+        "example_vi": "Vụ bê bối đó lên trang nhất. coverage (n) – việc đưa tin"
+      },
+      {
+        "word": "coverage",
+        "type": "n",
+        "meaning": "việc đưa tin",
+        "example": "The media gave wide coverage to the event.",
+        "example_vi": "Truyền thông đã đưa tin rộng rãi về sự kiện. reporter (n) – phóng viên"
+      },
+      {
+        "word": "reporter",
+        "type": "n",
+        "meaning": "phóng viên",
+        "example": "The reporter asked difficult questions.",
+        "example_vi": "Phóng viên đã đặt những câu hỏi khó. audience (n) – khán giả"
+      },
+      {
+        "word": "audience",
+        "type": "n",
+        "meaning": "khán giả",
+        "example": "The show attracts a large audience.",
+        "example_vi": "Chương trình thu hút lượng lớn khán giả. source (n) – nguồn tin"
+      },
+      {
+        "word": "source",
+        "type": "n",
+        "meaning": "nguồn tin",
+        "example": "Always check if the source is reliable.",
+        "example_vi": "Luôn kiểm tra xem nguồn tin có đáng tin cậy không. 📺 II. CÁC LOẠI PHƯƠNG TIỆN TRUYỀN THÔNG television (n) – truyền hình"
+      },
+      {
+        "word": "NG television",
+        "type": "n",
+        "meaning": "truyền hình",
+        "example": "Television is a major source of entertainment.",
+        "example_vi": "Truyền hình là nguồn giải trí chính. radio (n) – đài phát thanh"
+      },
+      {
+        "word": "radio",
+        "type": "n",
+        "meaning": "đài phát thanh",
+        "example": "He listens to the news on the radio.",
+        "example_vi": "Anh ấy nghe tin tức trên đài phát thanh. newspaper (n) – báo in"
+      },
+      {
+        "word": "newspaper",
+        "type": "n",
+        "meaning": "báo in",
+        "example": "Many people still read newspapers every morning.",
+        "example_vi": "Nhiều người vẫn đọc báo mỗi sáng. magazine (n) – tạp chí"
+      },
+      {
+        "word": "magazine",
+        "type": "n",
+        "meaning": "tạp chí",
+        "example": "Fashion magazines are popular among young women.",
+        "example_vi": "Tạp chí thời trang được giới trẻ ưa chuộng. internet (n) – mạng Internet"
+      },
+      {
+        "word": "internet",
+        "type": "n",
+        "meaning": "mạng Internet",
+        "example": "The Internet has changed the way we get news.",
+        "example_vi": "Internet đã thay đổi cách chúng ta tiếp nhận tin tức. social media (n) – mạng xã hội"
+      },
+      {
+        "word": "social media",
+        "type": "n",
+        "meaning": "mạng xã hội",
+        "example": "Social media connects people worldwide.",
+        "example_vi": "Mạng xã hội kết nối mọi người trên toàn cầu. website (n) – trang web"
+      },
+      {
+        "word": "website",
+        "type": "n",
+        "meaning": "trang web",
+        "example": "I found this article on a health website.",
+        "example_vi": "Tôi tìm thấy bài viết này trên một trang web sức khỏe. online platform (n) – nền tảng trực tuyến"
+      },
+      {
+        "word": "online platform",
+        "type": "n",
+        "meaning": "nền tảng trực tuyến",
+        "example": "YouTube is a popular online platform for videos.",
+        "example_vi": "YouTube là nền tảng trực tuyến phổ biến cho video. blog (n) – nhật ký mạng / blog"
+      },
+      {
+        "word": "blog",
+        "type": "n",
+        "meaning": "nhật ký mạng / blog",
+        "example": "She writes a travel blog.",
+        "example_vi": "Cô ấy viết blog du lịch. podcast (n) – chương trình phát thanh / podcast"
+      },
+      {
+        "word": "podcast",
+        "type": "n",
+        "meaning": "chương trình phát thanh / podcast",
+        "example": "I listen to English podcasts every day.",
+        "example_vi": "Tôi nghe podcast tiếng Anh mỗi ngày. 📣 III. QUẢNG CÁO &amp; TIẾP THỊ advertisement (n) – quảng cáo"
+      },
+      {
+        "word": "advertisement",
+        "type": "n",
+        "meaning": "quảng cáo",
+        "example": "I saw an advertisement for a new phone.",
+        "example_vi": "Tôi thấy quảng cáo cho một chiếc điện thoại mới. advertising (n) – ngành quảng cáo / hoạt động quảng cáo"
+      },
+      {
+        "word": "advertising",
+        "type": "n",
+        "meaning": "ngành quảng cáo / hoạt động quảng cáo",
+        "example": "Advertising influences what people buy.",
+        "example_vi": "Quảng cáo ảnh hưởng đến việc mua hàng của mọi người. commercial (n) – quảng cáo thương mại (trên TV/radio)"
+      },
+      {
+        "word": "commercial",
+        "type": "n",
+        "meaning": "quảng cáo thương mại (trên TV/radio)",
+        "example": "That funny commercial went viral online.",
+        "example_vi": "Quảng cáo vui nhộn đó đã lan truyền trên mạng. poster (n) – áp phích"
+      },
+      {
+        "word": "poster",
+        "type": "n",
+        "meaning": "áp phích",
+        "example": "They put up posters to promote the concert.",
+        "example_vi": "Họ dán áp phích để quảng bá buổi hòa nhạc. billboard (n) – biển quảng cáo lớn"
+      },
+      {
+        "word": "billboard",
+        "type": "n",
+        "meaning": "biển quảng cáo lớn",
+        "example": "You can see big billboards along the highway.",
+        "example_vi": "Bạn có thể thấy biển quảng cáo lớn dọc đường cao tốc. brand (n) – thương hiệu"
+      },
+      {
+        "word": "brand",
+        "type": "n",
+        "meaning": "thương hiệu",
+        "example": "People often trust well-known brands.",
+        "example_vi": "Mọi người thường tin tưởng các thương hiệu nổi tiếng. slogan (n) – khẩu hiệu"
+      },
+      {
+        "word": "slogan",
+        "type": "n",
+        "meaning": "khẩu hiệu",
+        "example": "“Just do it” is Nike’s famous slogan.",
+        "example_vi": "“Just do it” là khẩu hiệu nổi tiếng của Nike. logo (n) – biểu tượng"
+      },
+      {
+        "word": "logo",
+        "type": "n",
+        "meaning": "biểu tượng",
+        "example": "The Apple logo is recognized worldwide.",
+        "example_vi": "Biểu tượng Apple được nhận ra trên toàn thế giới. target audience (n) – đối tượng khách hàng mục tiêu"
+      },
+      {
+        "word": "target audience",
+        "type": "n",
+        "meaning": "đối tượng khách hàng mục tiêu",
+        "example": "The target audience for this ad is teenagers.",
+        "example_vi": "Đối tượng mục tiêu của quảng cáo này là thanh thiếu niên. marketing campaign (n) – chiến dịch tiếp thị"
+      },
+      {
+        "word": "marketing campaign",
+        "type": "n",
+        "meaning": "chiến dịch tiếp thị",
+        "example": "They launched a new marketing campaign for the product.",
+        "example_vi": "Họ tung ra chiến dịch tiếp thị mới cho sản phẩm. 💬 IV. ẢNH HƯỞNG CỦA TRUYỀN THÔNG influence (n/v) – ảnh hưởng"
+      },
+      {
+        "word": "NG influence",
+        "type": "n/v",
+        "meaning": "ảnh hưởng",
+        "example": "The media influences how people think.",
+        "example_vi": "Truyền thông ảnh hưởng đến cách con người suy nghĩ. public opinion (n) – dư luận"
+      },
+      {
+        "word": "public opinion",
+        "type": "n",
+        "meaning": "dư luận",
+        "example": "The media can shape public opinion.",
+        "example_vi": "Truyền thông có thể định hình dư luận. fake news (n) – tin giả"
+      },
+      {
+        "word": "fake news",
+        "type": "n",
+        "meaning": "tin giả",
+        "example": "Fake news spreads quickly on social media.",
+        "example_vi": "Tin giả lan truyền rất nhanh trên mạng xã hội. bias (n) – thiên vị"
+      },
+      {
+        "word": "bias",
+        "type": "n",
+        "meaning": "thiên vị",
+        "example": "Some news channels show political bias.",
+        "example_vi": "Một số kênh tin tức thể hiện sự thiên vị chính trị. freedom of speech (n) – tự do ngôn luận"
+      },
+      {
+        "word": "freedom of speech",
+        "type": "n",
+        "meaning": "tự do ngôn luận",
+        "example": "Freedom of speech is a basic human right.",
+        "example_vi": "Tự do ngôn luận là quyền cơ bản của con người. privacy (n) – quyền riêng tư"
+      },
+      {
+        "word": "privacy",
+        "type": "n",
+        "meaning": "quyền riêng tư",
+        "example": "Celebrities often lose their privacy.",
+        "example_vi": "Người nổi tiếng thường mất quyền riêng tư. celebrity (n) – người nổi tiếng"
+      },
+      {
+        "word": "celebrity",
+        "type": "n",
+        "meaning": "người nổi tiếng",
+        "example": "The media follows celebrities everywhere.",
+        "example_vi": "Truyền thông theo dõi người nổi tiếng khắp nơi. role model (n) – hình mẫu"
+      },
+      {
+        "word": "role model",
+        "type": "n",
+        "meaning": "hình mẫu",
+        "example": "Celebrities can be good or bad role models.",
+        "example_vi": "Người nổi tiếng có thể là hình mẫu tốt hoặc xấu. manipulate (v) – thao túng"
+      },
+      {
+        "word": "manipulate",
+        "type": "v",
+        "meaning": "thao túng",
+        "example": "Some media outlets manipulate the truth.",
+        "example_vi": "Một số kênh truyền thông bóp méo sự thật. exposure (n) – sự tiếp xúc / độ phủ sóng"
+      },
+      {
+        "word": "exposure",
+        "type": "n",
+        "meaning": "sự tiếp xúc / độ phủ sóng",
+        "example": "The company gained a lot of exposure through advertising.",
+        "example_vi": "Công ty được quảng bá rộng rãi nhờ quảng cáo. 💻 V. TRUYỀN THÔNG KỸ THUẬT SỐ digital media (n) – truyền thông kỹ thuật số"
+      },
+      {
+        "word": "digital media",
+        "type": "n",
+        "meaning": "truyền thông kỹ thuật số",
+        "example": "Digital media dominates modern communication.",
+        "example_vi": "Truyền thông kỹ thuật số chiếm ưu thế trong giao tiếp hiện đại. social networking site (n) – trang mạng xã hội"
+      },
+      {
+        "word": "social networking site",
+        "type": "n",
+        "meaning": "trang mạng xã hội",
+        "example": "Facebook is the most popular social networking site.",
+        "example_vi": "Facebook là mạng xã hội phổ biến nhất. viral (adj) – lan truyền mạnh"
+      },
+      {
+        "word": "viral",
+        "type": "adj",
+        "meaning": "lan truyền mạnh",
+        "example": "The video went viral overnight.",
+        "example_vi": "Video lan truyền chóng mặt chỉ sau một đêm. content creator (n) – người sáng tạo nội dung"
+      },
+      {
+        "word": "content creator",
+        "type": "n",
+        "meaning": "người sáng tạo nội dung",
+        "example": "Many young people work as content creators online.",
+        "example_vi": "Nhiều bạn trẻ làm nghề sáng tạo nội dung trực tuyến. follower (n) – người theo dõi"
+      },
+      {
+        "word": "follower",
+        "type": "n",
+        "meaning": "người theo dõi",
+        "example": "She has millions of followers on Instagram.",
+        "example_vi": "Cô ấy có hàng triệu người theo dõi trên Instagram. influencer (n) – người có ảnh hưởng"
+      },
+      {
+        "word": "influencer",
+        "type": "n",
+        "meaning": "người có ảnh hưởng",
+        "example": "Brands pay influencers to promote products.",
+        "example_vi": "Các thương hiệu trả tiền cho người ảnh hưởng để quảng bá sản phẩm. engagement (n) – tương tác (mạng xã hội)"
+      },
+      {
+        "word": "engagement",
+        "type": "n",
+        "meaning": "tương tác (mạng xã hội)",
+        "example": "This post got a lot of engagement.",
+        "example_vi": "Bài đăng này nhận được rất nhiều tương tác. platform (n) – nền tảng"
+      },
+      {
+        "word": "platform",
+        "type": "n",
+        "meaning": "nền tảng",
+        "example": "TikTok is a fast-growing social platform.",
+        "example_vi": "TikTok là nền tảng mạng xã hội phát triển nhanh chóng. online reputation (n) – danh tiếng trực tuyến"
+      },
+      {
+        "word": "online reputation",
+        "type": "n",
+        "meaning": "danh tiếng trực tuyến",
+        "example": "Be careful with your online reputation.",
+        "example_vi": "Hãy cẩn thận với danh tiếng trực tuyến của bạn. algorithm (n) – thuật toán"
+      },
+      {
+        "word": "algorithm",
+        "type": "n",
+        "meaning": "thuật toán",
+        "example": "Social media algorithms decide what you see online.",
+        "example_vi": "Thuật toán mạng xã hội quyết định bạn thấy gì trên mạng. ⚖️ VI. TÁC ĐỘNG TÍCH CỰC &amp; TIÊU CỰC raise awareness (v) – nâng cao nhận thức"
+      },
+      {
+        "word": "C raise awareness",
+        "type": "v",
+        "meaning": "nâng cao nhận thức",
+        "example": "Media can raise awareness about global issues.",
+        "example_vi": "Truyền thông có thể nâng cao nhận thức về các vấn đề toàn cầu. educate (v) – giáo dục"
+      },
+      {
+        "word": "educate",
+        "type": "v",
+        "meaning": "giáo dục",
+        "example": "Documentaries educate people about history and science.",
+        "example_vi": "Phim tài liệu giúp mọi người hiểu hơn về lịch sử và khoa học. entertainment (n) – giải trí"
+      },
+      {
+        "word": "entertainment",
+        "type": "n",
+        "meaning": "giải trí",
+        "example": "TV provides entertainment for all ages.",
+        "example_vi": "Truyền hình mang lại giải trí cho mọi lứa tuổi. misinformation (n) – thông tin sai lệch"
+      },
+      {
+        "word": "misinformation",
+        "type": "n",
+        "meaning": "thông tin sai lệch",
+        "example": "Misinformation spreads quickly on social media.",
+        "example_vi": "Thông tin sai lệch lan truyền nhanh trên mạng xã hội. addiction (n) – nghiện"
+      },
+      {
+        "word": "addiction",
+        "type": "n",
+        "meaning": "nghiện",
+        "example": "Social media addiction affects mental health.",
+        "example_vi": "Nghiện mạng xã hội ảnh hưởng đến sức khỏe tinh thần. body image (n) – hình ảnh cơ thể"
+      },
+      {
+        "word": "body image",
+        "type": "n",
+        "meaning": "hình ảnh cơ thể",
+        "example": "Ads often create unrealistic body images.",
+        "example_vi": "Quảng cáo thường tạo ra hình ảnh cơ thể phi thực tế. consumerism (n) – chủ nghĩa tiêu dùng"
+      },
+      {
+        "word": "consumerism",
+        "type": "n",
+        "meaning": "chủ nghĩa tiêu dùng",
+        "example": "Advertising promotes consumerism.",
+        "example_vi": "Quảng cáo thúc đẩy chủ nghĩa tiêu dùng. peer pressure (n) – áp lực từ bạn bè"
+      },
+      {
+        "word": "peer pressure",
+        "type": "n",
+        "meaning": "áp lực từ bạn bè",
+        "example": "Teens face peer pressure from social media trends.",
+        "example_vi": "Thanh thiếu niên chịu áp lực từ các trào lưu mạng xã hội. freedom of information (n) – tự do thông tin"
+      },
+      {
+        "word": "freedom of information",
+        "type": "n",
+        "meaning": "tự do thông tin",
+        "example": "Freedom of information is vital for democracy.",
+        "example_vi": "Tự do thông tin rất quan trọng đối với dân chủ. critical thinking (n) – tư duy phản biện"
+      },
+      {
+        "word": "critical thinking",
+        "type": "n",
+        "meaning": "tư duy phản biện",
+        "example": "People need critical thinking to evaluate media content.",
+        "example_vi": "Con người cần tư duy phản biện để đánh giá nội dung truyền thông."
+      }
+    ]
+  },
+  {
+    "id": "globalization",
+    "title": "GLOBALIZATION",
+    "words": [
+      {
+        "word": "N globalization",
+        "type": "n",
+        "meaning": "toàn cầu hóa",
+        "example": "Globalization connects people around the world.",
+        "example_vi": "Toàn cầu hóa kết nối con người trên khắp thế giới. global (adj) – mang tính toàn cầu"
+      },
+      {
+        "word": "global",
+        "type": "adj",
+        "meaning": "mang tính toàn cầu",
+        "example": "English has become a global language.",
+        "example_vi": "Tiếng Anh đã trở thành ngôn ngữ toàn cầu. international (adj) – quốc tế"
+      },
+      {
+        "word": "international",
+        "type": "adj",
+        "meaning": "quốc tế",
+        "example": "She works for an international company.",
+        "example_vi": "Cô ấy làm việc cho một công ty quốc tế. border (n) – biên giới"
+      },
+      {
+        "word": "border",
+        "type": "n",
+        "meaning": "biên giới",
+        "example": "Globalization makes borders less important.",
+        "example_vi": "Toàn cầu hóa khiến biên giới trở nên ít quan trọng hơn. worldwide (adj/adv) – trên toàn thế giới"
+      },
+      {
+        "word": "worldwide",
+        "type": "adj/adv",
+        "meaning": "trên toàn thế giới",
+        "example": "The brand is popular worldwide.",
+        "example_vi": "Thương hiệu này nổi tiếng trên toàn thế giới. connection (n) – sự kết nối"
+      },
+      {
+        "word": "connection",
+        "type": "n",
+        "meaning": "sự kết nối",
+        "example": "The Internet improves global connections.",
+        "example_vi": "Internet giúp tăng cường kết nối toàn cầu. cooperation (n) – sự hợp tác"
+      },
+      {
+        "word": "cooperation",
+        "type": "n",
+        "meaning": "sự hợp tác",
+        "example": "Global problems require international cooperation.",
+        "example_vi": "Các vấn đề toàn cầu cần sự hợp tác quốc tế. cultural exchange (n) – trao đổi văn hóa"
+      },
+      {
+        "word": "cultural exchange",
+        "type": "n",
+        "meaning": "trao đổi văn hóa",
+        "example": "Cultural exchange helps people understand each other.",
+        "example_vi": "Trao đổi văn hóa giúp con người hiểu nhau hơn. integration (n) – hội nhập"
+      },
+      {
+        "word": "integration",
+        "type": "n",
+        "meaning": "hội nhập",
+        "example": "Economic integration benefits developing countries.",
+        "example_vi": "Hội nhập kinh tế mang lại lợi ích cho các nước đang phát triển. interdependence (n) – sự phụ thuộc lẫn nhau"
+      },
+      {
+        "word": "interdependence",
+        "type": "n",
+        "meaning": "sự phụ thuộc lẫn nhau",
+        "example": "Countries have economic interdependence today.",
+        "example_vi": "Các quốc gia ngày nay có sự phụ thuộc kinh tế lẫn nhau. 💰 II. KINH TẾ &amp; THƯƠNG MẠI trade (n) – thương mại"
+      },
+      {
+        "word": "I trade",
+        "type": "n",
+        "meaning": "thương mại",
+        "example": "Free trade promotes economic growth.",
+        "example_vi": "Thương mại tự do thúc đẩy tăng trưởng kinh tế. free trade (n) – thương mại tự do"
+      },
+      {
+        "word": "free trade",
+        "type": "n",
+        "meaning": "thương mại tự do",
+        "example": "Many countries support free trade agreements.",
+        "example_vi": "Nhiều quốc gia ủng hộ các hiệp định thương mại tự do. multinational company (n) – công ty đa quốc gia"
+      },
+      {
+        "word": "multinational company",
+        "type": "n",
+        "meaning": "công ty đa quốc gia",
+        "example": "Multinational companies operate in many countries.",
+        "example_vi": "Các công ty đa quốc gia hoạt động ở nhiều quốc gia. foreign investment (n) – đầu tư nước ngoài"
+      },
+      {
+        "word": "foreign investment",
+        "type": "n",
+        "meaning": "đầu tư nước ngoài",
+        "example": "Foreign investment helps create more jobs.",
+        "example_vi": "Đầu tư nước ngoài giúp tạo thêm việc làm. outsourcing (n) – thuê ngoài"
+      },
+      {
+        "word": "outsourcing",
+        "type": "n",
+        "meaning": "thuê ngoài",
+        "example": "Many companies save money through outsourcing.",
+        "example_vi": "Nhiều công ty tiết kiệm chi phí nhờ thuê ngoài. economic growth (n) – tăng trưởng kinh tế"
+      },
+      {
+        "word": "economic growth",
+        "type": "n",
+        "meaning": "tăng trưởng kinh tế",
+        "example": "Globalization contributes to economic growth.",
+        "example_vi": "Toàn cầu hóa góp phần vào tăng trưởng kinh tế. developed country (n) – nước phát triển"
+      },
+      {
+        "word": "developed country",
+        "type": "n",
+        "meaning": "nước phát triển",
+        "example": "Developed countries have advanced industries.",
+        "example_vi": "Các nước phát triển có ngành công nghiệp tiên tiến. developing country (n) – nước đang phát triển"
+      },
+      {
+        "word": "developing country",
+        "type": "n",
+        "meaning": "nước đang phát triển",
+        "example": "Developing countries attract foreign businesses.",
+        "example_vi": "Các nước đang phát triển thu hút doanh nghiệp nước ngoài. export (v/n) – xuất khẩu"
+      },
+      {
+        "word": "export",
+        "type": "v/n",
+        "meaning": "xuất khẩu",
+        "example": "Vietnam exports rice to many countries.",
+        "example_vi": "Việt Nam xuất khẩu gạo sang nhiều nước. import (v/n) – nhập khẩu"
+      },
+      {
+        "word": "import",
+        "type": "v/n",
+        "meaning": "nhập khẩu",
+        "example": "We import oil from abroad.",
+        "example_vi": "Chúng ta nhập khẩu dầu từ nước ngoài. 🧑 ‍ 🤝 ‍ 🧑 III. ẢNH HƯỞNG XÃ HỘI &amp; VĂN HÓA cultural diversity (n) – đa dạng văn hóa"
+      },
+      {
+        "word": "A cultural diversity",
+        "type": "n",
+        "meaning": "đa dạng văn hóa",
+        "example": "Globalization increases cultural diversity.",
+        "example_vi": "Toàn cầu hóa làm tăng sự đa dạng văn hóa. cultural identity (n) – bản sắc văn hóa"
+      },
+      {
+        "word": "cultural identity",
+        "type": "n",
+        "meaning": "bản sắc văn hóa",
+        "example": "Some people fear losing their cultural identity.",
+        "example_vi": "Một số người lo sợ mất bản sắc văn hóa. westernization (n) – sự phương Tây hóa"
+      },
+      {
+        "word": "westernization",
+        "type": "n",
+        "meaning": "sự phương Tây hóa",
+        "example": "Westernization influences local traditions.",
+        "example_vi": "Sự phương Tây hóa ảnh hưởng đến truyền thống địa phương. modern lifestyle (n) – lối sống hiện đại"
+      },
+      {
+        "word": "modern lifestyle",
+        "type": "n",
+        "meaning": "lối sống hiện đại",
+        "example": "Globalization brings a more modern lifestyle.",
+        "example_vi": "Toàn cầu hóa mang đến lối sống hiện đại hơn. tradition (n) – truyền thống"
+      },
+      {
+        "word": "tradition",
+        "type": "n",
+        "meaning": "truyền thống",
+        "example": "We must preserve our traditions.",
+        "example_vi": "Chúng ta phải giữ gìn truyền thống của mình. language barrier (n) – rào cản ngôn ngữ"
+      },
+      {
+        "word": "language barrier",
+        "type": "n",
+        "meaning": "rào cản ngôn ngữ",
+        "example": "Language barriers can cause misunderstanding.",
+        "example_vi": "Rào cản ngôn ngữ có thể gây hiểu lầm. communication (n) – giao tiếp"
+      },
+      {
+        "word": "communication",
+        "type": "n",
+        "meaning": "giao tiếp",
+        "example": "Technology improves global communication.",
+        "example_vi": "Công nghệ giúp cải thiện giao tiếp toàn cầu. migration (n) – di cư"
+      },
+      {
+        "word": "migration",
+        "type": "n",
+        "meaning": "di cư",
+        "example": "Globalization leads to more migration.",
+        "example_vi": "Toàn cầu hóa dẫn đến nhiều sự di cư hơn. urbanization (n) – đô thị hóa"
+      },
+      {
+        "word": "urbanization",
+        "type": "n",
+        "meaning": "đô thị hóa",
+        "example": "Urbanization is a result of global economic change.",
+        "example_vi": "Đô thị hóa là kết quả của thay đổi kinh tế toàn cầu. standard of living (n) – mức sống"
+      },
+      {
+        "word": "standard of living",
+        "type": "n",
+        "meaning": "mức sống",
+        "example": "Globalization raises the standard of living in many countries.",
+        "example_vi": "Toàn cầu hóa nâng cao mức sống ở nhiều quốc gia. 🌐 IV. TRUYỀN THÔNG &amp; CÔNG NGHỆ information technology (n) – công nghệ thông tin"
+      },
+      {
+        "word": "information technology",
+        "type": "n",
+        "meaning": "công nghệ thông tin",
+        "example": "Information technology connects people globally.",
+        "example_vi": "Công nghệ thông tin kết nối con người toàn cầu. social media (n) – mạng xã hội"
+      },
+      {
+        "word": "social media",
+        "type": "n",
+        "meaning": "mạng xã hội",
+        "example": "Social media spreads information quickly.",
+        "example_vi": "Mạng xã hội lan truyền thông tin rất nhanh. mass media (n) – phương tiện truyền thông đại chúng"
+      },
+      {
+        "word": "mass media",
+        "type": "n",
+        "meaning": "phương tiện truyền thông đại chúng",
+        "example": "Mass media influences public opinion.",
+        "example_vi": "Truyền thông đại chúng ảnh hưởng đến dư luận. global communication (n) – giao tiếp toàn cầu"
+      },
+      {
+        "word": "global communication",
+        "type": "n",
+        "meaning": "giao tiếp toàn cầu",
+        "example": "Global communication is faster than ever before.",
+        "example_vi": "Giao tiếp toàn cầu nhanh hơn bao giờ hết. digital platform (n) – nền tảng kỹ thuật số"
+      },
+      {
+        "word": "digital platform",
+        "type": "n",
+        "meaning": "nền tảng kỹ thuật số",
+        "example": "Digital platforms connect buyers and sellers worldwide.",
+        "example_vi": "Nền tảng kỹ thuật số kết nối người mua và người bán toàn cầu. advertising (n) – quảng cáo"
+      },
+      {
+        "word": "advertising",
+        "type": "n",
+        "meaning": "quảng cáo",
+        "example": "Global advertising promotes international brands.",
+        "example_vi": "Quảng cáo toàn cầu quảng bá thương hiệu quốc tế. e-commerce (n) – thương mại điện tử"
+      },
+      {
+        "word": "e-commerce",
+        "type": "n",
+        "meaning": "thương mại điện tử",
+        "example": "E-commerce allows people to shop internationally.",
+        "example_vi": "Thương mại điện tử cho phép mọi người mua sắm toàn cầu. technology advancement (n) – tiến bộ công nghệ"
+      },
+      {
+        "word": "technology advancement",
+        "type": "n",
+        "meaning": "tiến bộ công nghệ",
+        "example": "Technology advancement drives globalization.",
+        "example_vi": "Tiến bộ công nghệ thúc đẩy toàn cầu hóa. internet access (n) – truy cập Internet"
+      },
+      {
+        "word": "internet access",
+        "type": "n",
+        "meaning": "truy cập Internet",
+        "example": "Internet access is essential for globalization.",
+        "example_vi": "Truy cập Internet là yếu tố cần thiết cho toàn cầu hóa. digital economy (n) – kinh tế số"
+      },
+      {
+        "word": "digital economy",
+        "type": "n",
+        "meaning": "kinh tế số",
+        "example": "The digital economy is growing rapidly.",
+        "example_vi": "Nền kinh tế số đang phát triển nhanh chóng. ⚖️ V. LỢI ÍCH &amp; TÁC HẠI CỦA TOÀN CẦU HÓA benefit (n) – lợi ích"
+      },
+      {
+        "word": "A benefit",
+        "type": "n",
+        "meaning": "lợi ích",
+        "example": "Globalization brings many benefits to society.",
+        "example_vi": "Toàn cầu hóa mang lại nhiều lợi ích cho xã hội. opportunity (n) – cơ hội"
+      },
+      {
+        "word": "opportunity",
+        "type": "n",
+        "meaning": "cơ hội",
+        "example": "It provides more job opportunities.",
+        "example_vi": "Nó mang đến nhiều cơ hội việc làm hơn. competition (n) – sự cạnh tranh"
+      },
+      {
+        "word": "competition",
+        "type": "n",
+        "meaning": "sự cạnh tranh",
+        "example": "Global competition improves product quality.",
+        "example_vi": "Cạnh tranh toàn cầu giúp cải thiện chất lượng sản phẩm. economic inequality (n) – bất bình đẳng kinh tế"
+      },
+      {
+        "word": "economic inequality",
+        "type": "n",
+        "meaning": "bất bình đẳng kinh tế",
+        "example": "Globalization increases economic inequality in some regions.",
+        "example_vi": "Toàn cầu hóa làm gia tăng bất bình đẳng kinh tế ở một số nơi. exploitation (n) – sự bóc lột"
+      },
+      {
+        "word": "exploitation",
+        "type": "n",
+        "meaning": "sự bóc lột",
+        "example": "Some companies exploit cheap labor in developing countries.",
+        "example_vi": "Một số công ty bóc lột lao động giá rẻ ở các nước đang phát triển. job loss (n) – mất việc làm"
+      },
+      {
+        "word": "job loss",
+        "type": "n",
+        "meaning": "mất việc làm",
+        "example": "Automation and globalization cause job loss.",
+        "example_vi": "Tự động hóa và toàn cầu hóa gây mất việc làm. cultural loss (n) – mất bản sắc văn hóa"
+      },
+      {
+        "word": "cultural loss",
+        "type": "n",
+        "meaning": "mất bản sắc văn hóa",
+        "example": "Many fear globalization leads to cultural loss.",
+        "example_vi": "Nhiều người lo sợ toàn cầu hóa làm mất bản sắc văn hóa. environmental impact (n) – tác động môi trường"
+      },
+      {
+        "word": "environmental impact",
+        "type": "n",
+        "meaning": "tác động môi trường",
+        "example": "Global trade has a negative environmental impact.",
+        "example_vi": "Thương mại toàn cầu có tác động tiêu cực đến môi trường. economic dependency (n) – phụ thuộc kinh tế"
+      },
+      {
+        "word": "economic dependency",
+        "type": "n",
+        "meaning": "phụ thuộc kinh tế",
+        "example": "Poor countries become economically dependent on rich nations.",
+        "example_vi": "Các nước nghèo trở nên phụ thuộc kinh tế vào các nước giàu. standardization (n) – tiêu chuẩn hóa"
+      },
+      {
+        "word": "standardization",
+        "type": "n",
+        "meaning": "tiêu chuẩn hóa",
+        "example": "Globalization leads to cultural standardization.",
+        "example_vi": "Toàn cầu hóa dẫn đến sự đồng nhất văn hóa. 🌎 VI. TƯƠNG LAI TOÀN CẦU HÓA global cooperation (n) – hợp tác toàn cầu"
+      },
+      {
+        "word": "A global cooperation",
+        "type": "n",
+        "meaning": "hợp tác toàn cầu",
+        "example": "Global cooperation is needed to fight climate change.",
+        "example_vi": "Cần có sự hợp tác toàn cầu để chống biến đổi khí hậu. global citizen (n) – công dân toàn cầu"
+      },
+      {
+        "word": "global citizen",
+        "type": "n",
+        "meaning": "công dân toàn cầu",
+        "example": "Young people should become global citizens.",
+        "example_vi": "Giới trẻ nên trở thành công dân toàn cầu. cultural awareness (n) – nhận thức văn hóa"
+      },
+      {
+        "word": "cultural awareness",
+        "type": "n",
+        "meaning": "nhận thức văn hóa",
+        "example": "Cultural awareness helps reduce conflicts.",
+        "example_vi": "Nhận thức văn hóa giúp giảm xung đột. international relations (n) – quan hệ quốc tế"
+      },
+      {
+        "word": "international relations",
+        "type": "n",
+        "meaning": "quan hệ quốc tế",
+        "example": "Good international relations promote peace.",
+        "example_vi": "Quan hệ quốc tế tốt thúc đẩy hòa bình. sustainable development (n) – phát triển bền vững"
+      },
+      {
+        "word": "sustainable development",
+        "type": "n",
+        "meaning": "phát triển bền vững",
+        "example": "We must aim for sustainable development in globalization.",
+        "example_vi": "Chúng ta phải hướng tới phát triển bền vững trong toàn cầu hóa. global economy (n) – nền kinh tế toàn cầu"
+      },
+      {
+        "word": "global economy",
+        "type": "n",
+        "meaning": "nền kinh tế toàn cầu",
+        "example": "The global economy depends on trade and innovation.",
+        "example_vi": "Nền kinh tế toàn cầu phụ thuộc vào thương mại và đổi mới. cross-cultural understanding (n) – hiểu biết giữa các nền văn hóa"
+      },
+      {
+        "word": "cross-cultural understanding",
+        "type": "n",
+        "meaning": "hiểu biết giữa các nền văn hóa",
+        "example": "Cross-cultural understanding improves cooperation.",
+        "example_vi": "Hiểu biết giữa các nền văn hóa giúp tăng cường hợp tác. economic integration (n) – hội nhập kinh tế"
+      },
+      {
+        "word": "economic integration",
+        "type": "n",
+        "meaning": "hội nhập kinh tế",
+        "example": "Economic integration brings nations closer together.",
+        "example_vi": "Hội nhập kinh tế giúp các quốc gia gần nhau hơn. technological progress (n) – tiến bộ công nghệ"
+      },
+      {
+        "word": "technological progress",
+        "type": "n",
+        "meaning": "tiến bộ công nghệ",
+        "example": "Technological progress makes globalization faster.",
+        "example_vi": "Tiến bộ công nghệ khiến toàn cầu hóa diễn ra nhanh hơn. future trend (n) – xu hướng tương lai"
+      },
+      {
+        "word": "future trend",
+        "type": "n",
+        "meaning": "xu hướng tương lai",
+        "example": "Globalization will continue to shape the world.",
+        "example_vi": "Toàn cầu hóa sẽ tiếp tục định hình thế giới."
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "EDUCATION",
+    "words": [
+      {
+        "word": "C primary education",
+        "type": "n",
+        "meaning": "giáo dục tiểu học",
+        "example": "Example: All children should receive free primary education.",
+        "example_vi": ""
+      },
+      {
+        "word": "secondary education",
+        "type": "n",
+        "meaning": "giáo dục trung học",
+        "example": "Example: In many countries, secondary education is compulsory until the age of 16.",
+        "example_vi": ""
+      },
+      {
+        "word": "tertiary education",
+        "type": "n",
+        "meaning": "giáo dục bậc cao (đại học, cao đẳng)",
+        "example": "Example: Many students move to big cities to pursue tertiary education.",
+        "example_vi": ""
+      },
+      {
+        "word": "compulsory education",
+        "type": "n",
+        "meaning": "giáo dục bắt buộc",
+        "example": "Example: Compulsory education ensures that all children can read and write.",
+        "example_vi": ""
+      },
+      {
+        "word": "higher education",
+        "type": "n",
+        "meaning": "giáo dục đại học",
+        "example": "Example: The government should invest more in higher education to improve research quality.",
+        "example_vi": ""
+      },
+      {
+        "word": "vocational training",
+        "type": "n",
+        "meaning": "đào tạo nghề",
+        "example": "Example: Vocational training provides students with practical job skills.",
+        "example_vi": ""
+      },
+      {
+        "word": "curriculum",
+        "type": "n",
+        "meaning": "chương trình giảng dạy",
+        "example": "Example: The national curriculum should be updated regularly.",
+        "example_vi": ""
+      },
+      {
+        "word": "syllabus",
+        "type": "n",
+        "meaning": "đề cương môn học",
+        "example": "Example: The teacher handed out the course syllabus on the first day.",
+        "example_vi": ""
+      },
+      {
+        "word": "academic year",
+        "type": "n",
+        "meaning": "năm học",
+        "example": "Example: The academic year in most countries begins in September.",
+        "example_vi": ""
+      },
+      {
+        "word": "semester",
+        "type": "n",
+        "meaning": "học kỳ",
+        "example": "Example: Students usually take final exams at the end of each semester.",
+        "example_vi": ""
+      },
+      {
+        "word": "NG pupil",
+        "type": "n",
+        "meaning": "học sinh (thường dùng cho cấp 1, 2)",
+        "example": "Example: The pupils were excited to go on a school trip.",
+        "example_vi": ""
+      },
+      {
+        "word": "student",
+        "type": "n",
+        "meaning": "sinh viên, học sinh",
+        "example": "Example: Every student should be encouraged to think critically.",
+        "example_vi": ""
+      },
+      {
+        "word": "undergraduate",
+        "type": "n",
+        "meaning": "sinh viên đại học (chưa tốt nghiệp)",
+        "example": "Example: She is an undergraduate student at Oxford University.",
+        "example_vi": ""
+      },
+      {
+        "word": "postgraduate",
+        "type": "n",
+        "meaning": "học viên cao học",
+        "example": "Example: He decided to continue his studies as a postgraduate in education.",
+        "example_vi": ""
+      },
+      {
+        "word": "lecturer",
+        "type": "n",
+        "meaning": "giảng viên đại học",
+        "example": "Example: The lecturer gave an interesting talk about global education systems.",
+        "example_vi": ""
+      },
+      {
+        "word": "tutor",
+        "type": "n",
+        "meaning": "gia sư, giảng viên hướng dẫn",
+        "example": "Example: I hired a private tutor to help me with mathematics.",
+        "example_vi": ""
+      },
+      {
+        "word": "principal",
+        "type": "n",
+        "meaning": "hiệu trưởng",
+        "example": "Example: The principal announced new safety measures at the assembly.",
+        "example_vi": ""
+      },
+      {
+        "word": "faculty",
+        "type": "n",
+        "meaning": "khoa (trong trường đại học)",
+        "example": "Example: She works in the Faculty of Social Sciences.",
+        "example_vi": ""
+      },
+      {
+        "word": "classroom",
+        "type": "n",
+        "meaning": "lớp học",
+        "example": "Example: Modern classrooms are equipped with interactive whiteboards.",
+        "example_vi": ""
+      },
+      {
+        "word": "campus",
+        "type": "n",
+        "meaning": "khuôn viên trường",
+        "example": "Example: The university campus is large and beautifully designed.",
+        "example_vi": ""
+      },
+      {
+        "word": "exam",
+        "type": "n",
+        "meaning": "kỳ thi",
+        "example": "Example: Students are under a lot of pressure during exam periods.",
+        "example_vi": ""
+      },
+      {
+        "word": "assessment",
+        "type": "n",
+        "meaning": "sự đánh giá",
+        "example": "Example: Continuous assessment encourages students to study regularly.",
+        "example_vi": ""
+      },
+      {
+        "word": "coursework",
+        "type": "n",
+        "meaning": "bài tập / bài luận trong khóa học",
+        "example": "Example: Coursework counts for 40% of the final grade.",
+        "example_vi": ""
+      },
+      {
+        "word": "GPA",
+        "type": "n",
+        "meaning": "điểm trung bình (Grade Point Average)",
+        "example": "Example: My GPA improved after I retook the statistics course.",
+        "example_vi": ""
+      },
+      {
+        "word": "academic performance",
+        "type": "n",
+        "meaning": "thành tích học tập",
+        "example": "Example: Parents often worry about their children’s academic performance.",
+        "example_vi": ""
+      },
+      {
+        "word": "grade",
+        "type": "n",
+        "meaning": "điểm số",
+        "example": "Example: He got excellent grades in his final exams.",
+        "example_vi": ""
+      },
+      {
+        "word": "diploma",
+        "type": "n",
+        "meaning": "bằng tốt nghiệp",
+        "example": "Example: She received her high school diploma last year.",
+        "example_vi": ""
+      },
+      {
+        "word": "degree",
+        "type": "n",
+        "meaning": "bằng đại học",
+        "example": "Example: A university degree can open many career opportunities.",
+        "example_vi": ""
+      },
+      {
+        "word": "scholarship",
+        "type": "n",
+        "meaning": "học bổng",
+        "example": "Example: She was awarded a scholarship to study abroad.",
+        "example_vi": ""
+      },
+      {
+        "word": "internship",
+        "type": "n",
+        "meaning": "kỳ thực tập",
+        "example": "Example: I did a three-month internship at a marketing company.",
+        "example_vi": ""
+      },
+      {
+        "word": "C critical thinking",
+        "type": "n",
+        "meaning": "tư duy phản biện",
+        "example": "Example: Critical thinking is an essential skill in modern education.",
+        "example_vi": ""
+      },
+      {
+        "word": "time management",
+        "type": "n",
+        "meaning": "quản lý thời gian",
+        "example": "Example: Good time management helps students handle their workload efficiently.",
+        "example_vi": ""
+      },
+      {
+        "word": "problem-solving",
+        "type": "n",
+        "meaning": "giải quyết vấn đề",
+        "example": "Example: Group projects improve students’ problem-solving skills.",
+        "example_vi": ""
+      },
+      {
+        "word": "note-taking",
+        "type": "n",
+        "meaning": "kỹ năng ghi chép",
+        "example": "Example: Effective note-taking helps retain key information from lectures.",
+        "example_vi": ""
+      },
+      {
+        "word": "presentation skills",
+        "type": "n",
+        "meaning": "kỹ năng thuyết trình",
+        "example": "Example: Students often need strong presentation skills for oral exams.",
+        "example_vi": ""
+      },
+      {
+        "word": "teamwork",
+        "type": "n",
+        "meaning": "làm việc nhóm",
+        "example": "Example: Teamwork is encouraged in most modern classrooms.",
+        "example_vi": ""
+      },
+      {
+        "word": "self-discipline",
+        "type": "n",
+        "meaning": "tính tự giác",
+        "example": "Example: Online learners need a lot of self-discipline to succeed.",
+        "example_vi": ""
+      },
+      {
+        "word": "motivation",
+        "type": "n",
+        "meaning": "động lực",
+        "example": "Example: Teachers should help students maintain their motivation to study.",
+        "example_vi": ""
+      },
+      {
+        "word": "curiosity",
+        "type": "n",
+        "meaning": "sự tò mò học hỏi",
+        "example": "Example: Curiosity drives people to explore and learn new things.",
+        "example_vi": ""
+      },
+      {
+        "word": "perseverance",
+        "type": "n",
+        "meaning": "sự kiên trì",
+        "example": "Example: Perseverance is the key to academic success.",
+        "example_vi": ""
+      },
+      {
+        "word": "I distance learning",
+        "type": "n",
+        "meaning": "học từ xa",
+        "example": "Example: Distance learning allows students to study from anywhere.",
+        "example_vi": ""
+      },
+      {
+        "word": "online courses",
+        "type": "n",
+        "meaning": "khóa học trực tuyến",
+        "example": "Example: Many universities offer online courses for international students.",
+        "example_vi": ""
+      },
+      {
+        "word": "blended learning",
+        "type": "n",
+        "meaning": "học kết hợp (trực tuyến + truyền thống)",
+        "example": "Example: Blended learning provides flexibility and face-to-face interaction.",
+        "example_vi": ""
+      },
+      {
+        "word": "homeschooling",
+        "type": "n",
+        "meaning": "học tại nhà",
+        "example": "Example: Homeschooling is becoming more popular among parents.",
+        "example_vi": ""
+      },
+      {
+        "word": "lifelong learning",
+        "type": "n",
+        "meaning": "học suốt đời",
+        "example": "Example: In a fast-changing world, lifelong learning is essential.",
+        "example_vi": ""
+      },
+      {
+        "word": "e-learning",
+        "type": "n",
+        "meaning": "học qua Internet",
+        "example": "Example: E-learning platforms like Coursera and Udemy are widely used.",
+        "example_vi": ""
+      },
+      {
+        "word": "digital literacy",
+        "type": "n",
+        "meaning": "kỹ năng sử dụng công nghệ thông tin",
+        "example": "Example: Digital literacy is a necessary skill in modern education.",
+        "example_vi": ""
+      },
+      {
+        "word": "P academic achievement",
+        "type": "n",
+        "meaning": "thành tích học tập",
+        "example": "Example: Academic achievement should not be the only goal of education.",
+        "example_vi": ""
+      },
+      {
+        "word": "job prospects",
+        "type": "n",
+        "meaning": "triển vọng nghề nghiệp",
+        "example": "Example: A degree in engineering offers good job prospects.",
+        "example_vi": ""
+      },
+      {
+        "word": "graduate employment",
+        "type": "n",
+        "meaning": "việc làm sau tốt nghiệp",
+        "example": "Example: Graduate employment rates have dropped due to economic recession.",
+        "example_vi": ""
+      },
+      {
+        "word": "career development",
+        "type": "n",
+        "meaning": "phát triển nghề nghiệp",
+        "example": "Example: Ongoing education is vital for career development.",
+        "example_vi": ""
+      },
+      {
+        "word": "knowledge acquisition",
+        "type": "n",
+        "meaning": "quá trình tiếp thu kiến thức",
+        "example": "Example: Technology has transformed the way students approach knowledge acquisition.",
+        "example_vi": ""
+      },
+      {
+        "word": "CH educational inequality",
+        "type": "n",
+        "meaning": "bất bình đẳng trong giáo dục",
+        "example": "Example: Educational inequality remains a major issue in developing countries.",
+        "example_vi": ""
+      },
+      {
+        "word": "tuition fees",
+        "type": "n",
+        "meaning": "học phí",
+        "example": "Example: Tuition fees are rising in many private universities.",
+        "example_vi": ""
+      },
+      {
+        "word": "dropout rate",
+        "type": "n",
+        "meaning": "tỷ lệ bỏ học",
+        "example": "Example: The government is trying to reduce the high school dropout rate.",
+        "example_vi": ""
+      },
+      {
+        "word": "literacy rate",
+        "type": "n",
+        "meaning": "tỷ lệ biết chữ",
+        "example": "Example: Literacy rates have improved significantly over the last decade.",
+        "example_vi": ""
+      },
+      {
+        "word": "public education",
+        "type": "n",
+        "meaning": "giáo dục công lập",
+        "example": "Example: Public education should be accessible and well-funded.",
+        "example_vi": ""
+      },
+      {
+        "word": "private school",
+        "type": "n",
+        "meaning": "trường tư thục",
+        "example": "Example: Many parents send their children to private schools for better facilities.",
+        "example_vi": ""
+      },
+      {
+        "word": "boarding school",
+        "type": "n",
+        "meaning": "trường nội trú",
+        "example": "Example: Boarding schools teach students independence and discipline.",
+        "example_vi": ""
+      },
+      {
+        "word": "equal opportunity",
+        "type": "n",
+        "meaning": "cơ hội bình đẳng",
+        "example": "Example: Every student deserves equal opportunity to learn and succeed.",
+        "example_vi": ""
+      }
+    ]
+  },
+  {
+    "id": "culture_and_traditions",
+    "title": "CULTURE AND TRADITIONS",
+    "words": [
+      {
+        "word": "N culture",
+        "type": "n",
+        "meaning": "văn hóa",
+        "example": "Vietnamese culture is rich and diverse.",
+        "example_vi": "Văn hóa Việt Nam rất phong phú và đa dạng. tradition (n) – truyền thống"
+      },
+      {
+        "word": "tradition",
+        "type": "n",
+        "meaning": "truyền thống",
+        "example": "We should respect our family traditions.",
+        "example_vi": "Chúng ta nên tôn trọng các truyền thống gia đình. custom (n) – phong tục"
+      },
+      {
+        "word": "custom",
+        "type": "n",
+        "meaning": "phong tục",
+        "example": "Every country has its own customs.",
+        "example_vi": "Mỗi quốc gia đều có phong tục riêng. belief (n) – tín ngưỡng, niềm tin"
+      },
+      {
+        "word": "belief",
+        "type": "n",
+        "meaning": "tín ngưỡng, niềm tin",
+        "example": "People have different religious beliefs.",
+        "example_vi": "Mọi người có những tín ngưỡng khác nhau. heritage (n) – di sản"
+      },
+      {
+        "word": "heritage",
+        "type": "n",
+        "meaning": "di sản",
+        "example": "Hue is famous for its cultural heritage.",
+        "example_vi": "Huế nổi tiếng với di sản văn hóa. ritual (n) – nghi lễ"
+      },
+      {
+        "word": "ritual",
+        "type": "n",
+        "meaning": "nghi lễ",
+        "example": "They perform traditional rituals at festivals.",
+        "example_vi": "Họ thực hiện các nghi lễ truyền thống trong lễ hội. value (n) – giá trị"
+      },
+      {
+        "word": "value",
+        "type": "n",
+        "meaning": "giá trị",
+        "example": "Respect for elders is an important cultural value.",
+        "example_vi": "Kính trọng người lớn tuổi là một giá trị văn hóa quan trọng. customary (adj) – theo phong tục"
+      },
+      {
+        "word": "customary",
+        "type": "adj",
+        "meaning": "theo phong tục",
+        "example": "It is customary to take off your shoes before entering a house in Japan.",
+        "example_vi": "Ở Nhật, cởi giày trước khi vào nhà là phong tục. ethnic group (n) – nhóm dân tộc"
+      },
+      {
+        "word": "ethnic group",
+        "type": "n",
+        "meaning": "nhóm dân tộc",
+        "example": "Vietnam has 54 ethnic groups.",
+        "example_vi": "Việt Nam có 54 dân tộc. religion (n) – tôn giáo"
+      },
+      {
+        "word": "religion",
+        "type": "n",
+        "meaning": "tôn giáo",
+        "example": "Buddhism is one of the main religions in Asia.",
+        "example_vi": "Phật giáo là một trong những tôn giáo chính ở châu Á. 🏮 II. LỄ HỘI &amp; PHONG TỤC festival (n) – lễ hội"
+      },
+      {
+        "word": "C festival",
+        "type": "n",
+        "meaning": "lễ hội",
+        "example": "The Tet Festival is the most important in Vietnam.",
+        "example_vi": "Tết là lễ hội quan trọng nhất ở Việt Nam. celebration (n) – sự kỷ niệm, ăn mừng"
+      },
+      {
+        "word": "celebration",
+        "type": "n",
+        "meaning": "sự kỷ niệm, ăn mừng",
+        "example": "We have a big celebration on New Year’s Eve.",
+        "example_vi": "Chúng tôi tổ chức ăn mừng lớn vào đêm giao thừa. ceremony (n) – nghi lễ, buổi lễ"
+      },
+      {
+        "word": "ceremony",
+        "type": "n",
+        "meaning": "nghi lễ, buổi lễ",
+        "example": "The graduation ceremony was very touching.",
+        "example_vi": "Lễ tốt nghiệp rất xúc động. wedding (n) – đám cưới"
+      },
+      {
+        "word": "wedding",
+        "type": "n",
+        "meaning": "đám cưới",
+        "example": "Traditional weddings are beautiful and meaningful.",
+        "example_vi": "Đám cưới truyền thống rất đẹp và ý nghĩa. funeral (n) – đám tang"
+      },
+      {
+        "word": "funeral",
+        "type": "n",
+        "meaning": "đám tang",
+        "example": "Funerals are important in many cultures.",
+        "example_vi": "Đám tang rất quan trọng trong nhiều nền văn hóa. costume (n) – trang phục truyền thống"
+      },
+      {
+        "word": "costume",
+        "type": "n",
+        "meaning": "trang phục truyền thống",
+        "example": "The ao dai is a traditional Vietnamese costume.",
+        "example_vi": "Áo dài là trang phục truyền thống của Việt Nam. decoration (n) – trang trí"
+      },
+      {
+        "word": "decoration",
+        "type": "n",
+        "meaning": "trang trí",
+        "example": "People put up colorful decorations during festivals.",
+        "example_vi": "Người dân treo trang trí đầy màu sắc trong các lễ hội. symbol (n) – biểu tượng"
+      },
+      {
+        "word": "symbol",
+        "type": "n",
+        "meaning": "biểu tượng",
+        "example": "The dragon is a symbol of power in Asian culture.",
+        "example_vi": "Con rồng là biểu tượng của sức mạnh trong văn hóa Á Đông. dance (n) – điệu nhảy"
+      },
+      {
+        "word": "dance",
+        "type": "n",
+        "meaning": "điệu nhảy",
+        "example": "The lion dance is performed during Lunar New Year.",
+        "example_vi": "Múa lân được biểu diễn vào dịp Tết Nguyên Đán. traditional music (n) – âm nhạc truyền thống"
+      },
+      {
+        "word": "traditional music",
+        "type": "n",
+        "meaning": "âm nhạc truyền thống",
+        "example": "Traditional music reflects a country’s history.",
+        "example_vi": "Âm nhạc truyền thống phản ánh lịch sử của một quốc gia. 🏯 III. GIA ĐÌNH &amp; XÃ HỘI family tradition (n) – truyền thống gia đình"
+      },
+      {
+        "word": "I family tradition",
+        "type": "n",
+        "meaning": "truyền thống gia đình",
+        "example": "Cooking together is a family tradition.",
+        "example_vi": "Cùng nấu ăn là một truyền thống gia đình. generation (n) – thế hệ"
+      },
+      {
+        "word": "generation",
+        "type": "n",
+        "meaning": "thế hệ",
+        "example": "Each generation has different values.",
+        "example_vi": "Mỗi thế hệ có những giá trị khác nhau. ancestor (n) – tổ tiên"
+      },
+      {
+        "word": "ancestor",
+        "type": "n",
+        "meaning": "tổ tiên",
+        "example": "We worship our ancestors every year.",
+        "example_vi": "Chúng ta cúng tổ tiên hàng năm. respect (n/v) – tôn trọng"
+      },
+      {
+        "word": "respect",
+        "type": "n/v",
+        "meaning": "tôn trọng",
+        "example": "Children should respect their parents and teachers.",
+        "example_vi": "Trẻ em nên tôn trọng cha mẹ và thầy cô. hospitality (n) – lòng hiếu khách"
+      },
+      {
+        "word": "hospitality",
+        "type": "n",
+        "meaning": "lòng hiếu khách",
+        "example": "Vietnamese people are known for their hospitality.",
+        "example_vi": "Người Việt nổi tiếng với lòng hiếu khách. courtesy (n) – phép lịch sự"
+      },
+      {
+        "word": "courtesy",
+        "type": "n",
+        "meaning": "phép lịch sự",
+        "example": "Courtesy is an important part of Asian culture.",
+        "example_vi": "Lịch sự là một phần quan trọng của văn hóa Á Đông. community (n) – cộng đồng"
+      },
+      {
+        "word": "community",
+        "type": "n",
+        "meaning": "cộng đồng",
+        "example": "Cultural festivals bring the community together.",
+        "example_vi": "Lễ hội văn hóa gắn kết cộng đồng. respect for elders (n) – sự kính trọng người lớn tuổi"
+      },
+      {
+        "word": "respect for elders",
+        "type": "n",
+        "meaning": "sự kính trọng người lớn tuổi",
+        "example": "Respect for elders is taught from a young age.",
+        "example_vi": "Sự kính trọng người lớn được dạy từ nhỏ. family reunion (n) – đoàn tụ gia đình"
+      },
+      {
+        "word": "family reunion",
+        "type": "n",
+        "meaning": "đoàn tụ gia đình",
+        "example": "We have a family reunion during Tet holiday.",
+        "example_vi": "Chúng tôi đoàn tụ gia đình vào dịp Tết. social norm (n) – chuẩn mực xã hội"
+      },
+      {
+        "word": "social norm",
+        "type": "n",
+        "meaning": "chuẩn mực xã hội",
+        "example": "Social norms vary from one culture to another.",
+        "example_vi": "Chuẩn mực xã hội khác nhau tùy theo từng nền văn hóa. 🎎 IV. SỰ BIẾN ĐỔI VĂN HÓA cultural change (n) – sự thay đổi văn hóa"
+      },
+      {
+        "word": "A cultural change",
+        "type": "n",
+        "meaning": "sự thay đổi văn hóa",
+        "example": "Cultural change happens with globalization.",
+        "example_vi": "Sự thay đổi văn hóa diễn ra cùng với toàn cầu hóa. cultural exchange (n) – giao lưu văn hóa"
+      },
+      {
+        "word": "cultural exchange",
+        "type": "n",
+        "meaning": "giao lưu văn hóa",
+        "example": "Cultural exchange helps people learn from each other.",
+        "example_vi": "Giao lưu văn hóa giúp con người học hỏi lẫn nhau. western culture (n) – văn hóa phương Tây"
+      },
+      {
+        "word": "western culture",
+        "type": "n",
+        "meaning": "văn hóa phương Tây",
+        "example": "Western culture has a strong influence worldwide.",
+        "example_vi": "Văn hóa phương Tây có ảnh hưởng mạnh mẽ trên toàn cầu. eastern culture (n) – văn hóa phương Đông"
+      },
+      {
+        "word": "eastern culture",
+        "type": "n",
+        "meaning": "văn hóa phương Đông",
+        "example": "Eastern culture values harmony and respect.",
+        "example_vi": "Văn hóa phương Đông đề cao sự hài hòa và tôn trọng. influence (n/v) – ảnh hưởng"
+      },
+      {
+        "word": "influence",
+        "type": "n/v",
+        "meaning": "ảnh hưởng",
+        "example": "Media strongly influences modern culture.",
+        "example_vi": "Truyền thông ảnh hưởng mạnh đến văn hóa hiện đại. modernization (n) – hiện đại hóa"
+      },
+      {
+        "word": "modernization",
+        "type": "n",
+        "meaning": "hiện đại hóa",
+        "example": "Modernization can change traditional lifestyles.",
+        "example_vi": "Hiện đại hóa có thể thay đổi lối sống truyền thống. cultural identity (n) – bản sắc văn hóa"
+      },
+      {
+        "word": "cultural identity",
+        "type": "n",
+        "meaning": "bản sắc văn hóa",
+        "example": "Young people should preserve their cultural identity.",
+        "example_vi": "Giới trẻ nên giữ gìn bản sắc văn hóa của mình. loss of tradition (n) – mất truyền thống"
+      },
+      {
+        "word": "loss of tradition",
+        "type": "n",
+        "meaning": "mất truyền thống",
+        "example": "Some traditions are disappearing due to modernization.",
+        "example_vi": "Một số truyền thống đang biến mất do hiện đại hóa. cultural preservation (n) – bảo tồn văn hóa"
+      },
+      {
+        "word": "cultural preservation",
+        "type": "n",
+        "meaning": "bảo tồn văn hóa",
+        "example": "Cultural preservation is essential for future generations.",
+        "example_vi": "Bảo tồn văn hóa là cần thiết cho các thế hệ sau. cultural awareness (n) – nhận thức văn hóa"
+      },
+      {
+        "word": "cultural awareness",
+        "type": "n",
+        "meaning": "nhận thức văn hóa",
+        "example": "Traveling increases cultural awareness.",
+        "example_vi": "Du lịch giúp nâng cao nhận thức văn hóa. 🎨 V. NGHỆ THUẬT &amp; BIỂU HIỆN VĂN HÓA art (n) – nghệ thuật"
+      },
+      {
+        "word": "A art",
+        "type": "n",
+        "meaning": "nghệ thuật",
+        "example": "Art expresses human creativity.",
+        "example_vi": "Nghệ thuật thể hiện sự sáng tạo của con người. painting (n) – hội họa, bức tranh"
+      },
+      {
+        "word": "painting",
+        "type": "n",
+        "meaning": "hội họa, bức tranh",
+        "example": "The painting shows rural life in Vietnam.",
+        "example_vi": "Bức tranh thể hiện cuộc sống nông thôn Việt Nam. sculpture (n) – điêu khắc"
+      },
+      {
+        "word": "sculpture",
+        "type": "n",
+        "meaning": "điêu khắc",
+        "example": "Ancient sculptures tell stories of the past.",
+        "example_vi": "Những bức tượng cổ kể lại câu chuyện quá khứ. literature (n) – văn học"
+      },
+      {
+        "word": "literature",
+        "type": "n",
+        "meaning": "văn học",
+        "example": "Vietnamese literature is full of moral lessons.",
+        "example_vi": "Văn học Việt Nam chứa đựng nhiều bài học đạo đức. architecture (n) – kiến trúc"
+      },
+      {
+        "word": "architecture",
+        "type": "n",
+        "meaning": "kiến trúc",
+        "example": "The temple’s architecture is unique and beautiful.",
+        "example_vi": "Kiến trúc của ngôi đền rất độc đáo và đẹp mắt. craft (n) – nghề thủ công"
+      },
+      {
+        "word": "craft",
+        "type": "n",
+        "meaning": "nghề thủ công",
+        "example": "Handmade crafts are part of our culture.",
+        "example_vi": "Các sản phẩm thủ công là một phần văn hóa của chúng ta. folk music (n) – nhạc dân gian"
+      },
+      {
+        "word": "folk music",
+        "type": "n",
+        "meaning": "nhạc dân gian",
+        "example": "Folk music reflects the spirit of the people.",
+        "example_vi": "Nhạc dân gian phản ánh tâm hồn của người dân. performing arts (n) – nghệ thuật biểu diễn"
+      },
+      {
+        "word": "performing arts",
+        "type": "n",
+        "meaning": "nghệ thuật biểu diễn",
+        "example": "Performing arts are popular during festivals.",
+        "example_vi": "Nghệ thuật biểu diễn rất phổ biến trong các lễ hội. art gallery (n) – phòng trưng bày nghệ thuật"
+      },
+      {
+        "word": "art gallery",
+        "type": "n",
+        "meaning": "phòng trưng bày nghệ thuật",
+        "example": "We visited an art gallery last weekend.",
+        "example_vi": "Chúng tôi đã đến phòng trưng bày nghệ thuật cuối tuần trước. cultural symbol (n) – biểu tượng văn hóa"
+      },
+      {
+        "word": "cultural symbol",
+        "type": "n",
+        "meaning": "biểu tượng văn hóa",
+        "example": "The lotus is a cultural symbol of Vietnam.",
+        "example_vi": "Hoa sen là biểu tượng văn hóa của Việt Nam. 🌏 VI. ẢNH HƯỞNG CỦA TOÀN CẦU HÓA LÊN VĂN HÓA global influence (n) – ảnh hưởng toàn cầu"
+      },
+      {
+        "word": "A global influence",
+        "type": "n",
+        "meaning": "ảnh hưởng toàn cầu",
+        "example": "Global influence spreads modern ideas.",
+        "example_vi": "Ảnh hưởng toàn cầu lan tỏa các ý tưởng hiện đại. westernization (n) – sự phương Tây hóa"
+      },
+      {
+        "word": "westernization",
+        "type": "n",
+        "meaning": "sự phương Tây hóa",
+        "example": "Westernization affects local customs and food.",
+        "example_vi": "Sự phương Tây hóa ảnh hưởng đến phong tục và ẩm thực địa phương. mass media (n) – phương tiện truyền thông đại chúng"
+      },
+      {
+        "word": "mass media",
+        "type": "n",
+        "meaning": "phương tiện truyền thông đại chúng",
+        "example": "Mass media shapes cultural trends.",
+        "example_vi": "Truyền thông đại chúng định hình xu hướng văn hóa. youth culture (n) – văn hóa giới trẻ"
+      },
+      {
+        "word": "youth culture",
+        "type": "n",
+        "meaning": "văn hóa giới trẻ",
+        "example": "Youth culture changes rapidly with technology.",
+        "example_vi": "Văn hóa giới trẻ thay đổi nhanh chóng cùng công nghệ. pop culture (n) – văn hóa đại chúng"
+      },
+      {
+        "word": "pop culture",
+        "type": "n",
+        "meaning": "văn hóa đại chúng",
+        "example": "Pop culture influences the way people dress and speak.",
+        "example_vi": "Văn hóa đại chúng ảnh hưởng đến cách ăn mặc và giao tiếp. global communication (n) – giao tiếp toàn cầu"
+      },
+      {
+        "word": "global communication",
+        "type": "n",
+        "meaning": "giao tiếp toàn cầu",
+        "example": "Global communication spreads cultural values.",
+        "example_vi": "Giao tiếp toàn cầu lan tỏa các giá trị văn hóa. identity crisis (n) – khủng hoảng bản sắc"
+      },
+      {
+        "word": "identity crisis",
+        "type": "n",
+        "meaning": "khủng hoảng bản sắc",
+        "example": "Some young people face an identity crisis in modern society.",
+        "example_vi": "Một số người trẻ gặp khủng hoảng bản sắc trong xã hội hiện đại. cultural blending (n) – pha trộn văn hóa"
+      },
+      {
+        "word": "cultural blending",
+        "type": "n",
+        "meaning": "pha trộn văn hóa",
+        "example": "Cultural blending creates new lifestyles.",
+        "example_vi": "Sự pha trộn văn hóa tạo ra lối sống mới. preserve (v) – bảo tồn"
+      },
+      {
+        "word": "preserve",
+        "type": "v",
+        "meaning": "bảo tồn",
+        "example": "We must preserve our cultural heritage.",
+        "example_vi": "Chúng ta phải bảo tồn di sản văn hóa của mình. adapt (v) – thích nghi"
+      },
+      {
+        "word": "adapt",
+        "type": "v",
+        "meaning": "thích nghi",
+        "example": "Cultures adapt to modern life over time.",
+        "example_vi": "Các nền văn hóa dần thích nghi với cuộc sống hiện đại."
+      }
+    ]
+  },
+  {
+    "id": "society_and_social_issues",
+    "title": "SOCIETY AND SOCIAL ISSUES",
+    "words": [
+      {
+        "word": "I society",
+        "type": "n",
+        "meaning": "xã hội",
+        "example": "We all have responsibilities to society.",
+        "example_vi": "Tất cả chúng ta đều có trách nhiệm với xã hội. community (n) – cộng đồng"
+      },
+      {
+        "word": "community",
+        "type": "n",
+        "meaning": "cộng đồng",
+        "example": "The local community helped rebuild the school.",
+        "example_vi": "Cộng đồng địa phương đã giúp xây lại trường học. social issue (n) – vấn đề xã hội"
+      },
+      {
+        "word": "social issue",
+        "type": "n",
+        "meaning": "vấn đề xã hội",
+        "example": "Poverty is a serious social issue.",
+        "example_vi": "Nghèo đói là một vấn đề xã hội nghiêm trọng. public (n) – công chúng, người dân"
+      },
+      {
+        "word": "public",
+        "type": "n",
+        "meaning": "công chúng, người dân",
+        "example": "The public needs better access to education.",
+        "example_vi": "Người dân cần được tiếp cận giáo dục tốt hơn. citizen (n) – công dân"
+      },
+      {
+        "word": "citizen",
+        "type": "n",
+        "meaning": "công dân",
+        "example": "Every citizen should follow the law.",
+        "example_vi": "Mỗi công dân nên tuân thủ pháp luật. government (n) – chính phủ"
+      },
+      {
+        "word": "government",
+        "type": "n",
+        "meaning": "chính phủ",
+        "example": "The government should solve social problems.",
+        "example_vi": "Chính phủ nên giải quyết các vấn đề xã hội. policy (n) – chính sách"
+      },
+      {
+        "word": "policy",
+        "type": "n",
+        "meaning": "chính sách",
+        "example": "New policies aim to reduce inequality.",
+        "example_vi": "Các chính sách mới nhằm giảm bất bình đẳng. public service (n) – dịch vụ công cộng"
+      },
+      {
+        "word": "public service",
+        "type": "n",
+        "meaning": "dịch vụ công cộng",
+        "example": "Public services include healthcare and education.",
+        "example_vi": "Dịch vụ công bao gồm y tế và giáo dục. charity (n) – tổ chức từ thiện"
+      },
+      {
+        "word": "charity",
+        "type": "n",
+        "meaning": "tổ chức từ thiện",
+        "example": "She donates money to a children’s charity.",
+        "example_vi": "Cô ấy quyên góp tiền cho một tổ chức từ thiện trẻ em. social welfare (n) – phúc lợi xã hội"
+      },
+      {
+        "word": "social welfare",
+        "type": "n",
+        "meaning": "phúc lợi xã hội",
+        "example": "Social welfare helps poor families survive.",
+        "example_vi": "Phúc lợi xã hội giúp các gia đình nghèo duy trì cuộc sống. 💰 II. NGHÈO ĐÓI &amp; BẤT BÌNH ĐẲNG poverty (n) – nghèo đói"
+      },
+      {
+        "word": "NG poverty",
+        "type": "n",
+        "meaning": "nghèo đói",
+        "example": "Many people live in poverty in developing countries.",
+        "example_vi": "Nhiều người sống trong cảnh nghèo ở các nước đang phát triển. homelessness (n) – tình trạng vô gia cư"
+      },
+      {
+        "word": "homelessness",
+        "type": "n",
+        "meaning": "tình trạng vô gia cư",
+        "example": "Homelessness is increasing in big cities.",
+        "example_vi": "Tình trạng vô gia cư đang gia tăng ở các thành phố lớn. unemployment (n) – thất nghiệp"
+      },
+      {
+        "word": "unemployment",
+        "type": "n",
+        "meaning": "thất nghiệp",
+        "example": "Unemployment leads to social problems.",
+        "example_vi": "Thất nghiệp dẫn đến nhiều vấn đề xã hội. inequality (n) – bất bình đẳng"
+      },
+      {
+        "word": "inequality",
+        "type": "n",
+        "meaning": "bất bình đẳng",
+        "example": "Gender inequality still exists in many places.",
+        "example_vi": "Bất bình đẳng giới vẫn tồn tại ở nhiều nơi. gap between rich and poor (n) – khoảng cách giàu nghèo"
+      },
+      {
+        "word": "gap between rich and poor",
+        "type": "n",
+        "meaning": "khoảng cách giàu nghèo",
+        "example": "The gap between rich and poor is widening.",
+        "example_vi": "Khoảng cách giữa người giàu và người nghèo đang ngày càng lớn. low income (n) – thu nhập thấp"
+      },
+      {
+        "word": "low income",
+        "type": "n",
+        "meaning": "thu nhập thấp",
+        "example": "Low-income families need financial support.",
+        "example_vi": "Các gia đình thu nhập thấp cần được hỗ trợ tài chính. affordable housing (n) – nhà ở giá rẻ"
+      },
+      {
+        "word": "affordable housing",
+        "type": "n",
+        "meaning": "nhà ở giá rẻ",
+        "example": "The government should build more affordable housing.",
+        "example_vi": "Chính phủ nên xây thêm nhà ở giá rẻ. standard of living (n) – mức sống"
+      },
+      {
+        "word": "standard of living",
+        "type": "n",
+        "meaning": "mức sống",
+        "example": "The standard of living is improving slowly.",
+        "example_vi": "Mức sống đang được cải thiện dần. wealth (n) – sự giàu có"
+      },
+      {
+        "word": "wealth",
+        "type": "n",
+        "meaning": "sự giàu có",
+        "example": "Wealth should be shared more equally.",
+        "example_vi": "Sự giàu có nên được chia sẻ công bằng hơn. economic stability (n) – ổn định kinh tế"
+      },
+      {
+        "word": "economic stability",
+        "type": "n",
+        "meaning": "ổn định kinh tế",
+        "example": "Economic stability reduces social tension.",
+        "example_vi": "Ổn định kinh tế giúp giảm căng thẳng xã hội. 🧒 III. GIÁO DỤC &amp; THANH THIẾU NIÊN education system (n) – hệ thống giáo dục"
+      },
+      {
+        "word": "N education system",
+        "type": "n",
+        "meaning": "hệ thống giáo dục",
+        "example": "The education system needs reform.",
+        "example_vi": "Hệ thống giáo dục cần được cải cách. literacy rate (n) – tỷ lệ biết chữ"
+      },
+      {
+        "word": "literacy rate",
+        "type": "n",
+        "meaning": "tỷ lệ biết chữ",
+        "example": "The literacy rate has increased in recent years.",
+        "example_vi": "Tỷ lệ biết chữ đã tăng trong những năm gần đây. dropout (n) – học sinh bỏ học"
+      },
+      {
+        "word": "dropout",
+        "type": "n",
+        "meaning": "học sinh bỏ học",
+        "example": "School dropouts often struggle to find jobs.",
+        "example_vi": "Học sinh bỏ học thường khó tìm việc làm. equal opportunity (n) – cơ hội bình đẳng"
+      },
+      {
+        "word": "equal opportunity",
+        "type": "n",
+        "meaning": "cơ hội bình đẳng",
+        "example": "Everyone should have equal opportunities in education.",
+        "example_vi": "Mọi người nên có cơ hội bình đẳng trong giáo dục. bullying (n) – bắt nạt"
+      },
+      {
+        "word": "bullying",
+        "type": "n",
+        "meaning": "bắt nạt",
+        "example": "Bullying is a serious issue in schools.",
+        "example_vi": "Bắt nạt là một vấn đề nghiêm trọng trong trường học. peer pressure (n) – áp lực từ bạn bè"
+      },
+      {
+        "word": "peer pressure",
+        "type": "n",
+        "meaning": "áp lực từ bạn bè",
+        "example": "Peer pressure can lead to bad habits.",
+        "example_vi": "Áp lực từ bạn bè có thể dẫn đến thói quen xấu. youth unemployment (n) – thất nghiệp ở thanh niên"
+      },
+      {
+        "word": "youth unemployment",
+        "type": "n",
+        "meaning": "thất nghiệp ở thanh niên",
+        "example": "Youth unemployment is a growing problem.",
+        "example_vi": "Thất nghiệp ở thanh niên đang là vấn đề đáng lo ngại. role model (n) – hình mẫu lý tưởng"
+      },
+      {
+        "word": "role model",
+        "type": "n",
+        "meaning": "hình mẫu lý tưởng",
+        "example": "Teachers should be good role models.",
+        "example_vi": "Giáo viên nên là hình mẫu tốt. discipline (n) – kỷ luật"
+      },
+      {
+        "word": "discipline",
+        "type": "n",
+        "meaning": "kỷ luật",
+        "example": "Discipline is necessary in education.",
+        "example_vi": "Kỷ luật là điều cần thiết trong giáo dục. tuition fee (n) – học phí"
+      },
+      {
+        "word": "tuition fee",
+        "type": "n",
+        "meaning": "học phí",
+        "example": "High tuition fees stop poor students from studying.",
+        "example_vi": "Học phí cao khiến học sinh nghèo không thể học tiếp. 🧓 IV. DÂN SỐ &amp; XÃ HỘI HIỆN ĐẠI aging population (n) – dân số già"
+      },
+      {
+        "word": "I aging population",
+        "type": "n",
+        "meaning": "dân số già",
+        "example": "An aging population increases healthcare costs.",
+        "example_vi": "Dân số già làm tăng chi phí y tế. overpopulation (n) – bùng nổ dân số"
+      },
+      {
+        "word": "overpopulation",
+        "type": "n",
+        "meaning": "bùng nổ dân số",
+        "example": "Overpopulation leads to housing problems.",
+        "example_vi": "Bùng nổ dân số dẫn đến vấn đề nhà ở. migration (n) – di cư"
+      },
+      {
+        "word": "migration",
+        "type": "n",
+        "meaning": "di cư",
+        "example": "Rural migration causes urban overcrowding.",
+        "example_vi": "Di cư từ nông thôn gây quá tải đô thị. urbanization (n) – đô thị hóa"
+      },
+      {
+        "word": "urbanization",
+        "type": "n",
+        "meaning": "đô thị hóa",
+        "example": "Urbanization changes the social structure.",
+        "example_vi": "Đô thị hóa làm thay đổi cấu trúc xã hội. diversity (n) – sự đa dạng"
+      },
+      {
+        "word": "diversity",
+        "type": "n",
+        "meaning": "sự đa dạng",
+        "example": "Cultural diversity makes society more interesting.",
+        "example_vi": "Đa dạng văn hóa khiến xã hội phong phú hơn. multicultural society (n) – xã hội đa văn hóa"
+      },
+      {
+        "word": "multicultural society",
+        "type": "n",
+        "meaning": "xã hội đa văn hóa",
+        "example": "Australia is a multicultural society.",
+        "example_vi": "Úc là một xã hội đa văn hóa. discrimination (n) – sự phân biệt đối xử"
+      },
+      {
+        "word": "discrimination",
+        "type": "n",
+        "meaning": "sự phân biệt đối xử",
+        "example": "Racial discrimination should be banned.",
+        "example_vi": "Phân biệt chủng tộc nên bị cấm. equality (n) – sự bình đẳng"
+      },
+      {
+        "word": "equality",
+        "type": "n",
+        "meaning": "sự bình đẳng",
+        "example": "We should fight for equality in all areas.",
+        "example_vi": "Chúng ta nên đấu tranh cho sự bình đẳng trong mọi lĩnh vực. minority (n) – dân tộc thiểu số / nhóm thiểu số"
+      },
+      {
+        "word": "minority",
+        "type": "n",
+        "meaning": "dân tộc thiểu số / nhóm thiểu số",
+        "example": "Minorities need equal rights and opportunities.",
+        "example_vi": "Các nhóm thiểu số cần quyền lợi và cơ hội bình đẳng. social justice (n) – công bằng xã hội"
+      },
+      {
+        "word": "social justice",
+        "type": "n",
+        "meaning": "công bằng xã hội",
+        "example": "Social justice is essential for peace.",
+        "example_vi": "Công bằng xã hội là điều cần thiết để có hòa bình. 🧑‍⚖️ V. TỘI PHẠM &amp; AN TOÀN XÃ HỘI crime (n) – tội phạm"
+      },
+      {
+        "word": "I crime",
+        "type": "n",
+        "meaning": "tội phạm",
+        "example": "The government must take action to reduce crime.",
+        "example_vi": "Chính phủ cần hành động để giảm tội phạm. violence (n) – bạo lực"
+      },
+      {
+        "word": "violence",
+        "type": "n",
+        "meaning": "bạo lực",
+        "example": "TV violence can affect children’s behavior.",
+        "example_vi": "Bạo lực trên TV có thể ảnh hưởng đến hành vi của trẻ. theft (n) – trộm cắp"
+      },
+      {
+        "word": "theft",
+        "type": "n",
+        "meaning": "trộm cắp",
+        "example": "Theft is common in crowded areas.",
+        "example_vi": "Trộm cắp phổ biến ở những nơi đông người. drug abuse (n) – lạm dụng ma túy"
+      },
+      {
+        "word": "drug abuse",
+        "type": "n",
+        "meaning": "lạm dụng ma túy",
+        "example": "Drug abuse destroys many young lives.",
+        "example_vi": "Lạm dụng ma túy hủy hoại nhiều cuộc đời trẻ. domestic violence (n) – bạo lực gia đình"
+      },
+      {
+        "word": "domestic violence",
+        "type": "n",
+        "meaning": "bạo lực gia đình",
+        "example": "Domestic violence must be stopped.",
+        "example_vi": "Bạo lực gia đình cần được chấm dứt. corruption (n) – tham nhũng"
+      },
+      {
+        "word": "corruption",
+        "type": "n",
+        "meaning": "tham nhũng",
+        "example": "Corruption damages public trust.",
+        "example_vi": "Tham nhũng làm mất niềm tin của người dân. law enforcement (n) – thực thi pháp luật"
+      },
+      {
+        "word": "law enforcement",
+        "type": "n",
+        "meaning": "thực thi pháp luật",
+        "example": "Strong law enforcement helps maintain order.",
+        "example_vi": "Thực thi pháp luật nghiêm giúp duy trì trật tự. justice (n) – công lý"
+      },
+      {
+        "word": "justice",
+        "type": "n",
+        "meaning": "công lý",
+        "example": "People expect justice from the courts.",
+        "example_vi": "Người dân mong đợi công lý từ tòa án. punishment (n) – hình phạt"
+      },
+      {
+        "word": "punishment",
+        "type": "n",
+        "meaning": "hình phạt",
+        "example": "Serious crimes deserve strict punishment.",
+        "example_vi": "Tội nghiêm trọng cần bị trừng phạt nghiêm khắc. rehabilitation (n) – phục hồi / cải tạo"
+      },
+      {
+        "word": "rehabilitation",
+        "type": "n",
+        "meaning": "phục hồi / cải tạo",
+        "example": "Rehabilitation helps criminals return to society.",
+        "example_vi": "Cải tạo giúp tội phạm tái hòa nhập xã hội. 🌐 VI. GIẢI PHÁP &amp; PHÁT TRIỂN XÃ HỘI government policy (n) – chính sách của chính phủ"
+      },
+      {
+        "word": "I government policy",
+        "type": "n",
+        "meaning": "chính sách của chính phủ",
+        "example": "Effective government policies can solve social issues.",
+        "example_vi": "Chính sách hiệu quả của chính phủ có thể giải quyết các vấn đề xã hội. public awareness (n) – nhận thức của công chúng"
+      },
+      {
+        "word": "public awareness",
+        "type": "n",
+        "meaning": "nhận thức của công chúng",
+        "example": "Public awareness is key to reducing pollution.",
+        "example_vi": "Nâng cao nhận thức cộng đồng là chìa khóa để giảm ô nhiễm. volunteer work (n) – công việc tình nguyện"
+      },
+      {
+        "word": "volunteer work",
+        "type": "n",
+        "meaning": "công việc tình nguyện",
+        "example": "Volunteer work helps improve communities.",
+        "example_vi": "Làm tình nguyện giúp cải thiện cộng đồng. non-governmental organization (n) – tổ chức phi chính phủ (NGO)"
+      },
+      {
+        "word": "non-governmental organization",
+        "type": "n",
+        "meaning": "tổ chức phi chính phủ (NGO)",
+        "example": "NGOs support poor children in rural areas.",
+        "example_vi": "Các tổ chức phi chính phủ hỗ trợ trẻ em nghèo ở vùng nông thôn. social campaign (n) – chiến dịch xã hội"
+      },
+      {
+        "word": "social campaign",
+        "type": "n",
+        "meaning": "chiến dịch xã hội",
+        "example": "They launched a campaign against child abuse.",
+        "example_vi": "Họ phát động chiến dịch chống bạo hành trẻ em. donation (n) – quyên góp"
+      },
+      {
+        "word": "donation",
+        "type": "n",
+        "meaning": "quyên góp",
+        "example": "He made a large donation to the hospital.",
+        "example_vi": "Anh ấy quyên góp một khoản lớn cho bệnh viện. support (v/n) – hỗ trợ"
+      },
+      {
+        "word": "support",
+        "type": "v/n",
+        "meaning": "hỗ trợ",
+        "example": "The program supports low-income families.",
+        "example_vi": "Chương trình hỗ trợ các gia đình thu nhập thấp. cooperation (n) – hợp tác"
+      },
+      {
+        "word": "cooperation",
+        "type": "n",
+        "meaning": "hợp tác",
+        "example": "International cooperation helps solve global issues.",
+        "example_vi": "Hợp tác quốc tế giúp giải quyết các vấn đề toàn cầu. development (n) – phát triển"
+      },
+      {
+        "word": "development",
+        "type": "n",
+        "meaning": "phát triển",
+        "example": "Education is vital for social development.",
+        "example_vi": "Giáo dục rất quan trọng cho sự phát triển xã hội. equality and justice (n) – bình đẳng và công bằng"
+      },
+      {
+        "word": "equality and justice",
+        "type": "n",
+        "meaning": "bình đẳng và công bằng",
+        "example": "A fair society is based on equality and justice.",
+        "example_vi": "Một xã hội công bằng dựa trên sự bình đẳng và công lý."
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "title": "HEALTH",
+    "words": [
+      {
+        "word": "E health",
+        "type": "n",
+        "meaning": "sức khỏe",
+        "example": "Health is more important than wealth.",
+        "example_vi": "Sức khỏe quan trọng hơn tiền bạc. physical health (n) – sức khỏe thể chất"
+      },
+      {
+        "word": "physical health",
+        "type": "n",
+        "meaning": "sức khỏe thể chất",
+        "example": "Exercise improves physical health.",
+        "example_vi": "Tập thể dục giúp cải thiện sức khỏe thể chất. mental health (n) – sức khỏe tinh thần"
+      },
+      {
+        "word": "mental health",
+        "type": "n",
+        "meaning": "sức khỏe tinh thần",
+        "example": "Stress affects mental health.",
+        "example_vi": "Căng thẳng ảnh hưởng đến sức khỏe tinh thần. well-being (n) – trạng thái khỏe mạnh"
+      },
+      {
+        "word": "well-being",
+        "type": "n",
+        "meaning": "trạng thái khỏe mạnh",
+        "example": "Sleep is essential for well-being.",
+        "example_vi": "Giấc ngủ rất cần thiết cho sức khỏe tổng thể. lifestyle (n) – lối sống"
+      },
+      {
+        "word": "lifestyle",
+        "type": "n",
+        "meaning": "lối sống",
+        "example": "A healthy lifestyle includes good diet and exercise.",
+        "example_vi": "Lối sống lành mạnh bao gồm chế độ ăn và tập thể dục hợp lý. nutrition (n) – dinh dưỡng"
+      },
+      {
+        "word": "nutrition",
+        "type": "n",
+        "meaning": "dinh dưỡng",
+        "example": "Good nutrition helps children grow properly.",
+        "example_vi": "Dinh dưỡng tốt giúp trẻ phát triển khỏe mạnh. balanced diet (n) – chế độ ăn cân bằng"
+      },
+      {
+        "word": "balanced diet",
+        "type": "n",
+        "meaning": "chế độ ăn cân bằng",
+        "example": "A balanced diet keeps you healthy.",
+        "example_vi": "Chế độ ăn cân bằng giúp bạn khỏe mạnh. junk food (n) – đồ ăn nhanh / không lành mạnh"
+      },
+      {
+        "word": "junk food",
+        "type": "n",
+        "meaning": "đồ ăn nhanh / không lành mạnh",
+        "example": "Eating too much junk food causes obesity.",
+        "example_vi": "Ăn quá nhiều đồ ăn nhanh gây béo phì. obesity (n) – béo phì"
+      },
+      {
+        "word": "obesity",
+        "type": "n",
+        "meaning": "béo phì",
+        "example": "Childhood obesity is a serious issue.",
+        "example_vi": "Béo phì ở trẻ em là một vấn đề nghiêm trọng. disease (n) – bệnh tật"
+      },
+      {
+        "word": "disease",
+        "type": "n",
+        "meaning": "bệnh tật",
+        "example": "Heart disease is common in older people.",
+        "example_vi": "Bệnh tim phổ biến ở người lớn tuổi. 💊 II. BỆNH TẬT &amp; TRIỆU CHỨNG illness (n) – căn bệnh"
+      },
+      {
+        "word": "NG illness",
+        "type": "n",
+        "meaning": "căn bệnh",
+        "example": "He missed school because of illness.",
+        "example_vi": "Cậu ấy nghỉ học vì bị ốm. infection (n) – nhiễm trùng"
+      },
+      {
+        "word": "infection",
+        "type": "n",
+        "meaning": "nhiễm trùng",
+        "example": "The wound may cause infection.",
+        "example_vi": "Vết thương có thể bị nhiễm trùng. virus (n) – vi-rút"
+      },
+      {
+        "word": "virus",
+        "type": "n",
+        "meaning": "vi-rút",
+        "example": "The flu is caused by a virus.",
+        "example_vi": "Cúm là do vi-rút gây ra. bacteria (n) – vi khuẩn"
+      },
+      {
+        "word": "bacteria",
+        "type": "n",
+        "meaning": "vi khuẩn",
+        "example": "Bacteria can spread through dirty hands.",
+        "example_vi": "Vi khuẩn có thể lây qua tay bẩn. symptom (n) – triệu chứng"
+      },
+      {
+        "word": "symptom",
+        "type": "n",
+        "meaning": "triệu chứng",
+        "example": "Fever is a common symptom of flu.",
+        "example_vi": "Sốt là triệu chứng phổ biến của bệnh cúm. cough (n) – ho"
+      },
+      {
+        "word": "cough",
+        "type": "n",
+        "meaning": "ho",
+        "example": "He has a bad cough and sore throat.",
+        "example_vi": "Anh ấy bị ho nặng và đau họng. fever (n) – sốt"
+      },
+      {
+        "word": "fever",
+        "type": "n",
+        "meaning": "sốt",
+        "example": "The child has a high fever.",
+        "example_vi": "Đứa trẻ bị sốt cao. headache (n) – đau đầu"
+      },
+      {
+        "word": "headache",
+        "type": "n",
+        "meaning": "đau đầu",
+        "example": "I can’t focus because of a headache.",
+        "example_vi": "Tôi không thể tập trung vì bị đau đầu. stomachache (n) – đau bụng"
+      },
+      {
+        "word": "stomachache",
+        "type": "n",
+        "meaning": "đau bụng",
+        "example": "He had a stomachache after eating too much.",
+        "example_vi": "Anh ấy bị đau bụng sau khi ăn quá nhiều. flu (n) – bệnh cúm"
+      },
+      {
+        "word": "flu",
+        "type": "n",
+        "meaning": "bệnh cúm",
+        "example": "Flu spreads easily in winter.",
+        "example_vi": "Bệnh cúm dễ lây lan vào mùa đông. 👨‍⚕️ III. DỊCH VỤ Y TẾ &amp; CHĂM SÓC doctor (n) – bác sĩ"
+      },
+      {
+        "word": "C doctor",
+        "type": "n",
+        "meaning": "bác sĩ",
+        "example": "You should see a doctor if you feel sick.",
+        "example_vi": "Bạn nên đi khám bác sĩ nếu cảm thấy không khỏe. nurse (n) – y tá"
+      },
+      {
+        "word": "nurse",
+        "type": "n",
+        "meaning": "y tá",
+        "example": "The nurse took my temperature.",
+        "example_vi": "Y tá đã đo nhiệt độ cho tôi. patient (n) – bệnh nhân"
+      },
+      {
+        "word": "patient",
+        "type": "n",
+        "meaning": "bệnh nhân",
+        "example": "The patient needs more rest.",
+        "example_vi": "Bệnh nhân cần nghỉ ngơi nhiều hơn. hospital (n) – bệnh viện"
+      },
+      {
+        "word": "hospital",
+        "type": "n",
+        "meaning": "bệnh viện",
+        "example": "He was taken to the hospital after the accident.",
+        "example_vi": "Anh ấy được đưa đến bệnh viện sau vụ tai nạn. clinic (n) – phòng khám"
+      },
+      {
+        "word": "clinic",
+        "type": "n",
+        "meaning": "phòng khám",
+        "example": "I went to a small clinic for a check-up.",
+        "example_vi": "Tôi đã đến một phòng khám nhỏ để kiểm tra sức khỏe. treatment (n) – điều trị"
+      },
+      {
+        "word": "treatment",
+        "type": "n",
+        "meaning": "điều trị",
+        "example": "The new treatment works well for cancer.",
+        "example_vi": "Phương pháp điều trị mới hiệu quả với bệnh ung thư. medicine (n) – thuốc"
+      },
+      {
+        "word": "medicine",
+        "type": "n",
+        "meaning": "thuốc",
+        "example": "Take your medicine twice a day.",
+        "example_vi": "Uống thuốc hai lần mỗi ngày. prescription (n) – đơn thuốc"
+      },
+      {
+        "word": "prescription",
+        "type": "n",
+        "meaning": "đơn thuốc",
+        "example": "The doctor gave me a prescription.",
+        "example_vi": "Bác sĩ đã kê đơn thuốc cho tôi. operation (n) – ca phẫu thuật"
+      },
+      {
+        "word": "operation",
+        "type": "n",
+        "meaning": "ca phẫu thuật",
+        "example": "She had a heart operation last year.",
+        "example_vi": "Cô ấy đã phẫu thuật tim năm ngoái. emergency (n) – trường hợp khẩn cấp"
+      },
+      {
+        "word": "emergency",
+        "type": "n",
+        "meaning": "trường hợp khẩn cấp",
+        "example": "Call an ambulance in case of an emergency.",
+        "example_vi": "Gọi xe cấp cứu trong trường hợp khẩn cấp. 🧘 ‍♀️ IV. LỐI SỐNG &amp; PHÒNG BỆNH exercise (v/n) – tập thể dục"
+      },
+      {
+        "word": "NH exercise",
+        "type": "v/n",
+        "meaning": "tập thể dục",
+        "example": "Regular exercise keeps you fit.",
+        "example_vi": "Tập thể dục thường xuyên giúp bạn khỏe mạnh. sleep (v/n) – giấc ngủ"
+      },
+      {
+        "word": "sleep",
+        "type": "v/n",
+        "meaning": "giấc ngủ",
+        "example": "You need at least 7 hours of sleep a day.",
+        "example_vi": "Bạn cần ít nhất 7 tiếng ngủ mỗi ngày. relax (v) – thư giãn"
+      },
+      {
+        "word": "relax",
+        "type": "v",
+        "meaning": "thư giãn",
+        "example": "Listening to music helps me relax.",
+        "example_vi": "Nghe nhạc giúp tôi thư giãn. stress (n) – căng thẳng"
+      },
+      {
+        "word": "stress",
+        "type": "n",
+        "meaning": "căng thẳng",
+        "example": "Too much stress can cause illness.",
+        "example_vi": "Quá nhiều căng thẳng có thể gây bệnh. smoking (n) – hút thuốc"
+      },
+      {
+        "word": "smoking",
+        "type": "n",
+        "meaning": "hút thuốc",
+        "example": "Smoking is harmful to your lungs.",
+        "example_vi": "Hút thuốc có hại cho phổi. alcohol (n) – rượu bia"
+      },
+      {
+        "word": "alcohol",
+        "type": "n",
+        "meaning": "rượu bia",
+        "example": "Too much alcohol damages your liver.",
+        "example_vi": "Uống quá nhiều rượu làm hại gan. addiction (n) – nghiện"
+      },
+      {
+        "word": "addiction",
+        "type": "n",
+        "meaning": "nghiện",
+        "example": "He has a gaming addiction.",
+        "example_vi": "Anh ấy bị nghiện trò chơi điện tử. diet (n) – chế độ ăn uống"
+      },
+      {
+        "word": "diet",
+        "type": "n",
+        "meaning": "chế độ ăn uống",
+        "example": "She follows a low-fat diet.",
+        "example_vi": "Cô ấy theo chế độ ăn ít chất béo. vegetarian (n/adj) – người ăn chay / ăn chay"
+      },
+      {
+        "word": "vegetarian",
+        "type": "n/adj",
+        "meaning": "người ăn chay / ăn chay",
+        "example": "Vegetarian meals are healthier.",
+        "example_vi": "Các bữa ăn chay lành mạnh hơn. immune system (n) – hệ miễn dịch"
+      },
+      {
+        "word": "immune system",
+        "type": "n",
+        "meaning": "hệ miễn dịch",
+        "example": "Vitamins help strengthen the immune system.",
+        "example_vi": "Vitamin giúp tăng cường hệ miễn dịch. 💉 V. VẤN ĐỀ Y TẾ HIỆN ĐẠI pandemic (n) – đại dịch"
+      },
+      {
+        "word": "I pandemic",
+        "type": "n",
+        "meaning": "đại dịch",
+        "example": "COVID-19 was a global pandemic.",
+        "example_vi": "COVID-19 là một đại dịch toàn cầu. vaccination (n) – tiêm chủng"
+      },
+      {
+        "word": "vaccination",
+        "type": "n",
+        "meaning": "tiêm chủng",
+        "example": "Vaccination helps prevent disease.",
+        "example_vi": "Tiêm chủng giúp phòng ngừa bệnh. virus outbreak (n) – sự bùng phát vi-rút"
+      },
+      {
+        "word": "virus outbreak",
+        "type": "n",
+        "meaning": "sự bùng phát vi-rút",
+        "example": "The virus outbreak caused panic.",
+        "example_vi": "Sự bùng phát vi-rút đã gây hoang mang. quarantine (n/v) – cách ly"
+      },
+      {
+        "word": "quarantine",
+        "type": "n/v",
+        "meaning": "cách ly",
+        "example": "They were in quarantine for two weeks.",
+        "example_vi": "Họ bị cách ly trong hai tuần. contagious (adj) – dễ lây lan"
+      },
+      {
+        "word": "contagious",
+        "type": "adj",
+        "meaning": "dễ lây lan",
+        "example": "Flu is a contagious disease.",
+        "example_vi": "Cúm là một bệnh dễ lây. public health (n) – sức khỏe cộng đồng"
+      },
+      {
+        "word": "public health",
+        "type": "n",
+        "meaning": "sức khỏe cộng đồng",
+        "example": "Clean water is important for public health.",
+        "example_vi": "Nước sạch rất quan trọng cho sức khỏe cộng đồng. healthcare system (n) – hệ thống y tế"
+      },
+      {
+        "word": "healthcare system",
+        "type": "n",
+        "meaning": "hệ thống y tế",
+        "example": "The healthcare system needs more investment.",
+        "example_vi": "Hệ thống y tế cần được đầu tư nhiều hơn. life expectancy (n) – tuổi thọ"
+      },
+      {
+        "word": "life expectancy",
+        "type": "n",
+        "meaning": "tuổi thọ",
+        "example": "Life expectancy is increasing worldwide.",
+        "example_vi": "Tuổi thọ đang tăng trên toàn thế giới. disability (n) – khuyết tật"
+      },
+      {
+        "word": "disability",
+        "type": "n",
+        "meaning": "khuyết tật",
+        "example": "People with disabilities need better support.",
+        "example_vi": "Người khuyết tật cần được hỗ trợ tốt hơn. mental illness (n) – bệnh tâm lý"
+      },
+      {
+        "word": "mental illness",
+        "type": "n",
+        "meaning": "bệnh tâm lý",
+        "example": "Depression is a common mental illness.",
+        "example_vi": "Trầm cảm là bệnh tâm lý phổ biến. ❤️ VI. CHĂM SÓC SỨC KHỎE TOÀN DIỆN prevent (v) – ngăn ngừa"
+      },
+      {
+        "word": "N prevent",
+        "type": "v",
+        "meaning": "ngăn ngừa",
+        "example": "Exercise helps prevent heart disease.",
+        "example_vi": "Tập thể dục giúp ngăn ngừa bệnh tim. recover (v) – hồi phục"
+      },
+      {
+        "word": "recover",
+        "type": "v",
+        "meaning": "hồi phục",
+        "example": "He recovered quickly after the operation.",
+        "example_vi": "Anh ấy hồi phục nhanh sau ca phẫu thuật. heal (v) – lành lại, chữa lành"
+      },
+      {
+        "word": "heal",
+        "type": "v",
+        "meaning": "lành lại, chữa lành",
+        "example": "Time helps heal emotional wounds.",
+        "example_vi": "Thời gian giúp chữa lành vết thương tinh thần. treatment (n) – điều trị"
+      },
+      {
+        "word": "treatment",
+        "type": "n",
+        "meaning": "điều trị",
+        "example": "She is under treatment for diabetes.",
+        "example_vi": "Cô ấy đang điều trị bệnh tiểu đường. check-up (n) – kiểm tra sức khỏe"
+      },
+      {
+        "word": "check-up",
+        "type": "n",
+        "meaning": "kiểm tra sức khỏe",
+        "example": "I have a medical check-up every year.",
+        "example_vi": "Tôi đi kiểm tra sức khỏe mỗi năm một lần. therapy (n) – liệu pháp"
+      },
+      {
+        "word": "therapy",
+        "type": "n",
+        "meaning": "liệu pháp",
+        "example": "Physical therapy helps patients move again.",
+        "example_vi": "Vật lý trị liệu giúp bệnh nhân đi lại được. disease prevention (n) – phòng bệnh"
+      },
+      {
+        "word": "disease prevention",
+        "type": "n",
+        "meaning": "phòng bệnh",
+        "example": "Good hygiene is key to disease prevention.",
+        "example_vi": "Giữ vệ sinh tốt là chìa khóa phòng bệnh. healthy habit (n) – thói quen lành mạnh"
+      },
+      {
+        "word": "healthy habit",
+        "type": "n",
+        "meaning": "thói quen lành mạnh",
+        "example": "Drinking water regularly is a healthy habit.",
+        "example_vi": "Uống nước thường xuyên là thói quen lành mạnh. first aid (n) – sơ cứu"
+      },
+      {
+        "word": "first aid",
+        "type": "n",
+        "meaning": "sơ cứu",
+        "example": "Everyone should learn basic first aid.",
+        "example_vi": "Mọi người nên học sơ cứu cơ bản. regular check-up (n) – khám định kỳ"
+      },
+      {
+        "word": "regular check-up",
+        "type": "n",
+        "meaning": "khám định kỳ",
+        "example": "Regular check-ups help detect problems early.",
+        "example_vi": "Khám định kỳ giúp phát hiện bệnh sớm."
+      }
+    ]
+  },
+  {
+    "id": "environment",
+    "title": "ENVIRONMENT",
+    "words": [
+      {
+        "word": "N environment",
+        "type": "n",
+        "meaning": "môi trường",
+        "example": "We must protect the environment.",
+        "example_vi": "Chúng ta phải bảo vệ môi trường. ecosystem (n) – hệ sinh thái"
+      },
+      {
+        "word": "ecosystem",
+        "type": "n",
+        "meaning": "hệ sinh thái",
+        "example": "Pollution harms the ecosystem.",
+        "example_vi": "Ô nhiễm gây hại cho hệ sinh thái. biodiversity (n) – đa dạng sinh học"
+      },
+      {
+        "word": "biodiversity",
+        "type": "n",
+        "meaning": "đa dạng sinh học",
+        "example": "We need to preserve biodiversity.",
+        "example_vi": "Chúng ta cần bảo tồn đa dạng sinh học. habitat (n) – môi trường sống"
+      },
+      {
+        "word": "habitat",
+        "type": "n",
+        "meaning": "môi trường sống",
+        "example": "Forests are natural habitats for animals.",
+        "example_vi": "Rừng là môi trường sống tự nhiên của động vật. natural resources (n) – tài nguyên thiên nhiên"
+      },
+      {
+        "word": "natural resources",
+        "type": "n",
+        "meaning": "tài nguyên thiên nhiên",
+        "example": "We should use natural resources wisely.",
+        "example_vi": "Chúng ta nên sử dụng tài nguyên thiên nhiên một cách khôn ngoan. pollution (n) – ô nhiễm"
+      },
+      {
+        "word": "pollution",
+        "type": "n",
+        "meaning": "ô nhiễm",
+        "example": "Air pollution is getting worse.",
+        "example_vi": "Ô nhiễm không khí đang trở nên tệ hơn. conservation (n) – sự bảo tồn"
+      },
+      {
+        "word": "conservation",
+        "type": "n",
+        "meaning": "sự bảo tồn",
+        "example": "Conservation of water is important.",
+        "example_vi": "Việc bảo tồn nước rất quan trọng. climate change (n) – biến đổi khí hậu"
+      },
+      {
+        "word": "climate change",
+        "type": "n",
+        "meaning": "biến đổi khí hậu",
+        "example": "Climate change affects everyone.",
+        "example_vi": "Biến đổi khí hậu ảnh hưởng đến tất cả mọi người. sustainability (n) – tính bền vững"
+      },
+      {
+        "word": "sustainability",
+        "type": "n",
+        "meaning": "tính bền vững",
+        "example": "We must focus on sustainability.",
+        "example_vi": "Chúng ta phải tập trung vào sự phát triển bền vững. global warming (n) – sự nóng lên toàn cầu"
+      },
+      {
+        "word": "global warming",
+        "type": "n",
+        "meaning": "sự nóng lên toàn cầu",
+        "example": "Global warming causes rising sea levels.",
+        "example_vi": "Hiện tượng nóng lên toàn cầu gây ra mực nước biển dâng cao. ☁️ II. CÁC DẠNG Ô NHIỄM air pollution (n) – ô nhiễm không khí"
+      },
+      {
+        "word": "M air pollution",
+        "type": "n",
+        "meaning": "ô nhiễm không khí",
+        "example": "Cars cause air pollution.",
+        "example_vi": "Xe hơi gây ô nhiễm không khí. water pollution (n) – ô nhiễm nguồn nước"
+      },
+      {
+        "word": "water pollution",
+        "type": "n",
+        "meaning": "ô nhiễm nguồn nước",
+        "example": "Factories cause water pollution.",
+        "example_vi": "Các nhà máy gây ô nhiễm nguồn nước. noise pollution (n) – ô nhiễm tiếng ồn"
+      },
+      {
+        "word": "noise pollution",
+        "type": "n",
+        "meaning": "ô nhiễm tiếng ồn",
+        "example": "Noise pollution is common in big cities.",
+        "example_vi": "Ô nhiễm tiếng ồn phổ biến ở các thành phố lớn. soil pollution (n) – ô nhiễm đất"
+      },
+      {
+        "word": "soil pollution",
+        "type": "n",
+        "meaning": "ô nhiễm đất",
+        "example": "Chemicals cause soil pollution.",
+        "example_vi": "Hóa chất gây ô nhiễm đất. carbon footprint (n) – lượng khí thải carbon"
+      },
+      {
+        "word": "carbon footprint",
+        "type": "n",
+        "meaning": "lượng khí thải carbon",
+        "example": "Try to reduce your carbon footprint.",
+        "example_vi": "Hãy cố gắng giảm lượng khí thải carbon của bạn. greenhouse effect (n) – hiệu ứng nhà kính"
+      },
+      {
+        "word": "greenhouse effect",
+        "type": "n",
+        "meaning": "hiệu ứng nhà kính",
+        "example": "The greenhouse effect makes the Earth hotter.",
+        "example_vi": "Hiệu ứng nhà kính khiến Trái Đất nóng hơn. emission (n) – khí thải"
+      },
+      {
+        "word": "emission",
+        "type": "n",
+        "meaning": "khí thải",
+        "example": "Factories produce harmful emissions.",
+        "example_vi": "Các nhà máy thải ra khí độc hại. deforestation (n) – nạn phá rừng"
+      },
+      {
+        "word": "deforestation",
+        "type": "n",
+        "meaning": "nạn phá rừng",
+        "example": "Deforestation leads to climate change.",
+        "example_vi": "Phá rừng dẫn đến biến đổi khí hậu. waste (n) – rác thải"
+      },
+      {
+        "word": "waste",
+        "type": "n",
+        "meaning": "rác thải",
+        "example": "We should recycle household waste.",
+        "example_vi": "Chúng ta nên tái chế rác thải sinh hoạt. toxic waste (n) – chất thải độc hại"
+      },
+      {
+        "word": "toxic waste",
+        "type": "n",
+        "meaning": "chất thải độc hại",
+        "example": "Toxic waste pollutes rivers and land.",
+        "example_vi": "Chất thải độc hại làm ô nhiễm sông và đất. 🌿 III. NGUYÊN NHÂN &amp; HẬU QUẢ flood (n) – lũ lụt"
+      },
+      {
+        "word": "flood",
+        "type": "n",
+        "meaning": "lũ lụt",
+        "example": "Heavy rain can cause floods.",
+        "example_vi": "Mưa lớn có thể gây lũ lụt. drought (n) – hạn hán"
+      },
+      {
+        "word": "drought",
+        "type": "n",
+        "meaning": "hạn hán",
+        "example": "Drought destroys crops.",
+        "example_vi": "Hạn hán phá hủy mùa màng. famine (n) – nạn đói"
+      },
+      {
+        "word": "famine",
+        "type": "n",
+        "meaning": "nạn đói",
+        "example": "Famine is often caused by drought.",
+        "example_vi": "Nạn đói thường do hạn hán gây ra. wildfire (n) – cháy rừng"
+      },
+      {
+        "word": "wildfire",
+        "type": "n",
+        "meaning": "cháy rừng",
+        "example": "Wildfires spread quickly in hot weather.",
+        "example_vi": "Cháy rừng lan nhanh trong thời tiết nóng. rising sea levels (n) – mực nước biển dâng"
+      },
+      {
+        "word": "rising sea levels",
+        "type": "n",
+        "meaning": "mực nước biển dâng",
+        "example": "Rising sea levels threaten islands.",
+        "example_vi": "Mực nước biển dâng đe dọa các hòn đảo. extinction (n) – sự tuyệt chủng"
+      },
+      {
+        "word": "extinction",
+        "type": "n",
+        "meaning": "sự tuyệt chủng",
+        "example": "Many animals face extinction.",
+        "example_vi": "Nhiều loài động vật đang đối mặt với nguy cơ tuyệt chủng. ozone layer (n) – tầng ô-zôn"
+      },
+      {
+        "word": "ozone layer",
+        "type": "n",
+        "meaning": "tầng ô-zôn",
+        "example": "The ozone layer protects us from UV rays.",
+        "example_vi": "Tầng ô-zôn bảo vệ chúng ta khỏi tia cực tím. natural disaster (n) – thảm họa thiên nhiên"
+      },
+      {
+        "word": "natural disaster",
+        "type": "n",
+        "meaning": "thảm họa thiên nhiên",
+        "example": "Earthquakes and floods are natural disasters.",
+        "example_vi": "Động đất và lũ lụt là những thảm họa thiên nhiên. acid rain (n) – mưa axit"
+      },
+      {
+        "word": "acid rain",
+        "type": "n",
+        "meaning": "mưa axit",
+        "example": "Factories cause acid rain.",
+        "example_vi": "Các nhà máy gây ra mưa axit. global crisis (n) – khủng hoảng toàn cầu"
+      },
+      {
+        "word": "global crisis",
+        "type": "n",
+        "meaning": "khủng hoảng toàn cầu",
+        "example": "Climate change is a global crisis.",
+        "example_vi": "Biến đổi khí hậu là một cuộc khủng hoảng toàn cầu. 🔋 IV. GIẢI PHÁP &amp; HÀNH ĐỘNG renewable energy (n) – năng lượng tái tạo"
+      },
+      {
+        "word": "NG renewable energy",
+        "type": "n",
+        "meaning": "năng lượng tái tạo",
+        "example": "We should use renewable energy.",
+        "example_vi": "Chúng ta nên sử dụng năng lượng tái tạo. solar energy (n) – năng lượng mặt trời"
+      },
+      {
+        "word": "solar energy",
+        "type": "n",
+        "meaning": "năng lượng mặt trời",
+        "example": "Solar energy is clean and free.",
+        "example_vi": "Năng lượng mặt trời sạch và miễn phí. wind power (n) – năng lượng gió"
+      },
+      {
+        "word": "wind power",
+        "type": "n",
+        "meaning": "năng lượng gió",
+        "example": "Wind power is used in many countries.",
+        "example_vi": "Năng lượng gió được sử dụng ở nhiều quốc gia. recycle (v) – tái chế"
+      },
+      {
+        "word": "recycle",
+        "type": "v",
+        "meaning": "tái chế",
+        "example": "We can recycle paper and plastic.",
+        "example_vi": "Chúng ta có thể tái chế giấy và nhựa. reuse (v) – tái sử dụng"
+      },
+      {
+        "word": "reuse",
+        "type": "v",
+        "meaning": "tái sử dụng",
+        "example": "Try to reuse old bottles.",
+        "example_vi": "Hãy cố gắng tái sử dụng các chai cũ. reduce (v) – giảm thiểu"
+      },
+      {
+        "word": "reduce",
+        "type": "v",
+        "meaning": "giảm thiểu",
+        "example": "Reduce waste to protect nature.",
+        "example_vi": "Giảm rác thải để bảo vệ thiên nhiên. eco-friendly (adj) – thân thiện với môi trường"
+      },
+      {
+        "word": "eco-friendly",
+        "type": "adj",
+        "meaning": "thân thiện với môi trường",
+        "example": "Use eco-friendly products.",
+        "example_vi": "Hãy sử dụng các sản phẩm thân thiện với môi trường. sustainable (adj) – bền vững"
+      },
+      {
+        "word": "sustainable",
+        "type": "adj",
+        "meaning": "bền vững",
+        "example": "We need a sustainable future.",
+        "example_vi": "Chúng ta cần một tương lai bền vững. green technology (n) – công nghệ xanh"
+      },
+      {
+        "word": "green technology",
+        "type": "n",
+        "meaning": "công nghệ xanh",
+        "example": "Green technology helps save energy.",
+        "example_vi": "Công nghệ xanh giúp tiết kiệm năng lượng. environmental protection (n) – bảo vệ môi trường"
+      },
+      {
+        "word": "environmental protection",
+        "type": "n",
+        "meaning": "bảo vệ môi trường",
+        "example": "Environmental protection is everyone’s duty.",
+        "example_vi": "Bảo vệ môi trường là trách nhiệm của mọi người. 🧪 V. CHÍNH SÁCH &amp; NHẬN THỨC raise awareness (v) – nâng cao nhận thức"
+      },
+      {
+        "word": "C raise awareness",
+        "type": "v",
+        "meaning": "nâng cao nhận thức",
+        "example": "We must raise awareness about pollution.",
+        "example_vi": "Chúng ta phải nâng cao nhận thức về ô nhiễm. take action (v) – hành động"
+      },
+      {
+        "word": "take action",
+        "type": "v",
+        "meaning": "hành động",
+        "example": "It’s time to take action to save the planet.",
+        "example_vi": "Đã đến lúc hành động để cứu lấy hành tinh. ban (v) – cấm"
+      },
+      {
+        "word": "ban",
+        "type": "v",
+        "meaning": "cấm",
+        "example": "Plastic bags should be banned.",
+        "example_vi": "Túi nhựa nên bị cấm. regulation (n) – quy định"
+      },
+      {
+        "word": "regulation",
+        "type": "n",
+        "meaning": "quy định",
+        "example": "There should be strict environmental regulations.",
+        "example_vi": "Cần có các quy định môi trường nghiêm ngặt. penalty (n) – hình phạt"
+      },
+      {
+        "word": "penalty",
+        "type": "n",
+        "meaning": "hình phạt",
+        "example": "Factories that pollute should face penalties.",
+        "example_vi": "Các nhà máy gây ô nhiễm phải chịu hình phạt. encourage (v) – khuyến khích"
+      },
+      {
+        "word": "encourage",
+        "type": "v",
+        "meaning": "khuyến khích",
+        "example": "We should encourage people to recycle.",
+        "example_vi": "Chúng ta nên khuyến khích mọi người tái chế. protect (v) – bảo vệ"
+      },
+      {
+        "word": "protect",
+        "type": "v",
+        "meaning": "bảo vệ",
+        "example": "We must protect forests and oceans.",
+        "example_vi": "Chúng ta phải bảo vệ rừng và đại dương. preserve (v) – gìn giữ, bảo tồn"
+      },
+      {
+        "word": "preserve",
+        "type": "v",
+        "meaning": "gìn giữ, bảo tồn",
+        "example": "We must preserve clean water sources.",
+        "example_vi": "Chúng ta phải bảo tồn nguồn nước sạch. campaign (n) – chiến dịch"
+      },
+      {
+        "word": "campaign",
+        "type": "n",
+        "meaning": "chiến dịch",
+        "example": "They started a campaign to plant trees.",
+        "example_vi": "Họ bắt đầu một chiến dịch trồng cây. law (n) – luật"
+      },
+      {
+        "word": "law",
+        "type": "n",
+        "meaning": "luật",
+        "example": "There should be laws against pollution.",
+        "example_vi": "Cần có luật chống ô nhiễm."
+      }
+    ]
+  },
+  {
+    "id": "work_and_employment",
+    "title": "WORK AND EMPLOYMENT",
+    "words": [
+      {
+        "word": "N job",
+        "type": "n",
+        "meaning": "công việc",
+        "example": "He finally found a new job.",
+        "example_vi": "Anh ấy cuối cùng cũng tìm được việc mới. career (n) – sự nghiệp"
+      },
+      {
+        "word": "career",
+        "type": "n",
+        "meaning": "sự nghiệp",
+        "example": "She wants a career in education.",
+        "example_vi": "Cô ấy muốn theo đuổi sự nghiệp trong ngành giáo dục. occupation (n) – nghề nghiệp"
+      },
+      {
+        "word": "occupation",
+        "type": "n",
+        "meaning": "nghề nghiệp",
+        "example": "Teaching is a respected occupation.",
+        "example_vi": "Nghề dạy học là một nghề được tôn trọng. employment (n) – việc làm"
+      },
+      {
+        "word": "employment",
+        "type": "n",
+        "meaning": "việc làm",
+        "example": "The government aims to increase employment.",
+        "example_vi": "Chính phủ đặt mục tiêu tăng cơ hội việc làm. unemployment (n) – thất nghiệp"
+      },
+      {
+        "word": "unemployment",
+        "type": "n",
+        "meaning": "thất nghiệp",
+        "example": "Unemployment rates are rising.",
+        "example_vi": "Tỷ lệ thất nghiệp đang gia tăng. full-time job (n) – công việc toàn thời gian"
+      },
+      {
+        "word": "full-time job",
+        "type": "n",
+        "meaning": "công việc toàn thời gian",
+        "example": "He has a full-time job at a bank.",
+        "example_vi": "Anh ấy làm việc toàn thời gian tại một ngân hàng. part-time job (n) – công việc bán thời gian"
+      },
+      {
+        "word": "part-time job",
+        "type": "n",
+        "meaning": "công việc bán thời gian",
+        "example": "Many students have part-time jobs.",
+        "example_vi": "Nhiều sinh viên có công việc bán thời gian. internship (n) – kỳ thực tập"
+      },
+      {
+        "word": "internship",
+        "type": "n",
+        "meaning": "kỳ thực tập",
+        "example": "I’m doing a summer internship at a tech company.",
+        "example_vi": "Tôi đang thực tập hè tại một công ty công nghệ. vacancy (n) – vị trí tuyển dụng"
+      },
+      {
+        "word": "vacancy",
+        "type": "n",
+        "meaning": "vị trí tuyển dụng",
+        "example": "There is a vacancy for an accountant.",
+        "example_vi": "Có một vị trí tuyển dụng kế toán. workplace (n) – nơi làm việc"
+      },
+      {
+        "word": "workplace",
+        "type": "n",
+        "meaning": "nơi làm việc",
+        "example": "A friendly workplace improves productivity.",
+        "example_vi": "Môi trường làm việc thân thiện giúp tăng năng suất. 💼 II. CHỨC VỤ &amp; NGHỀ NGHIỆP employee (n) – nhân viên"
+      },
+      {
+        "word": "P employee",
+        "type": "n",
+        "meaning": "nhân viên",
+        "example": "The company has over 200 employees.",
+        "example_vi": "Công ty có hơn 200 nhân viên. employer (n) – người tuyển dụng"
+      },
+      {
+        "word": "employer",
+        "type": "n",
+        "meaning": "người tuyển dụng",
+        "example": "Employers should care about workers’ rights.",
+        "example_vi": "Nhà tuyển dụng nên quan tâm đến quyền lợi của người lao động. colleague (n) – đồng nghiệp"
+      },
+      {
+        "word": "colleague",
+        "type": "n",
+        "meaning": "đồng nghiệp",
+        "example": "My colleagues are very supportive.",
+        "example_vi": "Các đồng nghiệp của tôi rất nhiệt tình giúp đỡ. manager (n) – quản lý"
+      },
+      {
+        "word": "manager",
+        "type": "n",
+        "meaning": "quản lý",
+        "example": "The manager is responsible for the team’s results.",
+        "example_vi": "Quản lý chịu trách nhiệm về kết quả của đội nhóm. boss (n) – sếp"
+      },
+      {
+        "word": "boss",
+        "type": "n",
+        "meaning": "sếp",
+        "example": "My boss is strict but fair.",
+        "example_vi": "Sếp của tôi nghiêm khắc nhưng công bằng. team leader (n) – trưởng nhóm"
+      },
+      {
+        "word": "team leader",
+        "type": "n",
+        "meaning": "trưởng nhóm",
+        "example": "The team leader organized the meeting.",
+        "example_vi": "Trưởng nhóm đã tổ chức cuộc họp. colleague (n) – đồng nghiệp"
+      },
+      {
+        "word": "colleague",
+        "type": "n",
+        "meaning": "đồng nghiệp",
+        "example": "We often have lunch with our colleagues.",
+        "example_vi": "Chúng tôi thường ăn trưa cùng đồng nghiệp. freelancer (n) – người làm tự do"
+      },
+      {
+        "word": "freelancer",
+        "type": "n",
+        "meaning": "người làm tự do",
+        "example": "He works as a freelance designer.",
+        "example_vi": "Anh ấy làm thiết kế tự do. entrepreneur (n) – doanh nhân"
+      },
+      {
+        "word": "entrepreneur",
+        "type": "n",
+        "meaning": "doanh nhân",
+        "example": "She became a successful entrepreneur at 25.",
+        "example_vi": "Cô ấy trở thành doanh nhân thành công ở tuổi 25. staff (n) – nhân viên, đội ngũ"
+      },
+      {
+        "word": "staff",
+        "type": "n",
+        "meaning": "nhân viên, đội ngũ",
+        "example": "The hospital has a large medical staff.",
+        "example_vi": "Bệnh viện có đội ngũ nhân viên y tế lớn. 🧾 III. QUY TRÌNH LÀM VIỆC &amp; TUYỂN DỤNG apply (v) – nộp đơn xin việc"
+      },
+      {
+        "word": "NG apply",
+        "type": "v",
+        "meaning": "nộp đơn xin việc",
+        "example": "I applied for a job at a law firm.",
+        "example_vi": "Tôi đã nộp đơn xin việc tại một công ty luật. application (n) – đơn xin việc"
+      },
+      {
+        "word": "application",
+        "type": "n",
+        "meaning": "đơn xin việc",
+        "example": "You need to complete the job application form.",
+        "example_vi": "Bạn cần điền mẫu đơn xin việc. resume / CV (n) – sơ yếu lý lịch"
+      },
+      {
+        "word": "CV",
+        "type": "n",
+        "meaning": "sơ yếu lý lịch",
+        "example": "Your CV should be short and clear.",
+        "example_vi": "CV của bạn nên ngắn gọn và rõ ràng. interview (n/v) – phỏng vấn"
+      },
+      {
+        "word": "interview",
+        "type": "n/v",
+        "meaning": "phỏng vấn",
+        "example": "I have a job interview tomorrow.",
+        "example_vi": "Tôi có buổi phỏng vấn việc làm vào ngày mai. experience (n) – kinh nghiệm"
+      },
+      {
+        "word": "experience",
+        "type": "n",
+        "meaning": "kinh nghiệm",
+        "example": "Work experience is important for getting a job.",
+        "example_vi": "Kinh nghiệm làm việc rất quan trọng để xin việc. qualification (n) – trình độ chuyên môn"
+      },
+      {
+        "word": "qualification",
+        "type": "n",
+        "meaning": "trình độ chuyên môn",
+        "example": "He has the right qualifications for this position.",
+        "example_vi": "Anh ấy có trình độ phù hợp cho vị trí này. promotion (n) – sự thăng chức"
+      },
+      {
+        "word": "promotion",
+        "type": "n",
+        "meaning": "sự thăng chức",
+        "example": "She got a promotion last month.",
+        "example_vi": "Cô ấy được thăng chức tháng trước. salary (n) – lương (tháng)"
+      },
+      {
+        "word": "salary",
+        "type": "n",
+        "meaning": "lương (tháng)",
+        "example": "He earns a good salary.",
+        "example_vi": "Anh ấy có mức lương khá cao. wage (n) – tiền công (theo giờ/ngày)"
+      },
+      {
+        "word": "wage",
+        "type": "n",
+        "meaning": "tiền công (theo giờ/ngày)",
+        "example": "Factory workers are paid weekly wages.",
+        "example_vi": "Công nhân nhà máy được trả lương hàng tuần. bonus (n) – tiền thưởng"
+      },
+      {
+        "word": "bonus",
+        "type": "n",
+        "meaning": "tiền thưởng",
+        "example": "All staff received a Christmas bonus.",
+        "example_vi": "Tất cả nhân viên đều nhận thưởng Giáng sinh. ⏰ IV. MÔI TRƯỜNG &amp; ĐIỀU KIỆN LÀM VIỆC working conditions (n) – điều kiện làm việc"
+      },
+      {
+        "word": "C working conditions",
+        "type": "n",
+        "meaning": "điều kiện làm việc",
+        "example": "The company offers safe working conditions.",
+        "example_vi": "Công ty cung cấp điều kiện làm việc an toàn. working hours (n) – giờ làm việc"
+      },
+      {
+        "word": "working hours",
+        "type": "n",
+        "meaning": "giờ làm việc",
+        "example": "My working hours are from 9 to 5.",
+        "example_vi": "Giờ làm việc của tôi là từ 9h đến 5h. overtime (n) – làm thêm giờ"
+      },
+      {
+        "word": "overtime",
+        "type": "n",
+        "meaning": "làm thêm giờ",
+        "example": "We often do overtime before deadlines.",
+        "example_vi": "Chúng tôi thường làm thêm giờ trước hạn nộp. flexible hours (n) – giờ làm linh hoạt"
+      },
+      {
+        "word": "flexible hours",
+        "type": "n",
+        "meaning": "giờ làm linh hoạt",
+        "example": "This job allows flexible working hours.",
+        "example_vi": "Công việc này cho phép giờ làm linh hoạt. remote work (n) – làm việc từ xa"
+      },
+      {
+        "word": "remote work",
+        "type": "n",
+        "meaning": "làm việc từ xa",
+        "example": "Remote work became popular after COVID-19.",
+        "example_vi": "Làm việc từ xa trở nên phổ biến sau đại dịch. workload (n) – khối lượng công việc"
+      },
+      {
+        "word": "workload",
+        "type": "n",
+        "meaning": "khối lượng công việc",
+        "example": "He has a heavy workload this week.",
+        "example_vi": "Anh ấy có khối lượng công việc lớn tuần này. deadline (n) – hạn chót"
+      },
+      {
+        "word": "deadline",
+        "type": "n",
+        "meaning": "hạn chót",
+        "example": "We have to finish this project before the deadline.",
+        "example_vi": "Chúng ta phải hoàn thành dự án trước hạn. meeting (n) – cuộc họp"
+      },
+      {
+        "word": "meeting",
+        "type": "n",
+        "meaning": "cuộc họp",
+        "example": "We have a meeting every Monday.",
+        "example_vi": "Chúng tôi có cuộc họp mỗi thứ Hai. task (n) – nhiệm vụ"
+      },
+      {
+        "word": "task",
+        "type": "n",
+        "meaning": "nhiệm vụ",
+        "example": "My main task is to design advertisements.",
+        "example_vi": "Nhiệm vụ chính của tôi là thiết kế quảng cáo. project (n) – dự án"
+      },
+      {
+        "word": "project",
+        "type": "n",
+        "meaning": "dự án",
+        "example": "Our team is working on a new project.",
+        "example_vi": "Nhóm của chúng tôi đang làm việc với một dự án mới. 📈 V. PHÁT TRIỂN NGHỀ NGHIỆP &amp; KỸ NĂNG training (n) – đào tạo"
+      },
+      {
+        "word": "NG training",
+        "type": "n",
+        "meaning": "đào tạo",
+        "example": "New employees receive training before starting work.",
+        "example_vi": "Nhân viên mới được đào tạo trước khi bắt đầu công việc. skill (n) – kỹ năng"
+      },
+      {
+        "word": "skill",
+        "type": "n",
+        "meaning": "kỹ năng",
+        "example": "Communication skills are very important.",
+        "example_vi": "Kỹ năng giao tiếp rất quan trọng. leadership (n) – khả năng lãnh đạo"
+      },
+      {
+        "word": "leadership",
+        "type": "n",
+        "meaning": "khả năng lãnh đạo",
+        "example": "Good leadership keeps the team motivated.",
+        "example_vi": "Lãnh đạo tốt giúp nhóm có động lực. teamwork (n) – làm việc nhóm"
+      },
+      {
+        "word": "teamwork",
+        "type": "n",
+        "meaning": "làm việc nhóm",
+        "example": "Teamwork is essential for success.",
+        "example_vi": "Làm việc nhóm là điều cần thiết cho thành công. responsibility (n) – trách nhiệm"
+      },
+      {
+        "word": "responsibility",
+        "type": "n",
+        "meaning": "trách nhiệm",
+        "example": "Every employee has a responsibility to do their job well.",
+        "example_vi": "Mỗi nhân viên đều có trách nhiệm làm tốt công việc của mình. communication (n) – giao tiếp"
+      },
+      {
+        "word": "communication",
+        "type": "n",
+        "meaning": "giao tiếp",
+        "example": "Good communication helps avoid misunderstandings.",
+        "example_vi": "Giao tiếp tốt giúp tránh hiểu lầm. motivation (n) – động lực"
+      },
+      {
+        "word": "motivation",
+        "type": "n",
+        "meaning": "động lực",
+        "example": "A pay raise can increase employees’ motivation.",
+        "example_vi": "Tăng lương có thể giúp tăng động lực cho nhân viên. performance (n) – hiệu suất làm việc"
+      },
+      {
+        "word": "performance",
+        "type": "n",
+        "meaning": "hiệu suất làm việc",
+        "example": "Her performance this year was excellent.",
+        "example_vi": "Hiệu suất làm việc của cô ấy năm nay rất tốt. goal (n) – mục tiêu"
+      },
+      {
+        "word": "goal",
+        "type": "n",
+        "meaning": "mục tiêu",
+        "example": "Setting clear goals helps you stay focused.",
+        "example_vi": "Đặt mục tiêu rõ ràng giúp bạn tập trung hơn. achievement (n) – thành tựu"
+      },
+      {
+        "word": "achievement",
+        "type": "n",
+        "meaning": "thành tựu",
+        "example": "Winning the award was her biggest achievement.",
+        "example_vi": "Giành được giải thưởng là thành tựu lớn nhất của cô ấy. 💰 VI. CÔNG VIỆC VÀ CUỘC SỐNG job satisfaction (n) – sự hài lòng trong công việc"
+      },
+      {
+        "word": "NG job satisfaction",
+        "type": "n",
+        "meaning": "sự hài lòng trong công việc",
+        "example": "Job satisfaction is more important than salary.",
+        "example_vi": "Sự hài lòng trong công việc quan trọng hơn mức lương. work-life balance (n) – cân bằng giữa công việc và cuộc sống"
+      },
+      {
+        "word": "work-life balance",
+        "type": "n",
+        "meaning": "cân bằng giữa công việc và cuộc sống",
+        "example": "It’s hard to maintain work-life balance.",
+        "example_vi": "Thật khó để giữ cân bằng giữa công việc và cuộc sống. stress (n) – căng thẳng"
+      },
+      {
+        "word": "stress",
+        "type": "n",
+        "meaning": "căng thẳng",
+        "example": "Work stress can affect your health.",
+        "example_vi": "Căng thẳng công việc có thể ảnh hưởng đến sức khỏe. burnout (n) – kiệt sức"
+      },
+      {
+        "word": "burnout",
+        "type": "n",
+        "meaning": "kiệt sức",
+        "example": "He quit his job because of burnout.",
+        "example_vi": "Anh ấy nghỉ việc vì bị kiệt sức. holiday (n) – kỳ nghỉ"
+      },
+      {
+        "word": "holiday",
+        "type": "n",
+        "meaning": "kỳ nghỉ",
+        "example": "I’m taking a short holiday next week.",
+        "example_vi": "Tôi sẽ nghỉ ngắn vào tuần tới. retirement (n) – nghỉ hưu"
+      },
+      {
+        "word": "retirement",
+        "type": "n",
+        "meaning": "nghỉ hưu",
+        "example": "He’s planning for his retirement.",
+        "example_vi": "Anh ấy đang lên kế hoạch nghỉ hưu. income (n) – thu nhập"
+      },
+      {
+        "word": "income",
+        "type": "n",
+        "meaning": "thu nhập",
+        "example": "Her main source of income is teaching.",
+        "example_vi": "Nguồn thu nhập chính của cô ấy là dạy học. promotion opportunity (n) – cơ hội thăng tiến"
+      },
+      {
+        "word": "promotion opportunity",
+        "type": "n",
+        "meaning": "cơ hội thăng tiến",
+        "example": "The company offers good promotion opportunities.",
+        "example_vi": "Công ty có nhiều cơ hội thăng tiến. job market (n) – thị trường việc làm"
+      },
+      {
+        "word": "job market",
+        "type": "n",
+        "meaning": "thị trường việc làm",
+        "example": "The job market is very competitive now.",
+        "example_vi": "Thị trường việc làm hiện nay rất cạnh tranh. resign (v) – từ chức"
+      },
+      {
+        "word": "resign",
+        "type": "v",
+        "meaning": "từ chức",
+        "example": "He resigned to start his own business.",
+        "example_vi": "Anh ấy từ chức để bắt đầu kinh doanh riêng."
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "title": "TECHNOLOGY",
+    "words": [
+      {
+        "word": "technology",
+        "type": "n",
+        "meaning": "công nghệ",
+        "example": "Technology is changing our lives.",
+        "example_vi": "Công nghệ đang thay đổi cuộc sống của chúng ta. modern technology (n) – công nghệ hiện đại"
+      },
+      {
+        "word": "modern technology",
+        "type": "n",
+        "meaning": "công nghệ hiện đại",
+        "example": "Modern technology makes work easier.",
+        "example_vi": "Công nghệ hiện đại giúp công việc dễ dàng hơn. digital age (n) – thời đại kỹ thuật số"
+      },
+      {
+        "word": "digital age",
+        "type": "n",
+        "meaning": "thời đại kỹ thuật số",
+        "example": "We live in the digital age.",
+        "example_vi": "Chúng ta đang sống trong thời đại kỹ thuật số. innovation (n) – sự đổi mới"
+      },
+      {
+        "word": "innovation",
+        "type": "n",
+        "meaning": "sự đổi mới",
+        "example": "Innovation drives economic growth.",
+        "example_vi": "Sự đổi mới thúc đẩy tăng trưởng kinh tế. artificial intelligence (n) – trí tuệ nhân tạo (AI)"
+      },
+      {
+        "word": "artificial intelligence",
+        "type": "n",
+        "meaning": "trí tuệ nhân tạo (AI)",
+        "example": "Artificial intelligence is used in many industries.",
+        "example_vi": "Trí tuệ nhân tạo được sử dụng trong nhiều ngành. machine learning (n) – học máy"
+      },
+      {
+        "word": "machine learning",
+        "type": "n",
+        "meaning": "học máy",
+        "example": "Machine learning helps computers learn automatically.",
+        "example_vi": "Học máy giúp máy tính tự học. automation (n) – tự động hóa"
+      },
+      {
+        "word": "automation",
+        "type": "n",
+        "meaning": "tự động hóa",
+        "example": "Automation reduces the need for human labor.",
+        "example_vi": "Tự động hóa giảm nhu cầu lao động con người. robotics (n) – ngành robot"
+      },
+      {
+        "word": "robotics",
+        "type": "n",
+        "meaning": "ngành robot",
+        "example": "Robotics is used in factories and hospitals.",
+        "example_vi": "Robot được sử dụng trong nhà máy và bệnh viện. cyberspace (n) – không gian mạng"
+      },
+      {
+        "word": "cyberspace",
+        "type": "n",
+        "meaning": "không gian mạng",
+        "example": "Many crimes now happen in cyberspace.",
+        "example_vi": "Nhiều tội phạm ngày nay xảy ra trên không gian mạng. innovation (n) – sáng tạo, đổi mới"
+      },
+      {
+        "word": "innovation",
+        "type": "n",
+        "meaning": "sáng tạo, đổi mới",
+        "example": "Innovation is the key to success in technology.",
+        "example_vi": "Sáng tạo là chìa khóa thành công trong công nghệ. 📱 II. THIẾT BỊ &amp; INTERNET device (n) – thiết bị"
+      },
+      {
+        "word": "INTERNET device",
+        "type": "n",
+        "meaning": "thiết bị",
+        "example": "Mobile devices are very convenient.",
+        "example_vi": "Thiết bị di động rất tiện lợi. smartphone (n) – điện thoại thông minh"
+      },
+      {
+        "word": "smartphone",
+        "type": "n",
+        "meaning": "điện thoại thông minh",
+        "example": "Most people own a smartphone nowadays.",
+        "example_vi": "Ngày nay hầu hết mọi người đều có điện thoại thông minh. computer (n) – máy tính"
+      },
+      {
+        "word": "computer",
+        "type": "n",
+        "meaning": "máy tính",
+        "example": "I use my computer for studying and entertainment.",
+        "example_vi": "Tôi dùng máy tính để học và giải trí. laptop (n) – máy tính xách tay"
+      },
+      {
+        "word": "laptop",
+        "type": "n",
+        "meaning": "máy tính xách tay",
+        "example": "Laptops are ideal for students.",
+        "example_vi": "Máy tính xách tay rất phù hợp cho sinh viên. tablet (n) – máy tính bảng"
+      },
+      {
+        "word": "tablet",
+        "type": "n",
+        "meaning": "máy tính bảng",
+        "example": "Tablets are used for reading and watching videos.",
+        "example_vi": "Máy tính bảng được dùng để đọc và xem video. Internet (n) – mạng Internet"
+      },
+      {
+        "word": "Internet",
+        "type": "n",
+        "meaning": "mạng Internet",
+        "example": "The Internet connects people around the world.",
+        "example_vi": "Internet kết nối mọi người trên toàn thế giới. Wi-Fi (n) – mạng không dây"
+      },
+      {
+        "word": "Wi-Fi",
+        "type": "n",
+        "meaning": "mạng không dây",
+        "example": "You need Wi-Fi to access the Internet.",
+        "example_vi": "Bạn cần Wi-Fi để truy cập Internet. network (n) – mạng lưới"
+      },
+      {
+        "word": "network",
+        "type": "n",
+        "meaning": "mạng lưới",
+        "example": "Social networks allow people to share ideas.",
+        "example_vi": "Mạng xã hội cho phép mọi người chia sẻ ý tưởng. connection (n) – kết nối"
+      },
+      {
+        "word": "connection",
+        "type": "n",
+        "meaning": "kết nối",
+        "example": "My Internet connection is very slow today.",
+        "example_vi": "Kết nối Internet của tôi hôm nay rất chậm. browser (n) – trình duyệt"
+      },
+      {
+        "word": "browser",
+        "type": "n",
+        "meaning": "trình duyệt",
+        "example": "Google Chrome is a popular browser.",
+        "example_vi": "Google Chrome là một trình duyệt phổ biến. 🧠 III. ỨNG DỤNG &amp; SỬ DỤNG software (n) – phần mềm"
+      },
+      {
+        "word": "NG software",
+        "type": "n",
+        "meaning": "phần mềm",
+        "example": "This software helps edit photos easily.",
+        "example_vi": "Phần mềm này giúp chỉnh sửa ảnh dễ dàng. hardware (n) – phần cứng"
+      },
+      {
+        "word": "hardware",
+        "type": "n",
+        "meaning": "phần cứng",
+        "example": "You need good hardware for gaming.",
+        "example_vi": "Bạn cần phần cứng tốt để chơi game. application / app (n) – ứng dụng"
+      },
+      {
+        "word": "app",
+        "type": "n",
+        "meaning": "ứng dụng",
+        "example": "I use an app to learn English.",
+        "example_vi": "Tôi dùng một ứng dụng để học tiếng Anh. download (v) – tải xuống"
+      },
+      {
+        "word": "download",
+        "type": "v",
+        "meaning": "tải xuống",
+        "example": "You can download free music online.",
+        "example_vi": "Bạn có thể tải nhạc miễn phí trên mạng. upload (v) – tải lên"
+      },
+      {
+        "word": "upload",
+        "type": "v",
+        "meaning": "tải lên",
+        "example": "She uploaded her photos to Instagram.",
+        "example_vi": "Cô ấy đã tải ảnh lên Instagram. update (v) – cập nhật"
+      },
+      {
+        "word": "update",
+        "type": "v",
+        "meaning": "cập nhật",
+        "example": "Please update your software regularly.",
+        "example_vi": "Hãy cập nhật phần mềm thường xuyên nhé. data (n) – dữ liệu"
+      },
+      {
+        "word": "data",
+        "type": "n",
+        "meaning": "dữ liệu",
+        "example": "Companies collect user data online.",
+        "example_vi": "Các công ty thu thập dữ liệu người dùng trực tuyến. cloud storage (n) – lưu trữ đám mây"
+      },
+      {
+        "word": "cloud storage",
+        "type": "n",
+        "meaning": "lưu trữ đám mây",
+        "example": "Cloud storage allows you to save files online.",
+        "example_vi": "Lưu trữ đám mây cho phép bạn lưu tệp trên mạng. database (n) – cơ sở dữ liệu"
+      },
+      {
+        "word": "database",
+        "type": "n",
+        "meaning": "cơ sở dữ liệu",
+        "example": "The company keeps a large customer database.",
+        "example_vi": "Công ty lưu trữ một cơ sở dữ liệu khách hàng lớn. server (n) – máy chủ"
+      },
+      {
+        "word": "server",
+        "type": "n",
+        "meaning": "máy chủ",
+        "example": "The website is down because the server crashed.",
+        "example_vi": "Trang web bị sập vì máy chủ gặp sự cố. 🔒 IV. AN TOÀN CÔNG NGHỆ &amp; MẠNG XÃ HỘI cybersecurity (n) – an ninh mạng"
+      },
+      {
+        "word": "I cybersecurity",
+        "type": "n",
+        "meaning": "an ninh mạng",
+        "example": "Cybersecurity is a growing concern.",
+        "example_vi": "An ninh mạng đang trở thành mối lo ngại lớn. hacker (n) – tin tặc"
+      },
+      {
+        "word": "hacker",
+        "type": "n",
+        "meaning": "tin tặc",
+        "example": "Hackers can steal personal information.",
+        "example_vi": "Tin tặc có thể đánh cắp thông tin cá nhân. virus (n) – vi-rút (máy tính)"
+      },
+      {
+        "word": "virus",
+        "type": "n",
+        "meaning": "vi-rút (máy tính)",
+        "example": "My laptop was infected with a virus.",
+        "example_vi": "Máy tính của tôi bị nhiễm vi-rút. password (n) – mật khẩu"
+      },
+      {
+        "word": "password",
+        "type": "n",
+        "meaning": "mật khẩu",
+        "example": "Use a strong password to protect your account.",
+        "example_vi": "Hãy dùng mật khẩu mạnh để bảo vệ tài khoản. privacy (n) – quyền riêng tư"
+      },
+      {
+        "word": "privacy",
+        "type": "n",
+        "meaning": "quyền riêng tư",
+        "example": "Many people worry about online privacy.",
+        "example_vi": "Nhiều người lo lắng về quyền riêng tư trên mạng. social media (n) – mạng xã hội"
+      },
+      {
+        "word": "social media",
+        "type": "n",
+        "meaning": "mạng xã hội",
+        "example": "Social media connects people worldwide.",
+        "example_vi": "Mạng xã hội kết nối mọi người trên toàn cầu. fake news (n) – tin giả"
+      },
+      {
+        "word": "fake news",
+        "type": "n",
+        "meaning": "tin giả",
+        "example": "Fake news spreads quickly on social media.",
+        "example_vi": "Tin giả lan truyền rất nhanh trên mạng xã hội. cyberbullying (n) – bắt nạt qua mạng"
+      },
+      {
+        "word": "cyberbullying",
+        "type": "n",
+        "meaning": "bắt nạt qua mạng",
+        "example": "Cyberbullying is a serious problem for teenagers.",
+        "example_vi": "Bắt nạt qua mạng là vấn đề nghiêm trọng với thanh thiếu niên. online scam (n) – lừa đảo trực tuyến"
+      },
+      {
+        "word": "online scam",
+        "type": "n",
+        "meaning": "lừa đảo trực tuyến",
+        "example": "Be careful of online scams when shopping.",
+        "example_vi": "Hãy cẩn thận với các vụ lừa đảo trực tuyến khi mua sắm. digital addiction (n) – nghiện công nghệ / thiết bị"
+      },
+      {
+        "word": "digital addiction",
+        "type": "n",
+        "meaning": "nghiện công nghệ / thiết bị",
+        "example": "Digital addiction affects students’ concentration.",
+        "example_vi": "Nghiện công nghệ ảnh hưởng đến khả năng tập trung của học sinh. ⚙️ V. ẢNH HƯỞNG &amp; TÁC ĐỘNG XÃ HỘI productivity (n) – năng suất"
+      },
+      {
+        "word": "I productivity",
+        "type": "n",
+        "meaning": "năng suất",
+        "example": "Technology improves workplace productivity.",
+        "example_vi": "Công nghệ giúp tăng năng suất làm việc. efficiency (n) – hiệu quả"
+      },
+      {
+        "word": "efficiency",
+        "type": "n",
+        "meaning": "hiệu quả",
+        "example": "Automation increases efficiency.",
+        "example_vi": "Tự động hóa giúp tăng hiệu quả. innovation (n) – đổi mới"
+      },
+      {
+        "word": "innovation",
+        "type": "n",
+        "meaning": "đổi mới",
+        "example": "Innovation helps companies stay competitive.",
+        "example_vi": "Đổi mới giúp các công ty duy trì khả năng cạnh tranh. convenience (n) – sự tiện lợi"
+      },
+      {
+        "word": "convenience",
+        "type": "n",
+        "meaning": "sự tiện lợi",
+        "example": "Online shopping offers great convenience.",
+        "example_vi": "Mua sắm trực tuyến rất tiện lợi. communication (n) – giao tiếp"
+      },
+      {
+        "word": "communication",
+        "type": "n",
+        "meaning": "giao tiếp",
+        "example": "Technology makes communication faster.",
+        "example_vi": "Công nghệ giúp giao tiếp nhanh hơn. dependence (n) – sự phụ thuộc"
+      },
+      {
+        "word": "dependence",
+        "type": "n",
+        "meaning": "sự phụ thuộc",
+        "example": "Many young people are too dependent on technology.",
+        "example_vi": "Nhiều người trẻ quá phụ thuộc vào công nghệ. digital divide (n) – khoảng cách số"
+      },
+      {
+        "word": "digital divide",
+        "type": "n",
+        "meaning": "khoảng cách số",
+        "example": "The digital divide affects rural communities.",
+        "example_vi": "Khoảng cách số ảnh hưởng đến cộng đồng nông thôn. remote work (n) – làm việc từ xa"
+      },
+      {
+        "word": "remote work",
+        "type": "n",
+        "meaning": "làm việc từ xa",
+        "example": "Remote work became common after the pandemic.",
+        "example_vi": "Làm việc từ xa trở nên phổ biến sau đại dịch. online learning (n) – học trực tuyến"
+      },
+      {
+        "word": "online learning",
+        "type": "n",
+        "meaning": "học trực tuyến",
+        "example": "Online learning gives students more flexibility.",
+        "example_vi": "Học trực tuyến mang lại sự linh hoạt hơn cho học sinh. virtual reality (n) – thực tế ảo"
+      },
+      {
+        "word": "virtual reality",
+        "type": "n",
+        "meaning": "thực tế ảo",
+        "example": "Virtual reality offers new experiences for users.",
+        "example_vi": "Thực tế ảo mang đến trải nghiệm mới cho người dùng. 🔋 VI. PHÁT TRIỂN TƯƠNG LAI artificial intelligence (n) – trí tuệ nhân tạo"
+      },
+      {
+        "word": "NG LAI artificial intelligence",
+        "type": "n",
+        "meaning": "trí tuệ nhân tạo",
+        "example": "AI can help doctors diagnose diseases.",
+        "example_vi": "Trí tuệ nhân tạo có thể giúp bác sĩ chẩn đoán bệnh. automation (n) – tự động hóa"
+      },
+      {
+        "word": "automation",
+        "type": "n",
+        "meaning": "tự động hóa",
+        "example": "Automation will replace some manual jobs.",
+        "example_vi": "Tự động hóa sẽ thay thế một số công việc thủ công. blockchain (n) – công nghệ chuỗi khối"
+      },
+      {
+        "word": "blockchain",
+        "type": "n",
+        "meaning": "công nghệ chuỗi khối",
+        "example": "Blockchain is used for secure transactions.",
+        "example_vi": "Công nghệ chuỗi khối được dùng cho giao dịch an toàn. self-driving car (n) – xe tự lái"
+      },
+      {
+        "word": "self-driving car",
+        "type": "n",
+        "meaning": "xe tự lái",
+        "example": "Self-driving cars may reduce accidents.",
+        "example_vi": "Xe tự lái có thể giảm tai nạn giao thông. space exploration (n) – khám phá không gian"
+      },
+      {
+        "word": "space exploration",
+        "type": "n",
+        "meaning": "khám phá không gian",
+        "example": "Technology plays a big role in space exploration.",
+        "example_vi": "Công nghệ đóng vai trò lớn trong việc khám phá không gian. innovation hub (n) – trung tâm đổi mới sáng tạo"
+      },
+      {
+        "word": "innovation hub",
+        "type": "n",
+        "meaning": "trung tâm đổi mới sáng tạo",
+        "example": "Many cities are becoming innovation hubs.",
+        "example_vi": "Nhiều thành phố đang trở thành trung tâm đổi mới sáng tạo. tech industry (n) – ngành công nghệ"
+      },
+      {
+        "word": "tech industry",
+        "type": "n",
+        "meaning": "ngành công nghệ",
+        "example": "The tech industry is growing rapidly.",
+        "example_vi": "Ngành công nghệ đang phát triển nhanh chóng. digital transformation (n) – chuyển đổi số"
+      },
+      {
+        "word": "digital transformation",
+        "type": "n",
+        "meaning": "chuyển đổi số",
+        "example": "Digital transformation is happening in every sector.",
+        "example_vi": "Chuyển đổi số đang diễn ra trong mọi lĩnh vực. biotechnology (n) – công nghệ sinh học"
+      },
+      {
+        "word": "biotechnology",
+        "type": "n",
+        "meaning": "công nghệ sinh học",
+        "example": "Biotechnology can improve agriculture and medicine.",
+        "example_vi": "Công nghệ sinh học có thể cải thiện nông nghiệp và y học. future technology (n) – công nghệ tương lai"
+      },
+      {
+        "word": "future technology",
+        "type": "n",
+        "meaning": "công nghệ tương lai",
+        "example": "Future technologies will make life easier and smarter.",
+        "example_vi": "Các công nghệ tương lai sẽ giúp cuộc sống dễ dàng và thông minh hơn."
+      }
+    ]
+  },
+  {
+    "id": "technology_and_innovation",
+    "title": "TECHNOLOGY AND INNOVATION",
+    "words": [
+      {
+        "word": "N technology",
+        "type": "n",
+        "meaning": "công nghệ",
+        "example": "Technology makes our lives easier.",
+        "example_vi": "Công nghệ giúp cuộc sống của chúng ta dễ dàng hơn. innovation (n) – sự đổi mới"
+      },
+      {
+        "word": "innovation",
+        "type": "n",
+        "meaning": "sự đổi mới",
+        "example": "Innovation drives economic growth.",
+        "example_vi": "Sự đổi mới thúc đẩy tăng trưởng kinh tế. invention (n) – phát minh"
+      },
+      {
+        "word": "invention",
+        "type": "n",
+        "meaning": "phát minh",
+        "example": "The telephone was a great invention.",
+        "example_vi": "Điện thoại là một phát minh vĩ đại. device (n) – thiết bị"
+      },
+      {
+        "word": "device",
+        "type": "n",
+        "meaning": "thiết bị",
+        "example": "Smart devices are used in daily life.",
+        "example_vi": "Các thiết bị thông minh được sử dụng hàng ngày. digital (adj) – kỹ thuật số"
+      },
+      {
+        "word": "digital",
+        "type": "adj",
+        "meaning": "kỹ thuật số",
+        "example": "We live in a digital world.",
+        "example_vi": "Chúng ta đang sống trong một thế giới kỹ thuật số. advance (n) – tiến bộ"
+      },
+      {
+        "word": "advance",
+        "type": "n",
+        "meaning": "tiến bộ",
+        "example": "Scientific advances improve healthcare.",
+        "example_vi": "Tiến bộ khoa học giúp cải thiện y tế. modern (adj) – hiện đại"
+      },
+      {
+        "word": "modern",
+        "type": "adj",
+        "meaning": "hiện đại",
+        "example": "Modern technology changes how we work.",
+        "example_vi": "Công nghệ hiện đại thay đổi cách chúng ta làm việc. research (n/v) – nghiên cứu"
+      },
+      {
+        "word": "research",
+        "type": "n/v",
+        "meaning": "nghiên cứu",
+        "example": "Researchers are developing new vaccines.",
+        "example_vi": "Các nhà nghiên cứu đang phát triển vắc-xin mới. scientist (n) – nhà khoa học"
+      },
+      {
+        "word": "scientist",
+        "type": "n",
+        "meaning": "nhà khoa học",
+        "example": "Scientists work hard to solve global problems.",
+        "example_vi": "Các nhà khoa học làm việc chăm chỉ để giải quyết vấn đề toàn cầu. laboratory (n) – phòng thí nghiệm"
+      },
+      {
+        "word": "laboratory",
+        "type": "n",
+        "meaning": "phòng thí nghiệm",
+        "example": "Experiments are done in laboratories.",
+        "example_vi": "Các thí nghiệm được thực hiện trong phòng thí nghiệm. 📱 II. CÔNG NGHỆ THÔNG TIN &amp; INTERNET information technology (n) – công nghệ thông tin"
+      },
+      {
+        "word": "INTERNET information technology",
+        "type": "n",
+        "meaning": "công nghệ thông tin",
+        "example": "Information technology connects people globally.",
+        "example_vi": "Công nghệ thông tin kết nối con người toàn cầu. the Internet (n) – mạng Internet"
+      },
+      {
+        "word": "the Internet",
+        "type": "n",
+        "meaning": "mạng Internet",
+        "example": "The Internet is a vital source of information.",
+        "example_vi": "Internet là nguồn thông tin quan trọng. website (n) – trang web"
+      },
+      {
+        "word": "website",
+        "type": "n",
+        "meaning": "trang web",
+        "example": "You can find tutorials on many websites.",
+        "example_vi": "Bạn có thể tìm hướng dẫn trên nhiều trang web. social media (n) – mạng xã hội"
+      },
+      {
+        "word": "social media",
+        "type": "n",
+        "meaning": "mạng xã hội",
+        "example": "Social media influences young people.",
+        "example_vi": "Mạng xã hội ảnh hưởng đến giới trẻ. search engine (n) – công cụ tìm kiếm"
+      },
+      {
+        "word": "search engine",
+        "type": "n",
+        "meaning": "công cụ tìm kiếm",
+        "example": "Google is the most popular search engine.",
+        "example_vi": "Google là công cụ tìm kiếm phổ biến nhất. online communication (n) – giao tiếp trực tuyến"
+      },
+      {
+        "word": "online communication",
+        "type": "n",
+        "meaning": "giao tiếp trực tuyến",
+        "example": "Online communication saves time and money.",
+        "example_vi": "Giao tiếp trực tuyến tiết kiệm thời gian và tiền bạc. data (n) – dữ liệu"
+      },
+      {
+        "word": "data",
+        "type": "n",
+        "meaning": "dữ liệu",
+        "example": "Companies collect user data for marketing.",
+        "example_vi": "Các công ty thu thập dữ liệu người dùng để tiếp thị. cloud computing (n) – điện toán đám mây"
+      },
+      {
+        "word": "cloud computing",
+        "type": "n",
+        "meaning": "điện toán đám mây",
+        "example": "Cloud computing allows access to files anywhere.",
+        "example_vi": "Điện toán đám mây cho phép truy cập dữ liệu ở bất cứ đâu. cybersecurity (n) – an ninh mạng"
+      },
+      {
+        "word": "cybersecurity",
+        "type": "n",
+        "meaning": "an ninh mạng",
+        "example": "Cybersecurity protects users from online attacks.",
+        "example_vi": "An ninh mạng bảo vệ người dùng khỏi các cuộc tấn công trực tuyến. artificial intelligence (n) – trí tuệ nhân tạo (AI)"
+      },
+      {
+        "word": "artificial intelligence",
+        "type": "n",
+        "meaning": "trí tuệ nhân tạo (AI)",
+        "example": "Artificial intelligence is used in many industries.",
+        "example_vi": "Trí tuệ nhân tạo được sử dụng trong nhiều lĩnh vực. 🧠 III. CÔNG NGHỆ HIỆN ĐẠI &amp; XU HƯỚNG MỚI robot (n) – rô-bốt"
+      },
+      {
+        "word": "I robot",
+        "type": "n",
+        "meaning": "rô-bốt",
+        "example": "Robots can replace humans in dangerous jobs.",
+        "example_vi": "Rô-bốt có thể thay thế con người trong các công việc nguy hiểm. automation (n) – tự động hóa"
+      },
+      {
+        "word": "automation",
+        "type": "n",
+        "meaning": "tự động hóa",
+        "example": "Automation reduces the need for human labor.",
+        "example_vi": "Tự động hóa giảm nhu cầu lao động con người. virtual reality (n) – thực tế ảo (VR)"
+      },
+      {
+        "word": "virtual reality",
+        "type": "n",
+        "meaning": "thực tế ảo (VR)",
+        "example": "Virtual reality is used in games and education.",
+        "example_vi": "Thực tế ảo được sử dụng trong trò chơi và giáo dục. augmented reality (n) – thực tế tăng cường (AR)"
+      },
+      {
+        "word": "augmented reality",
+        "type": "n",
+        "meaning": "thực tế tăng cường (AR)",
+        "example": "AR adds digital images to the real world.",
+        "example_vi": "AR thêm hình ảnh kỹ thuật số vào thế giới thực. smartphone (n) – điện thoại thông minh"
+      },
+      {
+        "word": "smartphone",
+        "type": "n",
+        "meaning": "điện thoại thông minh",
+        "example": "Almost everyone owns a smartphone now.",
+        "example_vi": "Hầu như ai cũng có điện thoại thông minh ngày nay. wearable device (n) – thiết bị đeo được"
+      },
+      {
+        "word": "wearable device",
+        "type": "n",
+        "meaning": "thiết bị đeo được",
+        "example": "Smartwatches are popular wearable devices.",
+        "example_vi": "Đồng hồ thông minh là thiết bị đeo phổ biến. automation system (n) – hệ thống tự động"
+      },
+      {
+        "word": "automation system",
+        "type": "n",
+        "meaning": "hệ thống tự động",
+        "example": "Factories use automation systems to save time.",
+        "example_vi": "Các nhà máy sử dụng hệ thống tự động để tiết kiệm thời gian. biotechnology (n) – công nghệ sinh học"
+      },
+      {
+        "word": "biotechnology",
+        "type": "n",
+        "meaning": "công nghệ sinh học",
+        "example": "Biotechnology helps produce better crops.",
+        "example_vi": "Công nghệ sinh học giúp tạo ra cây trồng tốt hơn. nanotechnology (n) – công nghệ nano"
+      },
+      {
+        "word": "nanotechnology",
+        "type": "n",
+        "meaning": "công nghệ nano",
+        "example": "Nanotechnology can improve medicine.",
+        "example_vi": "Công nghệ nano có thể cải thiện y học. space exploration (n) – khám phá không gian"
+      },
+      {
+        "word": "space exploration",
+        "type": "n",
+        "meaning": "khám phá không gian",
+        "example": "Space exploration helps us understand the universe.",
+        "example_vi": "Khám phá không gian giúp chúng ta hiểu vũ trụ hơn. 💼 IV. CÔNG NGHỆ &amp; CÔNG VIỆC digital transformation (n) – chuyển đổi số"
+      },
+      {
+        "word": "C digital transformation",
+        "type": "n",
+        "meaning": "chuyển đổi số",
+        "example": "Digital transformation changes how companies operate.",
+        "example_vi": "Chuyển đổi số thay đổi cách các công ty hoạt động. remote work (n) – làm việc từ xa"
+      },
+      {
+        "word": "remote work",
+        "type": "n",
+        "meaning": "làm việc từ xa",
+        "example": "Remote work became common after the pandemic.",
+        "example_vi": "Làm việc từ xa trở nên phổ biến sau đại dịch. online meeting (n) – họp trực tuyến"
+      },
+      {
+        "word": "online meeting",
+        "type": "n",
+        "meaning": "họp trực tuyến",
+        "example": "Online meetings save travel costs.",
+        "example_vi": "Họp trực tuyến tiết kiệm chi phí di chuyển. productivity (n) – năng suất"
+      },
+      {
+        "word": "productivity",
+        "type": "n",
+        "meaning": "năng suất",
+        "example": "Technology improves productivity.",
+        "example_vi": "Công nghệ giúp tăng năng suất. digital skill (n) – kỹ năng số"
+      },
+      {
+        "word": "digital skill",
+        "type": "n",
+        "meaning": "kỹ năng số",
+        "example": "Digital skills are essential in modern jobs.",
+        "example_vi": "Kỹ năng số là điều cần thiết trong công việc hiện đại. innovation hub (n) – trung tâm đổi mới"
+      },
+      {
+        "word": "innovation hub",
+        "type": "n",
+        "meaning": "trung tâm đổi mới",
+        "example": "Many cities are becoming innovation hubs.",
+        "example_vi": "Nhiều thành phố đang trở thành trung tâm đổi mới. entrepreneur (n) – doanh nhân"
+      },
+      {
+        "word": "entrepreneur",
+        "type": "n",
+        "meaning": "doanh nhân",
+        "example": "Young entrepreneurs use technology to start businesses.",
+        "example_vi": "Các doanh nhân trẻ sử dụng công nghệ để khởi nghiệp. start-up (n) – công ty khởi nghiệp"
+      },
+      {
+        "word": "start-up",
+        "type": "n",
+        "meaning": "công ty khởi nghiệp",
+        "example": "Tech start-ups are booming globally.",
+        "example_vi": "Các công ty khởi nghiệp công nghệ đang phát triển mạnh. automation job loss (n) – mất việc do tự động hóa"
+      },
+      {
+        "word": "automation job loss",
+        "type": "n",
+        "meaning": "mất việc do tự động hóa",
+        "example": "Automation may cause job loss in factories.",
+        "example_vi": "Tự động hóa có thể khiến công nhân mất việc. workplace innovation (n) – đổi mới nơi làm việc"
+      },
+      {
+        "word": "workplace innovation",
+        "type": "n",
+        "meaning": "đổi mới nơi làm việc",
+        "example": "Workplace innovation improves employee satisfaction.",
+        "example_vi": "Đổi mới nơi làm việc giúp nhân viên hài lòng hơn. 📚 V. GIÁO DỤC &amp; CÔNG NGHỆ online learning (n) – học trực tuyến"
+      },
+      {
+        "word": "online learning",
+        "type": "n",
+        "meaning": "học trực tuyến",
+        "example": "Online learning allows students to study anywhere.",
+        "example_vi": "Học trực tuyến giúp học sinh học ở bất cứ đâu. e-learning platform (n) – nền tảng học trực tuyến"
+      },
+      {
+        "word": "e-learning platform",
+        "type": "n",
+        "meaning": "nền tảng học trực tuyến",
+        "example": "Coursera is a popular e-learning platform.",
+        "example_vi": "Coursera là nền tảng học trực tuyến phổ biến. digital textbook (n) – sách giáo khoa điện tử"
+      },
+      {
+        "word": "digital textbook",
+        "type": "n",
+        "meaning": "sách giáo khoa điện tử",
+        "example": "Digital textbooks are cheaper than printed ones.",
+        "example_vi": "Sách giáo khoa điện tử rẻ hơn sách in. virtual classroom (n) – lớp học ảo"
+      },
+      {
+        "word": "virtual classroom",
+        "type": "n",
+        "meaning": "lớp học ảo",
+        "example": "Virtual classrooms connect teachers and students online.",
+        "example_vi": "Lớp học ảo kết nối giáo viên và học sinh qua mạng. educational app (n) – ứng dụng học tập"
+      },
+      {
+        "word": "educational app",
+        "type": "n",
+        "meaning": "ứng dụng học tập",
+        "example": "There are many educational apps for children.",
+        "example_vi": "Có nhiều ứng dụng học tập dành cho trẻ em. digital literacy (n) – hiểu biết về công nghệ số"
+      },
+      {
+        "word": "digital literacy",
+        "type": "n",
+        "meaning": "hiểu biết về công nghệ số",
+        "example": "Digital literacy is crucial for students today.",
+        "example_vi": "Hiểu biết công nghệ số rất quan trọng với học sinh hiện nay. distance education (n) – giáo dục từ xa"
+      },
+      {
+        "word": "distance education",
+        "type": "n",
+        "meaning": "giáo dục từ xa",
+        "example": "Distance education is suitable for working adults.",
+        "example_vi": "Giáo dục từ xa phù hợp với người đi làm. learning software (n) – phần mềm học tập"
+      },
+      {
+        "word": "learning software",
+        "type": "n",
+        "meaning": "phần mềm học tập",
+        "example": "Learning software makes studying more interactive.",
+        "example_vi": "Phần mềm học tập giúp việc học sinh động hơn. interactive learning (n) – học tương tác"
+      },
+      {
+        "word": "interactive learning",
+        "type": "n",
+        "meaning": "học tương tác",
+        "example": "Interactive learning keeps students engaged.",
+        "example_vi": "Học tương tác giúp học sinh hứng thú hơn. self-paced learning (n) – học theo tốc độ riêng"
+      },
+      {
+        "word": "self-paced learning",
+        "type": "n",
+        "meaning": "học theo tốc độ riêng",
+        "example": "Self-paced learning allows flexibility.",
+        "example_vi": "Học theo tốc độ riêng mang lại sự linh hoạt. ⚖️ VI. LỢI ÍCH &amp; TÁC HẠI CỦA CÔNG NGHỆ benefit (n) – lợi ích"
+      },
+      {
+        "word": "benefit",
+        "type": "n",
+        "meaning": "lợi ích",
+        "example": "Technology brings many benefits to society.",
+        "example_vi": "Công nghệ mang lại nhiều lợi ích cho xã hội. convenience (n) – sự tiện lợi"
+      },
+      {
+        "word": "convenience",
+        "type": "n",
+        "meaning": "sự tiện lợi",
+        "example": "Technology offers great convenience in daily life.",
+        "example_vi": "Công nghệ mang đến sự tiện lợi trong cuộc sống hàng ngày. efficiency (n) – hiệu quả"
+      },
+      {
+        "word": "efficiency",
+        "type": "n",
+        "meaning": "hiệu quả",
+        "example": "Automation increases efficiency in production.",
+        "example_vi": "Tự động hóa giúp tăng hiệu quả sản xuất. distraction (n) – sự xao nhãng"
+      },
+      {
+        "word": "distraction",
+        "type": "n",
+        "meaning": "sự xao nhãng",
+        "example": "Phones can be a big distraction for students.",
+        "example_vi": "Điện thoại có thể khiến học sinh mất tập trung. addiction (n) – nghiện"
+      },
+      {
+        "word": "addiction",
+        "type": "n",
+        "meaning": "nghiện",
+        "example": "Technology addiction affects mental health.",
+        "example_vi": "Nghiện công nghệ ảnh hưởng đến sức khỏe tinh thần. privacy concern (n) – lo ngại về quyền riêng tư"
+      },
+      {
+        "word": "privacy concern",
+        "type": "n",
+        "meaning": "lo ngại về quyền riêng tư",
+        "example": "Privacy concerns arise from data collection.",
+        "example_vi": "Lo ngại quyền riêng tư xuất phát từ việc thu thập dữ liệu. job displacement (n) – mất việc làm do công nghệ"
+      },
+      {
+        "word": "job displacement",
+        "type": "n",
+        "meaning": "mất việc làm do công nghệ",
+        "example": "Robots may cause job displacement in some industries.",
+        "example_vi": "Rô-bốt có thể khiến mất việc trong một số ngành. overreliance (n) – phụ thuộc quá mức"
+      },
+      {
+        "word": "overreliance",
+        "type": "n",
+        "meaning": "phụ thuộc quá mức",
+        "example": "Overreliance on technology can be dangerous.",
+        "example_vi": "Phụ thuộc quá mức vào công nghệ có thể nguy hiểm. digital divide (n) – khoảng cách số"
+      },
+      {
+        "word": "digital divide",
+        "type": "n",
+        "meaning": "khoảng cách số",
+        "example": "The digital divide separates rich and poor countries.",
+        "example_vi": "Khoảng cách số chia rẽ các quốc gia giàu và nghèo. sustainable innovation (n) – đổi mới bền vững"
+      },
+      {
+        "word": "sustainable innovation",
+        "type": "n",
+        "meaning": "đổi mới bền vững",
+        "example": "We need sustainable innovation for the future.",
+        "example_vi": "Chúng ta cần đổi mới bền vững cho tương lai."
+      }
+    ]
+  }
+]

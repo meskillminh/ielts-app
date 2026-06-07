@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>IELTS Writing — Flashcards</title>
+<style>
+  :root {
+    --bg: #f5f3ee;
+    --card-bg: #faf9f5;
+    --text: #1a1a1a;
+    --subtext: #666;
+    --border: #e0ddd6;
+    --lesson-writing: #e6f1fb;
+    --lesson-writing-border: #90bce8;
+    --lesson-upgrade: #f0ebff;
+    --lesson-upgrade-border: #9b7fe8;
+    --section-border: #b0c8e8;
+    --flipped-bg: #e1f5ee;
+    --flipped-border: #1d9e75;
+    --hover-border: #7c6fd4;
+    --btn-bg: #fff;
+    --btn-active-bg: #4a6fa5;
+    --btn-active-text: #fff;
+    --search-bg: #fff;
+    --controls-bg: rgba(245,243,238,0.96);
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-hover: 0 6px 18px rgba(0,0,0,0.13);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1f; --card-bg: #22222a; --text: #e8e6e0; --subtext: #aaa;
+      --border: #333; --lesson-writing: #1a2a3a; --lesson-writing-border: #3a6090;
+      --lesson-upgrade: #1f1a2e; --lesson-upgrade-border: #6a4fb0;
+      --section-border: #2a4a6a; --flipped-bg: #0d2a1e; --flipped-border: #1d9e75;
+      --hover-border: #a090ee; --btn-bg: #2a2a35; --btn-active-bg: #4a6fa5;
+      --btn-active-text: #fff; --search-bg: #2a2a35; --controls-bg: rgba(26,26,31,0.96);
+      --shadow: 0 2px 8px rgba(0,0,0,0.3); --shadow-hover: 0 6px 18px rgba(0,0,0,0.45);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+  /* CONTROLS */
+  .controls { position: sticky; top: 0; z-index: 100; background: var(--controls-bg); backdrop-filter: blur(8px); padding: 12px 20px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 10px; }
+  .controls-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .site-title { font-size: 1rem; font-weight: 700; color: #4a6fa5; white-space: nowrap; }
+  .search-wrap { flex: 1; min-width: 180px; }
+  .search-wrap input { width: 100%; padding: 8px 14px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--search-bg); color: var(--text); font-size: 0.9rem; outline: none; transition: border-color 0.2s; }
+  .search-wrap input:focus { border-color: #4a6fa5; }
+  .counter { font-size: 0.82rem; color: var(--subtext); white-space: nowrap; }
+  .btn-flip { padding: 7px 16px; border-radius: 16px; border: 1.5px solid var(--hover-border); background: var(--btn-bg); color: var(--hover-border); font-size: 0.85rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: background 0.2s, color 0.2s; }
+  .btn-flip:hover { background: var(--hover-border); color: #fff; }
+  .filters { display: flex; gap: 7px; flex-wrap: wrap; }
+  .filter-btn { padding: 5px 12px; border-radius: 14px; border: 1.5px solid var(--border); background: var(--btn-bg); color: var(--subtext); font-size: 0.8rem; cursor: pointer; transition: all 0.18s; font-weight: 500; }
+  .filter-btn:hover { border-color: #4a6fa5; color: #4a6fa5; }
+  .filter-btn.active { background: var(--btn-active-bg); color: var(--btn-active-text); border-color: var(--btn-active-bg); }
+  .filter-btn.upgrade { border-color: #9b7fe8; color: #7c6fd4; }
+  .filter-btn.upgrade.active { background: #7c6fd4; border-color: #7c6fd4; }
+
+  /* MAIN */
+  main { padding: 24px 20px 56px; max-width: 1100px; margin: 0 auto; }
+
+  /* LESSON BLOCK */
+  .lesson-block { margin-bottom: 36px; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+  .lesson-header { padding: 16px 22px; }
+  .lesson-header.writing { background: var(--lesson-writing); border-left: 5px solid var(--lesson-writing-border); }
+  .lesson-header.upgrade { background: var(--lesson-upgrade); border-left: 5px solid var(--lesson-upgrade-border); }
+  .lesson-tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #4a6fa5; margin-bottom: 4px; }
+  .lesson-tag.upgrade { color: #7c6fd4; }
+  .lesson-title { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+  .lesson-subtitle { font-size: 0.82rem; color: var(--subtext); margin-top: 4px; }
+  .lesson-body { background: var(--card-bg); padding: 20px; }
+
+  /* SECTION */
+  .section-block { margin-bottom: 28px; }
+  .section-block:last-child { margin-bottom: 0; }
+  .section-title { font-size: 0.85rem; font-weight: 700; color: #4a6fa5; border-bottom: 2px dashed var(--section-border); padding-bottom: 6px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* CARD GRID */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+
+  /* FLASHCARD */
+  .card { background: var(--btn-bg); border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 16px; cursor: pointer; transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s; user-select: none; min-height: 88px; position: relative; }
+  .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--hover-border); }
+  .card.flipped { background: var(--flipped-bg); border-color: var(--flipped-border); }
+  .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+  .card-front { font-size: 0.94rem; font-weight: 700; color: var(--text); flex: 1; line-height: 1.4; }
+  .card-hint { font-size: 0.72rem; color: #bbb; margin-top: 5px; }
+  .card.flipped .card-hint { display: none; }
+
+  /* BAND BADGE */
+  .band-badge { font-size: 0.68rem; font-weight: 800; padding: 2px 7px; border-radius: 8px; white-space: nowrap; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 1px; }
+  .band-b7 { background: #d4f5e9; color: #0e7a55; }
+  .band-b6 { background: #fff3cd; color: #856404; }
+  .band-fix { background: #fde8e8; color: #c0392b; }
+  @media (prefers-color-scheme: dark) {
+    .band-b7 { background: #0d3322; color: #4ecb96; }
+    .band-b6 { background: #2d2200; color: #e0a800; }
+    .band-fix { background: #3a0a0a; color: #f08080; }
+  }
+
+  /* CARD BACK */
+  .card-back { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--flipped-border); }
+  .card.flipped .card-back { display: block; }
+  .card-vn { font-size: 0.87rem; color: #1d9e75; font-weight: 600; margin-bottom: 6px; line-height: 1.4; }
+  .card-ex { font-size: 0.81rem; color: var(--subtext); font-style: italic; line-height: 1.55; }
+  .card-tip { font-size: 0.78rem; color: #c0392b; font-weight: 600; margin-top: 6px; padding: 5px 8px; background: #fde8e8; border-radius: 6px; line-height: 1.4; }
+  @media (prefers-color-scheme: dark) { .card-tip { background: #3a0a0a; color: #f08080; } }
+
+  /* PARAPHRASE BLOCK */
+  .card-para { margin-top: 10px; padding: 9px 10px; background: #f0f7ff; border-radius: 8px; border-left: 3px solid #4a6fa5; font-size: 0.8rem; line-height: 1.55; }
+  .card-para-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; color: #4a6fa5; }
+  .card-para-original { color: #c0392b; margin-bottom: 5px; }
+  .card-para-original span { font-style: italic; }
+  .card-para-rephrased { color: #1d9e75; }
+  .card-para-rephrased span { font-style: italic; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .card-para { background: #1a2535; border-left-color: #4a6fa5; }
+    .card-para-original { color: #f08080; }
+    .card-para-rephrased { color: #4ecb96; }
+  }
+
+  /* SAMPLE SCRIPT PANEL */
+  .script-panel { margin-top: 16px; border-radius: 10px; overflow: hidden; border: 1.5px solid var(--section-border); }
+  .script-panel summary {
+    list-style: none; cursor: pointer;
+    padding: 10px 16px; font-size: 0.83rem; font-weight: 700;
+    color: #4a6fa5; background: #eef5fd;
+    display: flex; align-items: center; gap: 8px;
+    user-select: none; transition: background 0.18s;
+  }
+  .script-panel summary::-webkit-details-marker { display: none; }
+  .script-panel summary::before { content: "▶"; font-size: 0.65rem; transition: transform 0.2s; }
+  .script-panel[open] summary::before { transform: rotate(90deg); }
+  .script-panel summary:hover { background: #ddeaf8; }
+  .script-body { padding: 14px 18px; background: #f8fcff; font-size: 0.85rem; line-height: 1.75; color: var(--text); }
+  .script-body p { margin-bottom: 10px; }
+  .script-body p:last-child { margin-bottom: 0; }
+  .script-body strong { color: #2563a8; background: #dbeafe; padding: 1px 3px; border-radius: 3px; font-weight: 700; }
+  .script-body .script-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: #4a6fa5; display: block; margin: 10px 0 3px; }
+  .script-body .bad { color: #c0392b; }
+  .script-body .bad strong { background: #fde8e8; color: #c0392b; }
+  .script-body .good { color: #1d9e75; }
+  .script-body .good strong { background: #d4f5e9; color: #0e7a55; }
+  .script-body .tip-box { background: #fff9e6; border-left: 3px solid #e0a800; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-top: 10px; font-size: 0.8rem; color: #856404; }
+  @media (prefers-color-scheme: dark) {
+    .script-panel { border-color: #2a4a6a; }
+    .script-panel summary { background: #1a2535; color: #7ab0dc; }
+    .script-panel summary:hover { background: #1e2f45; }
+    .script-body { background: #16202c; }
+    .script-body strong { background: #1a3055; color: #7ab0dc; }
+    .script-body .bad strong { background: #3a0a0a; color: #f08080; }
+    .script-body .good strong { background: #0d3322; color: #4ecb96; }
+    .script-body .tip-box { background: #2a1f00; border-left-color: #e0a800; color: #e0c060; }
+  }
+
+  /* EMPTY */
+  .empty { text-align: center; color: var(--subtext); padding: 60px 20px; font-size: 1rem; }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .controls { padding: 10px 14px; }
+    main { padding: 16px 12px 40px; }
+    .card-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .lesson-body { padding: 14px; }
+    .card { min-height: 80px; padding: 12px; }
+    .script-body { padding: 12px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <div class="controls-top">
+    <span class="site-title">✍️ IELTS Writing</span>
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search expressions, Vietnamese, examples…" oninput="render()" />
+    </div>
+    <span class="counter" id="counter">— / — expressions</span>
+    <button class="btn-flip" onclick="flipAll()">🔄 Flip all</button>
+  </div>
+  <div class="filters" id="filterBar"></div>
+</div>
+
+<main id="mainContent"></main>
+
+<script>
+const lessons = [
+  {
+    id: "L1W", type: "writing",
+    tag: "Lesson 1 — Writing Task 1",
+    title: "Cấu trúc câu mô tả xu hướng",
+    sections: [
+      {
+        title: "📌 Quantifiers — Chủ ngữ mô tả số liệu",
+        items: [
+          { e: "the number of + countable noun", v: "→ số lượng của... (danh từ đếm được)", ex: "The number of students increased to 1,200 in 2005." },
+          { e: "the amount of + uncountable noun", v: "→ lượng... (danh từ không đếm được)", ex: "The amount of water consumed per day was 50 litres." },
+          { e: "the percentage / proportion of", v: "→ tỷ lệ / phần trăm của...", ex: "The percentage of obese children in America was 15%." },
+          { e: "the unemployment rate", v: "→ tỷ lệ thất nghiệp (cụm cố định)", ex: "The unemployment rate in Japan in 2015 was 4%." },
+          { e: "the birth rate / the death rate", v: "→ tỷ lệ sinh / tử vong (cụm cố định)", ex: "The birth rate in Canada fluctuated between 10% and 15%." },
+          { e: "the price of something", v: "→ giá của... (KHÔNG dùng 'amount of price')", ex: "The price of petrol rose considerably in 2022." },
+          { e: "the sales of something", v: "→ doanh số bán... (KHÔNG dùng 'number of sales')", ex: "The sales of CDs increased dramatically in the 1980s." },
+          { e: "the income of something", v: "→ thu nhập của... (KHÔNG dùng 'amount of income')", ex: "The income of people in Vietnam rose slightly over the period." },
+          { e: "this figure", v: "→ số liệu này (khi S2 = S1 — cùng đối tượng)", ex: "The number of students in 1960 was 100. This figure in 1970 was 200." },
+          { e: "the figure for something", v: "→ số liệu cho... (khi S2 ≠ S1 — khác đối tượng)", ex: "The amount of chicken was 250g. The figure for beef was 100g." }
+        ],
+        script: {
+          title: "UK Household Spending (2000–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph</span>
+<p>The line graph illustrates changes in household expenditure in the UK from 2000 to 2020.</p>
+<p><strong>The number of</strong> households spending over £500 per month on rent rose sharply over the period. <strong>The amount of</strong> money spent on food also increased, from £250 to £380 per month. Meanwhile, <strong>the percentage of</strong> income spent on transport remained stable at around 15%.</p>
+<p><strong>The unemployment rate</strong> fell from 7% in 2010 to 3.8% in 2020. <strong>The price of</strong> energy climbed considerably, while <strong>the sales of</strong> electric vehicles grew dramatically in the final five years. Among all categories, housing costs were consistently the highest. <strong>This figure</strong> nearly doubled over the period, while <strong>the figure for</strong> entertainment remained the lowest throughout.</p>
+<div class="tip-box">💡 Tip: Use <em>this figure</em> when your subject stays the same. Use <em>the figure for</em> when you switch to a different subject.</div>`
+        }
+      },
+      {
+        title: "📈 Verbs & Nouns — Xu hướng TĂNG",
+        items: [
+          { e: "to rise / a rise", v: "→ tăng / sự tăng", ex: "The number of internet users rose steadily over the period." },
+          { e: "to increase / an increase", v: "→ tăng / sự tăng (phổ biến nhất)", ex: "The amount of energy used increased dramatically in 2010." },
+          { e: "to grow / a growth", v: "→ tăng trưởng (không dùng với tiền)", ex: "The number of students grew from 10,000 to 18,000 in 2019." },
+          { e: "to climb / a climb", v: "→ leo thang / sự tăng", ex: "The price of oil climbed sharply throughout the period." },
+          { e: "to go up", v: "→ tăng lên (thông thường)", ex: "Car sales went up gradually over the period." },
+          { e: "an upward trend", v: "→ xu hướng tăng", ex: "There was a clear upward trend in internet usage from 2000 to 2020." }
+        ],
+        script: {
+          title: "International Students in Australia (2000–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph</span>
+<p>The line graph illustrates the growth in international student enrolment in Australia from 2000 to 2020.</p>
+<p>In 2000, approximately 150,000 students were enrolled in Australian universities. This figure <strong>rose</strong> steadily to 200,000 by 2005, reflecting growing global interest in Australian education. Between 2005 and 2010, enrolment <strong>climbed</strong> more rapidly, reaching 280,000. Student numbers then <strong>grew</strong> dramatically to a peak of 450,000 by 2015. The figure continued to <strong>go up</strong>, reaching 560,000 in 2019 — a clear <strong>upward trend</strong> driven by government policy and improved university rankings. Overall, the total <strong>increase</strong> over the 20-year period was nearly fourfold.</p>
+<div class="tip-box">💡 Tip: Vary your verbs! Don't use "increased" in every sentence. Try: rose → climbed → grew → went up → reached.</div>`
+        }
+      },
+      {
+        title: "📉 Verbs & Nouns — Xu hướng GIẢM",
+        items: [
+          { e: "to decrease / a decrease", v: "→ giảm / sự giảm", ex: "The unemployment rate decreased from 10% to 6% between 2010 and 2018." },
+          { e: "to fall / a fall", v: "→ giảm / sự giảm (thường dùng khi giảm đột ngột)", ex: "The number of tourists fell sharply in 2020." },
+          { e: "to drop / a drop", v: "→ giảm (mạnh) / sự giảm", ex: "The unemployment rate experienced a gradual drop to 3% during the decade." },
+          { e: "to reduce / a reduction", v: "→ giảm / sự giảm bớt", ex: "There was a considerable reduction in sugar consumption in 2002." },
+          { e: "to decline / a decline", v: "→ suy giảm / sự suy giảm", ex: "The number of smokers declined significantly from 2010 to 2020." },
+          { e: "to go down", v: "→ đi xuống / giảm (thông thường)", ex: "The figure for exports went down slightly in the final year." },
+          { e: "a downward trend", v: "→ xu hướng giảm", ex: "The data showed a clear downward trend in coal consumption." }
+        ],
+        script: {
+          title: "Coal Consumption in Europe (1990–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph</span>
+<p>The bar chart provides information about coal consumption in three European countries from 1990 to 2020.</p>
+<p>In the UK, coal usage <strong>decreased</strong> considerably from 120 million tonnes in 1990 to 80 million tonnes in 2000. It then <strong>fell</strong> sharply to just 45 million tonnes by 2010 — a <strong>reduction</strong> of more than 60% in just two decades. A clear <strong>downward trend</strong> was visible throughout, with the figure <strong>going down</strong> to a record low of 15 million tonnes in 2020.</p>
+<p>In Germany, consumption <strong>dropped</strong> moderately from 250 to 180 million tonnes. It then <strong>declined</strong> more rapidly between 2015 and 2020, reaching 120 million tonnes. Spain also showed a <strong>decrease</strong>, though the <strong>fall</strong> was less dramatic — from 90 to 55 million tonnes over the full period.</p>
+<div class="tip-box">💡 Tip: "Fall" and "drop" suggest a sudden change. "Decline" and "decrease" are more neutral. "Reduce" often implies intentional action.</div>`
+        }
+      },
+      {
+        title: "➡️ Verbs — Xu hướng ĐẶC BIỆT (ổn định / dao động / đỉnh / đáy)",
+        items: [
+          { e: "to remain unchanged / remain constant / remain steady / remain stable", v: "→ giữ nguyên / duy trì ổn định (các biến thể)", ex: "The proportion remained unchanged at 40% throughout the period." },
+          { e: "to stabilize", v: "→ ổn định lại (sau biến động)", ex: "The figures stabilized after the sharp rise in 2018." },
+          { e: "to fluctuate / a fluctuation", v: "→ dao động (lên xuống ≥3 lần liên tiếp)", ex: "The birth rate fluctuated between 10% and 15% from 2000 to 2010." },
+          { e: "to peak at / reach its peak of", v: "→ đạt đỉnh ở mức / của", ex: "The percentage of visitors peaked at 45% in 1995." },
+          { e: "to reach its highest point of", v: "→ chạm đỉnh ở mức", ex: "Car sales reached their highest point of $8 million in 2019." },
+          { e: "to hit its lowest point of", v: "→ chạm đáy ở mức", ex: "It hit its lowest point of 5% in 1995." }
+        ],
+        script: {
+          title: "Social Media Usage in the USA (2005–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph</span>
+<p>The line graph illustrates social media usage among US adults from 2005 to 2020.</p>
+<p>Usage <strong>fluctuated</strong> between 5% and 9% from 2005 to 2008 before rising sharply. The proportion then <strong>peaked at</strong> 79% in 2018 — the highest point across the entire period. After that, the figure <strong>remained stable</strong> at around 72–75%, suggesting the market had reached near-saturation. Analysts expect it to <strong>stabilize</strong> at around 80% by 2025.</p>
+<p>Among older adults (65+), usage <strong>hit its lowest point of</strong> just 2% in 2007 before climbing gradually. By 2016, this figure had <strong>stabilized</strong> at approximately 34%, where it <strong>remained unchanged</strong> for two years before rising again to <strong>reach its highest point of</strong> 40% in 2020.</p>
+<div class="tip-box">💡 Tip: Use <em>fluctuated</em> only when the data goes up AND down multiple times. If it just stays flat, use <em>remained stable / unchanged</em>.</div>`
+        }
+      },
+      {
+        title: "🎚️ Adjectives & Adverbs — Mức độ thay đổi",
+        items: [
+          { e: "dramatic / dramatically", v: "→ rất mạnh / đột ngột (mạnh nhất)", ex: "The number of users increased dramatically over the decade." },
+          { e: "rapid / rapidly", v: "→ nhanh (trong thời gian ngắn)", ex: "There was a rapid rise in car sales during 2018." },
+          { e: "sharp / sharply", v: "→ đột ngột và mạnh (thời gian ngắn)", ex: "The price fell sharply to $50 per barrel in just one week." },
+          { e: "significant / significantly", v: "→ đáng kể (phổ biến nhất)", ex: "The unemployment rate decreased significantly over the decade." },
+          { e: "considerable / considerably", v: "→ đáng kể (lượng khá lớn)", ex: "There was a considerable decrease in laptop exports." },
+          { e: "substantial / substantially", v: "→ đáng kể (lượng lớn, trang trọng)", ex: "The amount of energy used increased substantially." },
+          { e: "remarkable / remarkably", v: "→ đáng chú ý / ấn tượng", ex: "The company recorded a remarkable growth in profits in 2019." },
+          { e: "gradual / gradually", v: "→ dần dần / từ từ", ex: "The number of students studying abroad grew gradually over the period." },
+          { e: "moderate / moderately", v: "→ vừa phải", ex: "Reading activities increased moderately from 30% to 45%." },
+          { e: "steady / steadily", v: "→ đều đặn / ổn định", ex: "Car sales rose steadily throughout the period." },
+          { e: "slight / slightly", v: "→ nhẹ / hơi (thay đổi nhỏ)", ex: "The amount of water used fell slightly at the beginning of the period." },
+          { e: "marginal / marginally", v: "→ rất nhỏ / không đáng kể", ex: "There was a marginal increase in internet usage from 1990 to 2000." },
+          { e: "minimal / minimally", v: "→ cực nhỏ / gần như không đổi", ex: "The figure rose minimally to just under 100 grams in 1980." }
+        ],
+        script: {
+          title: "Renewable Energy Production in 4 Countries (2000–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph — notice how each country gets a different degree word</span>
+<p>The line graph presents data on renewable energy production in four countries from 2000 to 2020.</p>
+<p>Germany's output rose <strong>dramatically</strong> from 20 to 180 gigawatts — the most <strong>remarkable</strong> increase of all four nations, driven by <strong>rapid</strong> solar expansion after 2010. By contrast, France recorded only a <strong>slight</strong> rise from 60 to 75 gigawatts, a <strong>marginal</strong> change reflecting its continued reliance on nuclear energy.</p>
+<p>The UK showed a <strong>gradual</strong> increase, growing <strong>steadily</strong> from 15 to 45 gigawatts throughout the period. Spain experienced a <strong>sharp</strong> rise to 80 gigawatts by 2012. However, growth slowed <strong>considerably</strong> after that, with only <strong>minimal</strong> increases recorded in the final five years — a <strong>moderate</strong> gain of just 10 gigawatts from 2015 to 2020.</p>
+<div class="tip-box">💡 Band 7 tip: Don't use the same degree word twice in one paragraph. Vary: dramatically → sharp → gradual → minimal → slight.</div>`
+        }
+      },
+      {
+        title: "🔢 Prepositions — Giới từ mô tả số liệu & thời gian",
+        items: [
+          { e: "rise / fall TO [number]", v: "→ tăng / giảm ĐẾN MỨC (giá trị cuối)", ex: "Sales rose to 200 units in 2016." },
+          { e: "increase / decrease FROM A TO B", v: "→ tăng / giảm từ A đến B", ex: "The rate increased from 10% to 30% between 2000 and 2020." },
+          { e: "remain unchanged AT [number]", v: "→ duy trì không đổi ở mức", ex: "The number remained unchanged at 10% throughout the period." },
+          { e: "start at / begin at / stand at", v: "→ bắt đầu / đứng ở mức", ex: "The figure started at 40% in 1980." },
+          { e: "fluctuate BETWEEN A AND B", v: "→ dao động giữa A và B", ex: "It fluctuated between 20% and 40% during the decade." },
+          { e: "over the period (from … to …)", v: "→ trong suốt giai đoạn", ex: "Over the period from 2000 to 2020, car sales increased steadily." },
+          { e: "throughout the period", v: "→ xuyên suốt giai đoạn", ex: "The population grew throughout the period." },
+          { e: "between … and … / from … to …", v: "→ từ... đến... (hai cách viết đều được)", ex: "Between 2010 and 2020, the rate increased by 20%." },
+          { e: "at the beginning / end of the period", v: "→ vào đầu / cuối giai đoạn", ex: "At the beginning of the period, the figures stood at around 20%." },
+          { e: "over the first / last + N + years", v: "→ trong N năm đầu/cuối", ex: "Over the first five years, the figure remained stable." }
+        ],
+        script: {
+          title: "Car Ownership in Three Countries (1980–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph — every preposition highlighted</span>
+<p>The line graph illustrates car ownership rates in three countries <strong>from 1980 to 2020</strong>.</p>
+<p>In Japan, the rate <strong>started at</strong> just 20% in 1980 and rose <strong>to</strong> 60% by 2000. <strong>Over the first</strong> twenty years, growth was gradual but consistent. <strong>Between</strong> 2000 <strong>and</strong> 2010, the rate <strong>remained unchanged at</strong> approximately 60% before climbing to 75% <strong>over the</strong> last decade. <strong>Throughout the period</strong>, Japan maintained the highest ownership rate of all three nations.</p>
+<p>In contrast, Brazil's rate <strong>fluctuated between</strong> 10% and 20% <strong>at the beginning of the period</strong>. It then rose <strong>from</strong> 20% <strong>to</strong> 40% <strong>between</strong> 2000 <strong>and</strong> 2020. <strong>At the end of the period</strong>, Brazil's figure stood at 40% — still far below Japan's. <strong>Over the period from</strong> 1980 <strong>to</strong> 2020, the gap between the two countries narrowed significantly.</p>
+<div class="tip-box">💡 Remember: "from X to Y" = the two endpoints. "over the period" = the whole duration. Both can appear in the same sentence.</div>`
+        }
+      }
+    ]
+  },
+  {
+    id: "L2W", type: "writing",
+    tag: "Lesson 2 — Writing Task 1",
+    title: "Cấu trúc mô tả xu hướng (II)",
+    sections: [
+      {
+        title: "📝 3 Core Sentence Structures — 3 Cấu trúc câu chính",
+        items: [
+          { e: "Structure 1: S + V + Adv + number + time", v: "→ Cấu trúc động từ (phổ biến nhất)", ex: "The number of students increased significantly to 2,000 in 2016." },
+          { e: "Structure 2: There was a/an + adj + noun + in + S + time", v: "→ Cấu trúc danh từ với 'There was'", ex: "There was a significant increase to 2,000 in the number of students in 2016." },
+          { e: "Structure 3: S + experienced / saw / witnessed / recorded + a/an + adj + noun + time", v: "→ Cấu trúc danh từ với động từ trung gian", ex: "The number of students witnessed a significant increase to 2,000 in 2016." }
+        ],
+        script: {
+          title: "All 3 Structures — Tourist Arrivals in Vietnam (2010–2020)",
+          content: `<span class="script-label">📊 Same data, 3 different ways to write it — use all 3 in a real essay</span>
+<p><strong>Structure 1 (S + V + Adv):</strong><br>
+The number of international tourists visiting Vietnam <strong>increased significantly to</strong> 18 million in 2019.</p>
+<p><strong>Structure 2 (There was a/an + adj + noun):</strong><br>
+<strong>There was a significant increase to</strong> 18 million in the number of international tourists visiting Vietnam in 2019.</p>
+<p><strong>Structure 3 (S + experienced/saw/recorded):</strong><br>
+International tourism in Vietnam <strong>recorded a significant increase to</strong> 18 million arrivals in 2019.</p>
+<div class="tip-box">💡 Band 7 strategy: Use Structure 1 for your first sentence, then alternate with Structure 2 or 3 to avoid repetition. Examiners reward grammatical range!</div>`
+        }
+      },
+      {
+        title: "🔗 Verbs for Structure 3 — Động từ trung gian",
+        items: [
+          { e: "experienced + a/an + adj + noun", v: "→ trải qua sự... (trung tính, học thuật)", ex: "The economy experienced a remarkable growth in 2019." },
+          { e: "witnessed + a/an + adj + noun", v: "→ chứng kiến sự... (hình tượng hơn)", ex: "The city witnessed a dramatic rise in population between 2000 and 2020." },
+          { e: "recorded + a/an + adj + noun", v: "→ ghi nhận sự... (dữ liệu, thống kê)", ex: "The company recorded a sharp decline in profits in 2020." },
+          { e: "saw + a/an + adj + noun", v: "→ chứng kiến sự... (thông thường, học thuật vừa)", ex: "The sector saw a moderate increase in output over the period." }
+        ],
+        script: {
+          title: "Energy Sectors — Applying All 4 Verbs",
+          content: `<span class="script-label">📊 Full Sample Paragraph — one verb per sentence to show variety</span>
+<p>The bar chart compares energy consumption across four sectors in 2000 and 2020.</p>
+<p>The transport sector <strong>experienced</strong> a dramatic increase from 80 to 150 units — the largest growth of any category. Meanwhile, the manufacturing industry <strong>witnessed</strong> a considerable decline from 200 to 130 units, reflecting improvements in efficiency.</p>
+<p>The residential sector <strong>saw</strong> only a slight rise from 90 to 100 units — the smallest change of all four categories. By contrast, the technology sector <strong>recorded</strong> the most remarkable growth, nearly tripling from 30 to 85 units between 2000 and 2020.</p>
+<div class="tip-box">💡 Tip: "Recorded" sounds most data-like and formal. "Witnessed" adds a vivid, dramatic tone. "Experienced" is the safest, most neutral choice for any chart.</div>`
+        }
+      },
+      {
+        title: "🔄 Noun Alternatives — Danh từ thay thế động từ",
+        items: [
+          { e: "an increase / a rise / a growth / a climb", v: "→ sự tăng (dùng với Structure 2 & 3)", ex: "There was a gradual increase to 200 tons in rice production in 1997." },
+          { e: "a decrease / a fall / a drop / a decline / a reduction", v: "→ sự giảm (dùng với Structure 2 & 3)", ex: "There was a slight decrease to 5 kilos per person in sugar consumption in 2002." },
+          { e: "a stability (danh từ của 'stable')", v: "→ sự ổn định ('unchanged' KHÔNG có danh từ!)", ex: "This figure experienced a stability from 2010 to 2020." },
+          { e: "a fluctuation", v: "→ sự dao động", ex: "There were fluctuations in the number of customers during the six-month period." },
+          { e: "an upward trend / a downward trend", v: "→ xu hướng tăng / giảm", ex: "The data showed a clear upward trend in renewable energy production." }
+        ],
+        script: {
+          title: "Internet Usage by Age Group (2005–2020)",
+          content: `<span class="script-label">📊 Full Sample Paragraph — using noun forms throughout</span>
+<p>The line graph illustrates internet usage rates across three age groups from 2005 to 2020.</p>
+<p>Among 18–35 year olds, there was <strong>a dramatic rise</strong> from 45% to 95% over the period, followed by <strong>a stability</strong> at around 95% in the final three years. In contrast, the 36–55 group recorded <strong>a gradual increase</strong> from 20% to 70%, with notable <strong>fluctuations</strong> between 2010 and 2013.</p>
+<p>For the over-65 age group, there was <strong>a steady growth</strong> from just 5% in 2005 to 40% in 2020, representing <strong>a rise</strong> of 35 percentage points. The overall data shows <strong>a clear upward trend</strong> across all demographics, though <strong>a decline</strong> in the digital divide between generations was equally apparent.</p>
+<div class="tip-box">💡 Common mistake: "a stability" sounds unusual but is grammatically correct. Alternatively, write "a period of stability" or "the figure remained stable" to sound more natural.</div>`
+        }
+      }
+    ]
+  },
+  {
+    id: "L3W", type: "writing",
+    tag: "Lesson 3 — Writing Task 1",
+    title: "Viết đoạn văn mô tả xu hướng",
+    sections: [
+      {
+        title: "⏱️ In-Sentence Connectors (Time) — Từ nối thời gian trong một câu",
+        items: [
+          { e: "After V-ing / Noun phrase, Clause 2", v: "→ Sau khi..., ... (đầu câu hoặc giữa câu)", ex: "After remaining unchanged at 5 from 2000 to 2010, the number increased dramatically to 90 by 2015." },
+          { e: "Clause 1 before V-ing", v: "→ ..., trước khi...", ex: "The figure remained unchanged from 2000 to 2010 before increasing dramatically to 90 by 2015." },
+          { e: "Clause 1, and then Clause 2", v: "→ ..., và sau đó... (chỉ đứng giữa câu)", ex: "The figure remained stable from 2000 to 2010, and then there was a dramatic increase to 90 by 2015." },
+          { e: "Clause 1, which then + V", v: "→ ..., rồi sau đó... (mệnh đề quan hệ)", ex: "In 1970, about 5 million UK people travelled by car, which then increased moderately to 7 million in 2000." }
+        ],
+        script: {
+          title: "4 Ways to Write the Same Sentence — Chinese Students Abroad",
+          content: `<span class="script-label">📊 Same data written 4 ways — learn to pick the best one</span>
+<p><strong>Using "After V-ing":</strong><br>
+<strong>After remaining</strong> unchanged at 50,000 from 2000 to 2005, the number of Chinese students studying abroad increased dramatically to 200,000 by 2010.</p>
+<p><strong>Using "before V-ing":</strong><br>
+The number of Chinese students studying abroad remained unchanged at 50,000 from 2000 to 2005 <strong>before increasing</strong> dramatically to 200,000 by 2010.</p>
+<p><strong>Using "and then":</strong><br>
+The figure stood at 50,000 from 2000 to 2005, <strong>and then</strong> there was a dramatic increase to 200,000 by 2010.</p>
+<p><strong>Using "which then":</strong><br>
+The number remained stable at 50,000 for the first five years, <strong>which then</strong> grew dramatically to reach 200,000 in 2010.</p>
+<div class="tip-box">💡 In a real answer, use "which then" and "before V-ing" the most — they are the most academic and compress two ideas into one elegant sentence.</div>`
+        }
+      },
+      {
+        title: "↔️ In-Sentence Connectors (Contrast) — Từ nối tương phản trong một câu",
+        items: [
+          { e: "While / Whereas Clause 1, Clause 2", v: "→ Trong khi...,... (so sánh hai đối tượng cùng câu)", ex: "While car sales rose sharply, bus usage declined steadily over the same period." },
+          { e: "Clause 1, but Clause 2", v: "→ ..., nhưng... (chỉ đứng giữa câu)", ex: "The figure rose sharply in 2010, but declined gradually in the following years." },
+          { e: "Despite V-ing / Noun phrase, Clause 2", v: "→ Mặc dù...,... (tương phản, đầu câu)", ex: "Despite a sharp rise in 2010, the figure fell dramatically by the end of the period." }
+        ],
+        script: {
+          title: "Transport Modes — 3 Contrast Connectors Compared",
+          content: `<span class="script-label">📊 Same contrast, 3 different connectors — all acceptable in band 7</span>
+<p><strong>Using "While":</strong><br>
+<strong>While</strong> car usage rose sharply from 40% to 65%, public bus ridership declined steadily from 35% to 20% over the same period.</p>
+<p><strong>Using "but":</strong><br>
+Car usage rose sharply from 40% to 65%, <strong>but</strong> bus ridership declined steadily from 35% to just 20% over the same 20-year period.</p>
+<p><strong>Using "Despite":</strong><br>
+<strong>Despite</strong> an overall increase in transport demand, bus ridership fell steadily from 35% to just 20% by 2020.</p>
+<div class="tip-box">💡 "While/Whereas" = most common in IELTS academic writing. "Despite" = great for showing a surprising contrast. Avoid starting too many sentences with "But" in formal writing.</div>`
+        }
+      },
+      {
+        title: "⏭️ Between-Sentence Connectors (Time) — Từ nối thời gian giữa hai câu",
+        items: [
+          { e: "Then, Sentence 2.", v: "→ Sau đó, ... (tiếp nối thời gian)", ex: "The number increased moderately to 500 in 2010. Then, it decreased slowly to 400 in 2015." },
+          { e: "Following that, Sentence 2.", v: "→ Tiếp theo đó, ... (tiếp nối thời gian, trang trọng hơn)", ex: "The figure peaked at 45% in 1995. Following that, it declined remarkably to under 35%." },
+          { e: "After that, Sentence 2.", v: "→ Sau đó, ... (tiếp nối thời gian)", ex: "Sales rose sharply in 2018. After that, they fell considerably in 2019." }
+        ],
+        script: {
+          title: "UK Travel by Transport Mode (1970–2030) — Full Body Paragraph",
+          content: `<span class="script-label">📊 Full body paragraph using all three time connectors</span>
+<p>In 1970, around 5 million UK people travelled by car. This figure rose moderately to 7 million in 2000. <strong>After that</strong>, it is predicted to reach 9 million by 2030.</p>
+<p>Similarly, rail passengers numbered approximately 2 million in 1970. <strong>Following that</strong>, there was a minimal rise to 3 million in 2000. <strong>Then</strong>, this figure is expected to grow considerably to 5 million in 2030.</p>
+<p>In contrast, bus usage started at 4 million in 1970. <strong>After that</strong>, there was a slight decrease to 3.5 million in 2000. <strong>Following that</strong>, this figure is anticipated to drop minimally to 3 million in 2030.</p>
+<div class="tip-box">💡 Tip: Don't use the same connector twice in a row. Rotate: "After that" → "Following that" → "Then" → "After that" again.</div>`
+        }
+      },
+      {
+        title: "🔀 Between-Sentence Connectors (Contrast & Similarity)",
+        items: [
+          { e: "However, Sentence 2.", v: "→ Tuy nhiên, ... (CÙNG chủ ngữ — cùng đối tượng)", ex: "The price rose sharply to $100 in January. However, it declined slightly to $80 over the next three months." },
+          { e: "In contrast / By contrast, Sentence 2.", v: "→ Ngược lại, ... (KHÁC chủ ngữ — đổi sang đối tượng mới)", ex: "Water usage in London increased to 150 litres per day. By contrast, the figure for Paris decreased to only 100 litres." },
+          { e: "Similarly, Sentence 2.", v: "→ Tương tự, ... (KHÁC chủ ngữ, cùng xu hướng)", ex: "Car ownership rose steadily to 70%. Similarly, motorbike ownership went up gradually to 85%." },
+          { e: "Likewise, Sentence 2.", v: "→ Tương tự vậy, ... (tương tự Similarly)", ex: "Oil consumption fell sharply over the decade. Likewise, coal usage declined significantly." },
+          { e: "Meanwhile, Sentence 2.", v: "→ Trong khi đó, ... (KHÁC chủ ngữ, không tương đồng cũng không tương phản)", ex: "Football participation increased to 2,000 people. Meanwhile, tennis numbers remained at 500." }
+        ],
+        script: {
+          title: "Energy Mix in France vs Germany (2020) — Full Body Paragraphs",
+          content: `<span class="script-label">📊 Full paragraph using all 5 connectors — notice which connector fits each situation</span>
+<p>In France, nuclear energy accounted for the largest share at 70%. <strong>However</strong>, this proportion is expected to decrease as the country shifts its energy policy. [← same subject: France's nuclear]</p>
+<p><strong>By contrast</strong>, Germany relied on renewable energy for 45% of its supply — the highest share of any large European economy. [← switching to a new subject: Germany]</p>
+<p><strong>Similarly</strong>, the UK saw renewables account for over 40%, reflecting a shared commitment to green energy targets. [← same direction as Germany: also high renewables]</p>
+<p>Coal still represented 15% of Germany's mix. <strong>Meanwhile</strong>, France used coal for just 2% — highlighting very different industrial histories. [← different subject, no clear contrast or similarity]</p>
+<p>Gas played a role in both countries. <strong>Likewise</strong>, both nations saw a decline in oil dependency over the decade. [← same trend, different subject]</p>
+<div class="tip-box">💡 Key rule: "However" = same subject. "By contrast" = different subject. "Similarly / Likewise" = different subject, same direction. "Meanwhile" = different subject, no clear relationship.</div>`
+        }
+      },
+      {
+        title: "🔭 Approximation Words — Từ mô tả số liệu gần đúng",
+        items: [
+          { e: "about / around", v: "→ khoảng (dùng phổ biến nhất)", ex: "In 1970, about 5 million UK people travelled by car." },
+          { e: "approximately", v: "→ khoảng / xấp xỉ (trang trọng nhất)", ex: "There were approximately 2 million rail passengers in 1970." },
+          { e: "roughly", v: "→ xấp xỉ / ước chừng", ex: "The rate roughly doubled over the decade." },
+          { e: "nearly / almost", v: "→ gần / hầu như (sắp chạm đến mốc tròn)", ex: "Nearly 70% of the population used the internet by 2020." },
+          { e: "just under", v: "→ ngay dưới / thấp hơn một chút so với mốc tròn", ex: "Sales were just under 200 units in 2015." },
+          { e: "just over", v: "→ ngay trên / cao hơn một chút so với mốc tròn", ex: "The proportion was just over 50% in 2010." }
+        ],
+        script: {
+          title: "Population Growth in Asian Cities (1970–2030)",
+          content: `<span class="script-label">📊 Full paragraph — every approximation word used in context</span>
+<p>In 1970, Tokyo's population stood at <strong>approximately</strong> 23 million. By 2000, this had risen to <strong>around</strong> 35 million — <strong>just over</strong> the 35-million mark. The projection suggests the figure will reach <strong>nearly</strong> 40 million by 2030, though growth is expected to slow considerably.</p>
+<p>Seoul's population was <strong>roughly</strong> 6 million in 1970, which then more than tripled to <strong>about</strong> 20 million by 2000. By 2030, it is predicted to reach <strong>just under</strong> 22 million — <strong>almost</strong> no change from the current level, suggesting the city has reached its peak.</p>
+<div class="tip-box">💡 When to use approximation: Use these words whenever a data point falls between gridlines on the chart, or when you're not 100% sure of the exact figure. "Just under/just over" are particularly impressive — they show precise reading of the graph.</div>`
+        }
+      }
+    ]
+  },
+  {
+    id: "L4W", type: "upgrade",
+    tag: "🎯 Band 6.5 → 7 — Upgrade Kit",
+    title: "Nâng điểm từ 5-6 lên 6.5-7",
+    subtitle: "5 kỹ năng quan trọng nhất để tăng điểm Writing Task 1",
+    sections: [
+      {
+        title: "🌟 Overview Paragraph — Đoạn Overview (BẮT BUỘC để đạt Band 6.5+)",
+        items: [
+          { e: "Overall, it is clear that…", v: "→ Nhìn chung, rõ ràng là... (mở đầu overview phổ biến nhất)", ex: "Overall, it is clear that car usage grew significantly while bus travel declined over the period.", band: "b7" },
+          { e: "In general, the most notable feature is…", v: "→ Nhìn chung, đặc điểm nổi bật nhất là...", ex: "In general, the most notable feature is the dramatic rise in internet usage across all age groups.", band: "b7" },
+          { e: "Overall, [Subject A] experienced the most dramatic change, while [Subject B] remained relatively stable.", v: "→ Nhìn chung, [A] thay đổi mạnh nhất, trong khi [B] tương đối ổn định.", ex: "Overall, China experienced the most dramatic change, while India remained relatively stable throughout the period.", band: "b7" },
+          { e: "What stands out most is that…", v: "→ Điều nổi bật nhất là... (bắt đầu overview ấn tượng)", ex: "What stands out most is that renewable energy nearly tripled over the 20-year period.", band: "b7" },
+          { e: "The most striking overall trend is that…", v: "→ Xu hướng nổi bật nhất là...", ex: "The most striking overall trend is that online shopping replaced traditional retail as the dominant method.", band: "b7" },
+          { e: "Overall, [subject] shows an upward/downward trend, with [key detail].", v: "→ Nhìn chung, [chủ đề] có xu hướng tăng/giảm, với [chi tiết nổi bật].", ex: "Overall, energy consumption shows an upward trend, with the sharpest increase occurring between 2010 and 2020.", band: "b7" }
+        ],
+        script: {
+          title: "3 Sample Overview Paragraphs — Band 7 Level",
+          content: `<span class="script-label">📊 Three different overview styles for the same chart — pick the one that fits</span>
+<p><em>Task: "The line graph shows changes in energy consumption across four sectors in the UK from 2000 to 2020."</em></p>
+<p><strong>Style 1 — "Overall, it is clear that":</strong><br>
+<strong>Overall, it is clear that</strong> energy use grew in most sectors over the period, with transport recording the most dramatic increase while manufacturing showed the only significant decline.</p>
+<p><strong>Style 2 — "What stands out most":</strong><br>
+<strong>What stands out most is that</strong> the transport sector nearly doubled its energy consumption, accounting for the largest share by 2020.</p>
+<p><strong>Style 3 — "Most dramatic change":</strong><br>
+<strong>Overall</strong>, the transport sector <strong>experienced the most dramatic change</strong>, while residential consumption <strong>remained relatively stable</strong> throughout the two-decade period.</p>
+<div class="tip-box">💡 THE #1 RULE: The overview must NEVER include specific numbers. It should describe the biggest general trends only. Write it as your 2nd paragraph — right after the introduction.</div>`
+        }
+      },
+      {
+        title: "✏️ Paraphrasing the Introduction — Diễn đạt lại câu mở đầu (KHÔNG copy đề!)",
+        items: [
+          { e: "The graph shows → The chart illustrates / presents / displays / compares", v: "→ Biểu đồ cho thấy → Biểu đồ minh họa / trình bày / hiển thị / so sánh", ex: "The line graph illustrates the changes in car ownership in three countries from 2000 to 2020.", band: "b7",
+            para: { original: "The graph shows changes in the number of tourists visiting six countries from 2000 to 2020.", rephrased: "The line graph illustrates how the number of tourists visiting six countries changed over a 20-year period." } },
+          { e: "shows → provides information about / gives data on", v: "→ cho thấy → cung cấp thông tin về / đưa ra dữ liệu về", ex: "The bar chart provides information about the percentage of households with internet access.", band: "b6",
+            para: { original: "The bar chart shows the amount of money spent on food, transport and clothing in the UK in 2015.", rephrased: "The bar chart provides information about consumer spending on three categories in the UK in 2015." } },
+          { e: "changes in → fluctuations in / trends in / how X changed", v: "→ sự thay đổi trong → biến động / xu hướng / cách X thay đổi", ex: "The graph illustrates how energy consumption changed over a 30-year period.", band: "b6",
+            para: { original: "The graph shows changes in CO₂ emissions in four countries between 1990 and 2020.", rephrased: "The graph illustrates the trends in CO₂ emissions across four countries over a 30-year period." } },
+          { e: "from [year] to [year] → over a [N]-year period", v: "→ từ năm...đến năm... → trong giai đoạn N năm", ex: "The chart compares car sales over a 10-year period from 2010 to 2020.", band: "b6",
+            para: { original: "The line graph shows car sales in the UK from 2005 to 2015.", rephrased: "The line graph illustrates car sales in the UK over a 10-year period." } },
+          { e: "in different countries → across several countries / among various nations", v: "→ ở các nước khác nhau → trên nhiều quốc gia / trong số các nước", ex: "The data compares internet usage across six countries in Asia.", band: "b7",
+            para: { original: "The chart shows internet usage in different countries in 2019.", rephrased: "The chart compares internet usage across several countries in 2019." } },
+          { e: "the percentage of people who → the proportion of individuals who", v: "→ phần trăm người... → tỷ lệ cá nhân... (synonym cho percentage)", ex: "The chart shows the proportion of individuals who used public transport in 2015.", band: "b7",
+            para: { original: "The graph shows the percentage of people who owned a smartphone in 2010 and 2020.", rephrased: "The graph compares the proportion of individuals who owned a smartphone in 2010 and 2020." } }
+        ],
+        script: {
+          title: "Full Paraphrased Introduction — Before & After",
+          content: `<span class="script-label">📊 Real exam task → full paraphrased opening sentence</span>
+<p class="bad">❌ ORIGINAL (do NOT copy this):<br>
+<strong>"The graph below shows the number of tourists who visited four different attractions in Brighton between 2010 and 2020."</strong></p>
+<p class="good">✅ PARAPHRASED (band 7 level):<br>
+<strong>"The line graph illustrates how visitor numbers at four tourist attractions in Brighton fluctuated over a 10-year period from 2010 to 2020."</strong></p>
+<p><strong>What changed:</strong><br>
+• "graph shows" → "<strong>line graph illustrates</strong>"<br>
+• "number of tourists who visited" → "<strong>visitor numbers at</strong>"<br>
+• "between 2010 and 2020" → "<strong>over a 10-year period from 2010 to 2020</strong>"<br>
+• "different attractions" → "<strong>tourist attractions</strong>"</p>
+<div class="tip-box">💡 You only need to change 3–4 key words. You don't need to rearrange the whole sentence. Focus on the main verb and the subject noun first.</div>`
+        }
+      },
+      {
+        title: "📊 Comparison Language — Ngôn ngữ so sánh (cho bar chart, pie chart)",
+        items: [
+          { e: "account for / make up / represent / constitute + %", v: "→ chiếm (tỉ lệ %)... (dùng cho pie chart, phần trăm)", ex: "Transport accounted for 30% of total household spending in 2005.", band: "b7" },
+          { e: "higher than / lower than", v: "→ cao hơn / thấp hơn (so sánh trực tiếp)", ex: "Car ownership in the UK was significantly higher than in France throughout the period.", band: "b6" },
+          { e: "twice as much as / three times as many as", v: "→ gấp đôi / gấp ba (so sánh bội số)", ex: "China produced twice as much electricity as India in 2010.", band: "b7" },
+          { e: "compared to / in comparison with", v: "→ so với / khi so sánh với", ex: "Compared to 1990, the number of internet users was ten times higher in 2010.", band: "b6" },
+          { e: "far higher / significantly lower / considerably more", v: "→ cao hơn nhiều / thấp hơn đáng kể / nhiều hơn đáng kể", ex: "The proportion of elderly internet users was far lower than that of younger groups.", band: "b7" },
+          { e: "the highest / the lowest / the second highest", v: "→ cao nhất / thấp nhất / cao thứ hai", ex: "China recorded the highest growth rate, while Japan had the lowest.", band: "b6" },
+          { e: "more than / less than / over / under", v: "→ hơn / ít hơn / trên / dưới", ex: "More than half of the population used smartphones by 2015.", band: "b6" },
+          { e: "at [X]%, [Subject] was the largest / smallest category", v: "→ Ở mức [X]%, [Chủ đề] là danh mục lớn nhất / nhỏ nhất", ex: "At 45%, housing was the largest category of household expenditure.", band: "b7" }
+        ],
+        script: {
+          title: "UK Household Expenditure Pie Chart (2020) — Full Description",
+          content: `<span class="script-label">📊 Full paragraph using comparison language — great for pie charts</span>
+<p>The pie chart illustrates UK household expenditure in 2020.</p>
+<p>Housing <strong>accounted for</strong> the largest share <strong>at</strong> 35%, which was <strong>far higher than</strong> any other category. Food and drink <strong>made up</strong> 20% of total spending — <strong>twice as much as</strong> transport, which <strong>represented</strong> just 10%. <strong>In comparison with</strong> clothing (8%), entertainment was slightly <strong>higher at</strong> 12%.</p>
+<p>The figure for education was <strong>considerably lower than</strong> healthcare — at 5% and 10% respectively. <strong>The lowest</strong> category was education, while housing was clearly <strong>the highest</strong>. <strong>More than</strong> half of all expenditure went to just two categories: housing and food.</p>
+<div class="tip-box">💡 For pie charts: always start with the biggest/smallest slice, use "account for / make up / represent" to describe shares, and compare at least 2 items directly using "compared to" or "twice as much as".</div>`
+        }
+      },
+      {
+        title: "🎯 Grouping & Selecting Key Features — Chọn & nhóm ý chính",
+        items: [
+          { e: "The most striking feature is…", v: "→ Đặc điểm nổi bật nhất là...", ex: "The most striking feature is the dramatic increase in online shopping between 2015 and 2020.", band: "b7" },
+          { e: "Notably, …", v: "→ Đáng chú ý là,...", ex: "Notably, both countries experienced a sharp decline after 2010.", band: "b7" },
+          { e: "It is worth noting that…", v: "→ Điều đáng chú ý là...", ex: "It is worth noting that despite the overall upward trend, there was a brief dip in 2008.", band: "b7" },
+          { e: "In terms of [category], …", v: "→ Về [phạm trù],...", ex: "In terms of age groups, the 18–25 bracket showed the most significant increase.", band: "b6" },
+          { e: "Looking at [subject] in more detail, …", v: "→ Nhìn vào [đối tượng] chi tiết hơn,...", ex: "Looking at China in more detail, it experienced three distinct phases of growth.", band: "b7" },
+          { e: "Turning to [subject], …", v: "→ Chuyển sang [đối tượng],...", ex: "Turning to the data for women, the pattern is quite different.", band: "b7" },
+          { e: "With regard to / Regarding [subject], …", v: "→ Về việc / Đối với [chủ đề],...", ex: "With regard to energy consumption, the figures tell a very different story.", band: "b6" }
+        ],
+        script: {
+          title: "Tourist Attractions — Full Body Paragraph Using Grouping Phrases",
+          content: `<span class="script-label">📊 Full body paragraph — notice how grouping phrases guide the reader through the data</span>
+<p>The line graph illustrates visitor numbers at four London attractions from 1980 to 2010.</p>
+<p><strong>The most striking feature is</strong> the dramatic rise in Castle visitors, which increased from 23% to 45% over the period. <strong>Notably</strong>, the Castle overtook the Festival as the most popular attraction by 1990.</p>
+<p><strong>In terms of</strong> the Zoo and Aquarium, both showed moderate growth before declining in the final decade. <strong>It is worth noting that</strong> the Aquarium experienced the most dramatic fluctuation — peaking at 35% in 1990 before falling sharply.</p>
+<p><strong>Turning to</strong> the Festival, this attraction saw the most consistent downward trend, declining steadily from 40% to under 15% by 2010. <strong>With regard to</strong> overall patterns, three of the four venues declined in the latter half of the period.</p>
+<div class="tip-box">💡 Band 5 mistake: describing every data point in chronological order. Band 7 strategy: group data by pattern (those that rose vs those that fell), then use these phrases to guide the reader between groups.</div>`
+        }
+      },
+      {
+        title: "🚨 Common Mistakes — Lỗi thường gặp ở Band 5-6",
+        items: [
+          { e: "rose TO 50% ✅  vs  rose BY 20% ✅", v: "→ TO = giá trị cuối | BY = mức độ thay đổi (LỖI PHỔ BIẾN NHẤT!)", ex: "Sales rose TO $200 million. / Sales rose BY $50 million (from $150m to $200m).", band: "fix", tip: "❌ Sales rose by $200 million. (khi $200m là giá trị cuối, không phải khoảng tăng)" },
+          { e: "The number of students WAS ✅  (NOT 'were')", v: "→ 'the number of' = chủ ngữ số ÍT → động từ số ít", ex: "The number of international students was 50,000 in 2010.", band: "fix", tip: "❌ The number of students were 50,000. → Sai vì 'the number' là chủ ngữ" },
+          { e: "an increase IN something ✅  (NOT 'increase of')", v: "→ tăng TRONG [cái gì] = 'increase in', không phải 'of'", ex: "There was a significant increase in the number of visitors.", band: "fix", tip: "❌ There was an increase of the number of visitors." },
+          { e: "The data SHOWS ✅  (NOT 'show')", v: "→ 'data' trong IELTS = danh từ số ÍT", ex: "The data shows a clear upward trend in energy consumption.", band: "fix", tip: "❌ The data show... (trong IELTS academic, 'data' = số ít)" },
+          { e: "decreased FROM 2010 TO 2020 ✅  (NOT 'until')", v: "→ dùng 'from...to...' hoặc 'between...and...' cho khoảng thời gian", ex: "The rate decreased from 10% in 2010 to 6% in 2020.", band: "fix", tip: "❌ decreased from 2010 until 2020" },
+          { e: "the sales OF CDs ✅  (NOT 'sales in CDs')", v: "→ sales OF [thứ gì đó], không phải 'sales in'", ex: "The sales of electric vehicles increased dramatically between 2015 and 2020.", band: "fix", tip: "❌ the sales in CDs / the number of sales" },
+          { e: "Use PAST TENSE for past data ✅", v: "→ Biểu đồ có số liệu trong quá khứ → dùng quá khứ đơn", ex: "In 2010, the unemployment rate stood at 8%. It then fell to 5% in 2015.", band: "fix", tip: "❌ In 2010, the unemployment rate stands at 8%." },
+          { e: "NEVER copy the question word-for-word ✅", v: "→ Câu đầu bài PHẢI diễn đạt lại đề, không được chép nguyên văn", ex: "Task: 'The graph shows changes in car sales.' → Write: 'The line graph illustrates how car sales fluctuated over the period.'", band: "fix", tip: "❌ The graph shows changes in car sales... (chép nguyên = 0 điểm Lexical Resource cho câu đó)" }
+        ],
+        script: {
+          title: "Before & After — Band 5 Paragraph Corrected to Band 7",
+          content: `<span class="script-label">📊 Full paragraph rewrite — spot every mistake that was fixed</span>
+<p class="bad">❌ BAND 5 VERSION (with mistakes):<br>
+"The graph show changes in unemployment rate from 2010 until 2020. The number of unemployed people were 5 million in 2010. The unemployment rose to 8 million in 2015. Then it rose by 10 million in 2020. There was an increase of the unemployed people over the period."</p>
+<p class="good">✅ BAND 7 CORRECTED VERSION:<br>
+"The line graph <strong>illustrates</strong> changes in the unemployment rate <strong>from</strong> 2010 <strong>to</strong> 2020. <strong>The number</strong> of unemployed people <strong>was</strong> 5 million in 2010, which then rose to 8 million in 2015. By 2020, this had grown further <strong>to</strong> 10 million — an increase <strong>in</strong> unemployment of 5 million over the decade."</p>
+<p><strong>Fixes applied:</strong><br>
+• "show" → "<strong>illustrates</strong>" (paraphrase + subject-verb agreement)<br>
+• "until 2020" → "<strong>to 2020</strong>"<br>
+• "were" → "<strong>was</strong>" (the number = singular)<br>
+• "rose by 10 million" → "<strong>grown to 10 million</strong>" (TO not BY for final value)<br>
+• "increase of" → "<strong>increase in</strong>"</p>`
+        }
+      },
+      {
+        title: "📋 Sentence Templates by Chart Type — Mẫu câu theo loại biểu đồ",
+        items: [
+          { e: "Line graph intro: The line graph illustrates [what] from [year] to [year].", v: "→ Mở đầu cho biểu đồ đường", ex: "The line graph illustrates changes in the number of international tourists visiting Vietnam from 2000 to 2020.", band: "b6" },
+          { e: "Bar chart intro: The bar chart compares [what] in/across [categories/years].", v: "→ Mở đầu cho biểu đồ cột", ex: "The bar chart compares the average monthly income of workers in five different sectors in 2015.", band: "b6" },
+          { e: "Pie chart intro: The pie charts show the proportion of [what] in [year(s)].", v: "→ Mở đầu cho biểu đồ tròn", ex: "The pie charts show the proportion of household expenditure on different categories in 1990 and 2020.", band: "b6" },
+          { e: "Table intro: The table presents data on [what] in [year/period].", v: "→ Mở đầu cho bảng số liệu", ex: "The table presents data on the number of tourists from six countries visiting Thailand in 2019.", band: "b6" },
+          { e: "Overview template: Overall, [main trend], while [secondary observation].", v: "→ Mẫu overview linh hoạt, dùng được cho mọi biểu đồ", ex: "Overall, energy consumption rose considerably throughout the period, while renewable sources remained the smallest category.", band: "b7" },
+          { e: "Body opener: In [year], [subject] stood at [figure], which then [verb] [adverb] to [figure] by [year].", v: "→ Mở đầu body paragraph với số liệu cụ thể", ex: "In 2000, the number of internet users stood at 2 million, which then grew dramatically to 15 million by 2010.", band: "b7" },
+          { e: "Switching subject: Turning to [subject], in [year], it stood at [figure] before [V-ing] to [figure] in [year].", v: "→ Chuyển sang đối tượng mới với số liệu", ex: "Turning to France, in 2000, it stood at 30% before rising steadily to 55% in 2010.", band: "b7" }
+        ],
+        script: {
+          title: "Full Band 7 Sample Answer — Line Graph (4-paragraph structure)",
+          content: `<span class="script-label">📊 Complete Task 1 answer using all templates — this is what band 7 looks like</span>
+<p><em>Task: "The graph shows changes in the use of three types of transport in a city from 2000 to 2020."</em></p>
+<p><strong>§ Introduction (paraphrase):</strong><br>
+The line graph <strong>illustrates</strong> how the use of three transport modes changed in a city <strong>over a 20-year period</strong>.</p>
+<p><strong>§ Overview (no numbers!):</strong><br>
+<strong>Overall, it is clear that</strong> car usage grew significantly throughout the period, while cycling saw the most dramatic rise in the final decade. Public transport <strong>remained the most widely used</strong> mode throughout.</p>
+<p><strong>§ Body 1 (main trends):</strong><br>
+In 2000, public transport <strong>stood at</strong> 60%, <strong>which then declined</strong> gradually to 50% by 2010 <strong>before stabilising</strong> for the remainder of the period. <strong>Meanwhile</strong>, car usage rose from 30% to 40% between 2000 and 2015, <strong>which then remained unchanged at</strong> 40% in 2020.</p>
+<p><strong>§ Body 2 (supporting detail):</strong><br>
+<strong>Turning to</strong> cycling, in 2000 it stood at just 10%, <strong>which then grew</strong> moderately to 15% by 2015. <strong>After that</strong>, there was a <strong>sharp rise to</strong> 25% by 2020 — the most dramatic change of any single decade. <strong>It is worth noting that</strong> cycling was the only mode to increase in the latter half of the period.</p>
+<div class="tip-box">💡 Structure check: Intro (1–2 sentences) → Overview (2 sentences, no numbers) → Body 1 (4–5 sentences, biggest trends) → Body 2 (3–4 sentences, supporting detail). Total: ~170–190 words.</div>`
+        }
+      }
+    ]
+  }
+];
+
+// ─── State ───────────────────────────────────────────
+let activeFilter = "all";
+
+function buildFilters() {
+  const bar = document.getElementById("filterBar");
+  const filters = [{ id: "all", label: "All", type: "all" }];
+  lessons.forEach(l => {
+    let label = l.tag;
+    if (l.type === "writing") label = l.tag.replace("Lesson ", "L").replace(" — Writing Task 1", " Writing");
+    if (l.type === "upgrade") label = "🎯 Band 6.5→7";
+    filters.push({ id: l.id, label, type: l.type });
+  });
+  bar.innerHTML = filters.map(f => {
+    const cls = `filter-btn${f.id === activeFilter ? ' active' : ''}${f.type === 'upgrade' ? ' upgrade' : ''}`;
+    return `<button class="${cls}" onclick="setFilter('${f.id}')">${f.label}</button>`;
+  }).join("");
+}
+
+function setFilter(id) { activeFilter = id; buildFilters(); render(); }
+
+function render() {
+  const searchQuery = document.getElementById("searchInput").value.toLowerCase().trim();
+  const container = document.getElementById("mainContent");
+  let totalShown = 0, totalAll = 0, html = "";
+
+  lessons.forEach(lesson => {
+    if (activeFilter !== "all" && activeFilter !== lesson.id) return;
+    let lessonHtml = "";
+
+    lesson.sections.forEach(section => {
+      const filtered = section.items.filter(item => {
+        if (!searchQuery) return true;
+        return item.e.toLowerCase().includes(searchQuery) ||
+               item.v.toLowerCase().includes(searchQuery) ||
+               (item.ex && item.ex.toLowerCase().includes(searchQuery)) ||
+               (item.tip && item.tip.toLowerCase().includes(searchQuery));
+      });
+      totalAll += section.items.length;
+      totalShown += filtered.length;
+
+      // hide section only if search is active and no cards match
+      const showScript = !searchQuery && section.script;
+
+      if (filtered.length === 0 && !showScript) return;
+
+      const cardsHtml = filtered.map(item => {
+        const badge = item.band ? `<span class="band-badge band-${item.band}">${item.band === 'fix' ? '⚠ Fix' : item.band.toUpperCase()}</span>` : '';
+        return `<div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-top"><div class="card-front">${item.e}</div>${badge}</div>
+          <div class="card-hint">👆 tap to reveal</div>
+          <div class="card-back">
+            <div class="card-vn">${item.v}</div>
+            ${item.ex ? `<div class="card-ex">${item.ex}</div>` : ''}
+            ${item.tip ? `<div class="card-tip">${item.tip}</div>` : ''}
+            ${item.para ? `<div class="card-para">
+              <div class="card-para-label">✏️ Sample Paraphrase</div>
+              <div class="card-para-original">❌ Original: <span>${item.para.original}</span></div>
+              <div class="card-para-rephrased">✅ Rephrased: <span>${item.para.rephrased}</span></div>
+            </div>` : ''}
+          </div>
+        </div>`;
+      }).join("");
+
+      const scriptHtml = showScript ? `<details class="script-panel">
+        <summary>📄 Sample Script — ${section.script.title}</summary>
+        <div class="script-body">${section.script.content}</div>
+      </details>` : '';
+
+      lessonHtml += `<div class="section-block">
+        <div class="section-title">${section.title}</div>
+        ${filtered.length > 0 ? `<div class="card-grid">${cardsHtml}</div>` : ''}
+        ${scriptHtml}
+      </div>`;
+    });
+
+    if (lessonHtml) {
+      const hCls = lesson.type === 'upgrade' ? 'upgrade' : 'writing';
+      const tCls = lesson.type === 'upgrade' ? 'upgrade' : '';
+      html += `<div class="lesson-block">
+        <div class="lesson-header ${hCls}">
+          <div class="lesson-tag ${tCls}">${lesson.tag}</div>
+          <div class="lesson-title">${lesson.title}</div>
+          ${lesson.subtitle ? `<div class="lesson-subtitle">${lesson.subtitle}</div>` : ''}
+        </div>
+        <div class="lesson-body">${lessonHtml}</div>
+      </div>`;
+    }
+  });
+
+  if (!html) html = `<div class="empty">😕 No expressions found.</div>`;
+  container.innerHTML = html;
+  document.getElementById("counter").textContent = `${totalShown} / ${totalAll} expressions`;
+}
+
+function flipAll() {
+  const cards = document.querySelectorAll(".card");
+  const allFlipped = [...cards].every(c => c.classList.contains("flipped"));
+  cards.forEach(c => allFlipped ? c.classList.remove("flipped") : c.classList.add("flipped"));
+}
+
+buildFilters();
+render();
+</script>
+</body>
+</html>
