@@ -7,6 +7,8 @@ import ReferenceGuide from './components/ReferenceGuide'
 import Icon from './components/Icon'
 import { allLessons as originalAllLessons } from './data'
 import { speakingLesson4, speakingLesson5, speakingLesson6, extraWritingLesson4 } from './extraLessons'
+import { writingLessonParaphrase, writingLessonTimeCharts } from './weekLessons'
+import { writingTask2Lesson, grammarLesson, vocabularyLesson, pronunciationLesson } from './knowledgeLessons'
 import VocabTopics from './components/VocabTopics'
 import { vocabTopics } from './vocabData'
 import './index.css'
@@ -20,6 +22,14 @@ const allLessons = originalAllLessons.map(l => {
 if (!allLessons.find(l => l.title.includes('Lesson 6'))) {
   allLessons.push(speakingLesson6);
 }
+// New Writing lessons added this week (from uploaded docs)
+if (!allLessons.find(l => l.id === 'write_5')) allLessons.push(writingLessonParaphrase);
+if (!allLessons.find(l => l.id === 'write_6')) allLessons.push(writingLessonTimeCharts);
+// Knowledge-enrichment lessons (Task 2, Grammar, Vocabulary, Pronunciation)
+if (!allLessons.find(l => l.id === 'write_7')) allLessons.push(writingTask2Lesson);
+if (!allLessons.find(l => l.id === 'speak_pron')) allLessons.push(pronunciationLesson);
+if (!allLessons.find(l => l.id === 'grammar_1')) allLessons.push(grammarLesson);
+if (!allLessons.find(l => l.id === 'vocab_collo')) allLessons.push(vocabularyLesson);
 
 const TABS = [
   { id: 'methodology', label: 'How To Study', icon: 'bookopen' },
@@ -50,6 +60,7 @@ function App() {
 
   const speakingLessons = allLessons.filter(l => l.category === 'Speaking')
   const writingLessons = allLessons.filter(l => l.category === 'Writing')
+  const foundationLessons = allLessons.filter(l => l.category === 'Foundations')
 
   const totalVocab = allLessons.reduce((sum, l) => sum + (l.vocabulary?.length || 0), 0)
   const totalStructures = allLessons.reduce((sum, l) => sum + (l.structures?.length || 0), 0)
@@ -161,6 +172,17 @@ function App() {
             {writingLessons.map(renderLessonItem)}
           </ul>
         </div>
+
+        {foundationLessons.length > 0 && (
+          <div className="category-section">
+            <h3>
+              <span className="category-icon"><Icon name="book" size={15} /></span> Grammar &amp; Vocabulary
+            </h3>
+            <ul>
+              {foundationLessons.map(renderLessonItem)}
+            </ul>
+          </div>
+        )}
       </aside>
 
       {/* Main Content Area */}

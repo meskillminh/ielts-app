@@ -4,6 +4,7 @@ const bandColors = {
   '4.0': { bg: 'rgba(239, 68, 68, 0.12)', border: '#ef4444', text: '#fca5a5', label: 'Band 4.0' },
   '5.0': { bg: 'rgba(251, 191, 36, 0.12)', border: '#f59e0b', text: '#fcd34d', label: 'Band 5.0' },
   '6.5': { bg: 'rgba(34, 197, 94, 0.12)', border: '#22c55e', text: '#86efac', label: 'Band 6.5' },
+  '7.0': { bg: 'rgba(20, 184, 166, 0.12)', border: '#14b8a6', text: '#5eead4', label: 'Band 7.0' },
   'IT DEPENDS': { bg: 'rgba(59, 130, 246, 0.12)', border: '#3b82f6', text: '#93c5fd', label: '🔄 It Depends' },
   'NEGATIVE': { bg: 'rgba(239, 68, 68, 0.12)', border: '#ef4444', text: '#fca5a5', label: '❌ Negative Answer' },
 };
@@ -50,7 +51,12 @@ const PracticeExamples = ({ data }) => {
 
           {openQuestion === qIdx && (
             <div className="practice-answers-container">
-              {ex.bands.map((b, bIdx) => {
+              {[...ex.bands]
+                .sort((a, b) => {
+                  const score = (v) => (isNaN(parseFloat(v)) ? 99 : parseFloat(v));
+                  return score(a.band) - score(b.band);
+                })
+                .map((b, bIdx) => {
                 const key = `${qIdx}-${bIdx}`;
                 const isRevealed = revealedBands[key];
                 const colors = bandColors[b.band] || bandColors['6.5'];

@@ -14,6 +14,20 @@ const Summary = ({ data }) => {
 
       <div className="summary-card">
         <h2>Grammar Structures (Band 6.5+)</h2>
+        {data.category === 'Writing' && data.structures?.length > 0 && (
+          <div className="structure-legend">
+            <span className="structure-legend-label">Sentence slots:</span>
+            <span className="slot-chip">Subject</span>
+            <span className="slot-sep">·</span>
+            <span className="slot-chip">Trend (verb/noun)</span>
+            <span className="slot-sep">·</span>
+            <span className="slot-chip">Degree</span>
+            <span className="slot-sep">·</span>
+            <span className="slot-chip">Number</span>
+            <span className="slot-sep">·</span>
+            <span className="slot-chip time">Time</span>
+          </div>
+        )}
         <div className="structure-list">
           {data.structures?.length > 0 ? data.structures.map((struct) => (
             <div key={struct.id} className="structure-item">

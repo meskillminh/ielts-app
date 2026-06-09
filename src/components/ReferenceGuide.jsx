@@ -11,6 +11,9 @@ const ReferenceGuide = ({ data }) => {
   const hasTrendRef = data.trendReference;
   const hasDegreeRef = data.degreeReference;
   const hasPrepRef = data.prepositionReference;
+  const hasTimeRef = data.timeReference;
+  const hasParaphraseBank = data.paraphraseBank && data.paraphraseBank.length > 0;
+  const hasReferenceCards = data.referenceCards && data.referenceCards.groups && data.referenceCards.groups.length > 0;
   const hasConnectorRef = data.connectorReference;
   const hasEssayStructure = data.essayStructure;
   const hasCommonMistakes = data.commonMistakes;
@@ -24,6 +27,9 @@ const ReferenceGuide = ({ data }) => {
   if (hasTrendRef) sections.push({ id: 'trends', label: '📈 Trends', icon: '📈' });
   if (hasDegreeRef) sections.push({ id: 'degree', label: '🎚️ Degree', icon: '🎚️' });
   if (hasPrepRef) sections.push({ id: 'preps', label: '🔤 Prepositions', icon: '🔤' });
+  if (hasTimeRef) sections.push({ id: 'time', label: '⏱️ Time', icon: '⏱️' });
+  if (hasParaphraseBank) sections.push({ id: 'paraphrase', label: '🔄 Paraphrase Bank', icon: '🔄' });
+  if (hasReferenceCards) sections.push({ id: 'cards', label: (data.referenceCards.tabLabel || '📚 Bank'), icon: '📚' });
   if (hasConnectorRef) sections.push({ id: 'connectors', label: '🔗 Connectors', icon: '🔗' });
   if (hasEssayStructure) sections.push({ id: 'essay', label: '📝 Essay Structure', icon: '📝' });
   if (hasCommonMistakes) sections.push({ id: 'mistakes', label: '⚠️ Common Mistakes', icon: '⚠️' });
@@ -361,6 +367,85 @@ const ReferenceGuide = ({ data }) => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Time Toolbox */}
+        {currentSection === 'time' && hasTimeRef && (
+          <div className="ref-section">
+            <h3 className="ref-title">⏱️ Time Toolbox — How to describe WHEN</h3>
+            <p className="ref-description">Never get stuck on time again. Pick the meaning, grab a phrase, drop it into your sentence — every example shows a number + a time phrase.</p>
+            <div className="trend-grid">
+              {[
+                { key: 'point', label: '📍 Point in time', color: '#4f8cff' },
+                { key: 'start', label: '▶️ Start of period', color: '#a855f7' },
+                { key: 'end', label: '🏁 End of period', color: '#f59e0b' },
+                { key: 'whole', label: '↔️ Whole period', color: '#22c55e' }
+              ].map(cat => data.timeReference[cat.key] && (
+                <div key={cat.key} className="trend-card" style={{ borderLeft: `4px solid ${cat.color}` }}>
+                  <div className="trend-header" style={{ color: cat.color }}>{cat.label}</div>
+                  <div className="trend-group">
+                    <div className="trend-items">
+                      {data.timeReference[cat.key].map((item, i) => (
+                        <span key={i} className="trend-tag">{item.phrase}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="time-examples">
+                    {data.timeReference[cat.key].map((item, i) => (
+                      <div key={i} className="connector-example">💡 {item.example}</div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Generic Reference Cards (linking words, collocations, pronunciation fixes…) */}
+        {currentSection === 'cards' && hasReferenceCards && (
+          <div className="ref-section">
+            <h3 className="ref-title">{data.referenceCards.title}</h3>
+            {data.referenceCards.description && <p className="ref-description">{data.referenceCards.description}</p>}
+            <div className="trend-grid">
+              {data.referenceCards.groups.map((g, idx) => (
+                <div key={idx} className="trend-card" style={{ borderLeft: `4px solid ${g.color || '#4f8cff'}` }}>
+                  <div className="trend-header" style={{ color: g.color || '#7aa7ff' }}>{g.label}</div>
+                  <div className="trend-group">
+                    <div className="trend-items">
+                      {g.items.map((it, i) => (
+                        <span key={i} className="trend-tag">{it}</span>
+                      ))}
+                    </div>
+                  </div>
+                  {g.example && <div className="connector-example">💡 {g.example}</div>}
+                  {g.note && <div className="connector-example">⚠️ {g.note}</div>}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Paraphrase Bank */}
+        {currentSection === 'paraphrase' && hasParaphraseBank && (
+          <div className="ref-section">
+            <h3 className="ref-title">🔄 Paraphrase Bank — Viết lại đối tượng trong bài</h3>
+            <p className="ref-description">Mỗi chủ đề có nhiều cách diễn đạt. Chọn một cách khác với đề bài để paraphrase mở bài và thân bài.</p>
+            <div className="trend-grid">
+              {data.paraphraseBank.map((grp, idx) => (
+                <div key={idx} className="trend-card" style={{ borderLeft: '4px solid #a855f7' }}>
+                  <div className="trend-header" style={{ color: '#c084fc' }}>{grp.object}</div>
+                  <div className="trend-group">
+                    <div className="trend-items">
+                      {grp.items.map((it, i) => (
+                        <span key={i} className="trend-tag">{it}</span>
+                      ))}
+                    </div>
+                  </div>
+                  {grp.note && <div className="connector-example">⚠️ {grp.note}</div>}
+                </div>
+              ))}
             </div>
           </div>
         )}

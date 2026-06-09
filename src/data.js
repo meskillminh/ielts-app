@@ -403,22 +403,22 @@ export const allLessons = [
       "Chủ ngữ (Subject): Dùng 'the number of' + danh từ đếm được, 'the amount of' + danh từ không đếm được, hoặc 'the percentage/proportion of'."
     ],
     structures: [
-      { 
-        id: 11, 
-        name: "Structure 1: Verb + Adverb", 
-        formula: "Subject + verb (increase/decrease) + adverb (significantly) + from [X] to [Y] + between [Year] and [Year].", 
-        example: "The number of cases increased slightly from 100 to 200 between 1965 and 1970." 
+      {
+        id: 11,
+        name: "Structure 1: Verb + Adverb",
+        formula: "Subject + verb (rise/fall) + adverb (significantly) + from [X] to [Y] + [time: between YEAR and YEAR].",
+        example: "The number of cases increased slightly from 100 to 200 between 1965 and 1970."
       },
-      { 
-        id: 12, 
-        name: "Structure 2: There was + Adj + Noun", 
-        formula: "There was a + adjective + noun + in + Subject.", 
-        example: "There was a significant increase in the number of cases." 
+      {
+        id: 12,
+        name: "Structure 2: There was + Adj + Noun",
+        formula: "There was a + adjective + noun + in + Subject + [time: in YEAR / between YEAR and YEAR].",
+        example: "There was a significant increase in the number of cases between 1965 and 1970."
       },
       {
         id: 20,
         name: "Structure 3: Experienced / Recorded",
-        formula: "Subject + experienced/witnessed/recorded + a/an + adj + noun + time.",
+        formula: "Subject + experienced/witnessed/recorded + a/an + adj + noun + [time: in YEAR / over the period].",
         example: "Tourist arrivals recorded a significant increase to 9M in 2015."
       }
     ],
@@ -459,7 +459,45 @@ export const allLessons = [
         { prep: "between...and", usage: "between [year] and [year]" },
         { prep: "throughout", usage: "throughout the period" }
       ]
-    }
+    },
+    timeReference: {
+      point: [
+        { phrase: "in + [year]", example: "The figure stood at 50% in 1990." },
+        { phrase: "by + [year]", example: "Sales had reached 80 million by 2010." }
+      ],
+      start: [
+        { phrase: "at the start of the period", example: "At the start of the period, the number stood at 20 million." },
+        { phrase: "initially / in the first year", example: "Initially, in 2000, the proportion was just 5%." }
+      ],
+      end: [
+        { phrase: "by the end of the period", example: "By the end of the period, the figure had climbed to 90%." },
+        { phrase: "in the final year", example: "In the final year, 2020, emissions fell to 6 tonnes." }
+      ],
+      whole: [
+        { phrase: "over the period (from X to Y)", example: "Car ownership rose steadily from 20 to 60 million over the period from 1990 to 2010." },
+        { phrase: "throughout the period", example: "The UK recorded the highest figures, around 11 tonnes, throughout the period." },
+        { phrase: "between [year] and [year]", example: "The number fluctuated around 5,000 between 2000 and 2020." },
+        { phrase: "from [year] to [year]", example: "Demand grew from 30 to 80 units from 1995 to 2005." }
+      ]
+    },
+    practiceExamples: [
+      {
+        question: "Sentence practice: 'the number of cases' rose 100 → 200, slightly, between 1965 and 1970. Write it three ways.",
+        bands: [
+          { band: "5.0", answer: "The number of cases went up from 100 to 200 between 1965 and 1970." },
+          { band: "6.5", answer: "The number of cases increased slightly from 100 to 200 between 1965 and 1970." },
+          { band: "7.0", answer: "The number of cases experienced a slight rise, climbing from 100 to 200 between 1965 and 1970." }
+        ]
+      },
+      {
+        question: "Sentence practice: 'tourist arrivals' reached 9 million in 2015 (significant rise).",
+        bands: [
+          { band: "5.0", answer: "Tourist arrivals went up to 9 million in 2015." },
+          { band: "6.5", answer: "Tourist arrivals rose significantly to 9 million in 2015." },
+          { band: "7.0", answer: "Tourist arrivals recorded a significant increase, reaching 9 million by 2015." }
+        ]
+      }
+    ]
   },
   {
     id: "write_2",
@@ -480,7 +518,7 @@ export const allLessons = [
       {
         id: 21,
         name: "Structure 3 Verbs",
-        formula: "Subject + experienced / witnessed / recorded / saw + a/an + adj + noun",
+        formula: "Subject + experienced / witnessed / recorded / saw + a/an + adj + noun + [time: over the period / in YEAR].",
         example: "The tourism industry witnessed a remarkable growth over the period."
       }
     ],
@@ -490,6 +528,36 @@ export const allLessons = [
       { id: 125, word: "Declined steadily", pronunciation: "/dɪˈklaɪnd ˈsted.əl.i/", definition: "Giảm đều đặn.", example: "The numbers declined steadily from 2000 to 2020.", type: "verb phrase" },
       { id: 154, word: "Experienced", pronunciation: "/ɪkˈspɪə.ri.ənst/", definition: "Trải qua (dùng trong Structure 3).", example: "The sector experienced a significant decline.", type: "verb" },
       { id: 155, word: "Witnessed", pronunciation: "/ˈwɪt.nəst/", definition: "Chứng kiến (dùng cho thay đổi đột ngột).", example: "The market witnessed a rapid growth.", type: "verb" }
+    ],
+    timeReference: {
+      point: [
+        { phrase: "in + [year]", example: "The figure peaked at 5,000 in 2012." },
+        { phrase: "by + [year]", example: "The total had fallen to 3,000 by 2020." }
+      ],
+      start: [
+        { phrase: "at the beginning of the period", example: "At the beginning of the period, enrolments stood at 2,000." },
+        { phrase: "initially", example: "Initially, the figure remained flat at 2,000." }
+      ],
+      end: [
+        { phrase: "by the end of the period", example: "By the end of the period, numbers had dropped back to 3,000." },
+        { phrase: "in the final year", example: "In the final year, the figure settled at 4,000." }
+      ],
+      whole: [
+        { phrase: "over the period", example: "Thai student numbers fluctuated around 4,000 over the period." },
+        { phrase: "throughout", example: "The figure stayed below 5,000 throughout." },
+        { phrase: "between [year] and [year]", example: "Numbers swung between 3,000 and 5,000 between 2000 and 2020." },
+        { phrase: "from [year] to [year]", example: "The figure held near 4,000 from 2000 to 2020." }
+      ]
+    },
+    practiceExamples: [
+      {
+        question: "Sentence practice: 'students from Thailand' fluctuated 2000–2020, peaking at 5,000.",
+        bands: [
+          { band: "5.0", answer: "The number of students from Thailand went up and down between 2000 and 2020. It was 5,000 at the highest." },
+          { band: "6.5", answer: "The number of students from Thailand fluctuated between 2000 and 2020, peaking at 5,000." },
+          { band: "7.0", answer: "The number of Thai students fluctuated markedly over the period, reaching a peak of 5,000 before falling back by 2020." }
+        ]
+      }
     ]
   },
   {
@@ -502,35 +570,35 @@ export const allLessons = [
       "Quick Decision Guide: Cùng chủ ngữ + cùng hướng → Then/After that. Cùng chủ ngữ + khác hướng → However. Khác chủ ngữ + cùng hướng → Similarly. Khác chủ ngữ + khác hướng → By contrast."
     ],
     structures: [
-      { 
-        id: 14, 
-        name: "Time progression (After/Before)", 
-        formula: "Clause 1, after which + Clause 2", 
-        example: "The percentage increased to 40% in 1990, after which it peaked at 45% in 1995." 
+      {
+        id: 14,
+        name: "Time progression (After/Before)",
+        formula: "Clause 1 + [time], after which + Clause 2 + [time].",
+        example: "The percentage increased to 40% in 1990, after which it peaked at 45% in 1995."
       },
-      { 
-        id: 15, 
-        name: "Contrast (Tương phản)", 
-        formula: "While / Whereas Clause 1, Clause 2", 
-        example: "While the US saw an increase, the UK experienced a decline." 
+      {
+        id: 15,
+        name: "Contrast (Tương phản)",
+        formula: "While / Whereas Clause 1 + [time], Clause 2.",
+        example: "While the US saw an increase between 2000 and 2010, the UK experienced a steady decline."
       },
       {
         id: 22,
         name: "After V-ing",
-        formula: "After V-ing, Clause 2",
-        example: "After remaining stable until 2005, the figure rose sharply."
+        formula: "After V-ing + [time], Clause 2.",
+        example: "After remaining stable until 2005, the figure rose sharply to 60% in 2010."
       },
       {
         id: 23,
         name: "Before V-ing",
-        formula: "Clause 1 before V-ing",
-        example: "The figure remained stable until 2005 before rising sharply."
+        formula: "Clause 1 + [time] before V-ing.",
+        example: "The figure remained stable until 2005 before rising sharply in 2010."
       },
       {
         id: 24,
         name: "Relative clause continuation",
-        formula: "Clause 1, which then + V",
-        example: "It remained stable until 2005, which then rose sharply."
+        formula: "Clause 1 + [time], which then + V.",
+        example: "It remained stable until 2005, which then rose sharply to 60% by 2010."
       }
     ],
     vocabulary: [
@@ -563,6 +631,36 @@ export const allLessons = [
       { category: "General 'around'", words: ["about", "around", "approximately"] },
       { category: "Not quite there", words: ["nearly", "almost", "roughly"] },
       { category: "Just above / below", words: ["just over", "just under"] }
+    ],
+    timeReference: {
+      point: [
+        { phrase: "in + [year]", example: "It peaked at 45% in 1995." },
+        { phrase: "by + [year]", example: "The share had slipped to 30% by 2000." }
+      ],
+      start: [
+        { phrase: "at the start of the period", example: "At the start of the period, the figure sat at 40%." },
+        { phrase: "until + [year]", example: "The figure remained stable until 2005." }
+      ],
+      end: [
+        { phrase: "by the end of the period", example: "By the end of the period, it had recovered to 42%." },
+        { phrase: "in the final year", example: "In the final year, the two lines converged at 38%." }
+      ],
+      whole: [
+        { phrase: "over the same period", example: "The US declined from 35% steadily over the same period." },
+        { phrase: "throughout", example: "Bus ridership stayed below 20% throughout." },
+        { phrase: "between [year] and [year]", example: "The two trends diverged by 15% between 2000 and 2010." },
+        { phrase: "from [year] to [year]", example: "The pattern held near 40% from 1990 to 1995." }
+      ]
+    },
+    practiceExamples: [
+      {
+        question: "Paragraph practice: figure steady at 40% until 1990, then peaked at 45% in 1995; meanwhile the US fell.",
+        bands: [
+          { band: "5.0", answer: "The figure was 40% until 1990. After that, it went up to 45% in 1995. The US went down." },
+          { band: "6.5", answer: "The figure remained stable at 40% until 1990, after which it peaked at 45% in 1995. Meanwhile, the US experienced a decline." },
+          { band: "7.0", answer: "Having remained steady at 40% until 1990, the figure climbed to a peak of 45% in 1995; by contrast, the US saw a steady fall over the same period." }
+        ]
+      }
     ]
   },
   {

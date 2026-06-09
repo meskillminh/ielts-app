@@ -241,6 +241,26 @@ export const extraWritingLesson4 = {
       nouns: ['highest figures throughout the period', 'leading category']
     }
   },
+  timeReference: {
+    point: [
+      { phrase: 'in + [year]', example: 'Road transport reached 95 million tonnes in 2002.' },
+      { phrase: 'by + [year]', example: 'Swedish emissions had risen to just over 10 tonnes by 1977.' }
+    ],
+    start: [
+      { phrase: 'at the start of the period / in [start year]', example: 'In 1967, UK emissions started at roughly 11 metric tonnes.' },
+      { phrase: 'initially', example: 'Initially, pipeline transport stood at just 5 million tonnes.' }
+    ],
+    end: [
+      { phrase: 'by the end of the period', example: 'By the end of the period, UK emissions had fallen to just under 9 tonnes.' },
+      { phrase: 'in the final year / in [end year]', example: 'In 2007, Sweden produced around 6 metric tonnes per person.' }
+    ],
+    whole: [
+      { phrase: 'over the period (from X to Y)', example: 'Italian emissions climbed over the period from 1967 to 2007.' },
+      { phrase: 'throughout the period', example: 'The UK recorded the highest figures, near 11 tonnes, throughout the period.' },
+      { phrase: 'between [year] and [year]', example: 'Goods moved by rail fluctuated around 40 million tonnes between 1974 and 2002.' },
+      { phrase: 'from [year] to [year]', example: 'Road haulage rose steadily from 1974 to 2002.' }
+    ]
+  },
   approximationWords: [
     {
       category: 'Approximations',
@@ -255,13 +275,17 @@ export const extraWritingLesson4 = {
     {
       question: 'Line graph: Average CO2 emissions per person in 4 countries (1967-2007)',
       bands: [
-        { band: '6.5', answer: 'The line graph illustrates the amount of CO2 emitted by each person in four European countries from 1967 and 2007. Overall, while carbon dioxide emissions per person in the UK and Sweden experienced downward trends, the figures for Italy and Portugal increased over the years. Additionally, it is clear that the UK consistently recorded the highest figures throughout the period. In 1967, the amount of CO2 each person produced in the UK started at roughly 11 metric tonnes, which then reduced steadily to just under 9 metric tonnes in 2007. Meanwhile, the quantity of CO2 in Sweden recorded rapid growth from nearly 9 to just over 10 metric tonnes by 1977. However, there was a significant reduction to just under 6 metric tonnes at the end of the period. Regarding the remaining categories, CO2 emissions in Italy experienced a significant climb from around 4 to just under 8 metric tonnes and then remained unchanged. Similarly, the figure for Portugal rose considerably to approximately 5 metric tonnes.' }
+        { band: '5.0', answer: 'The line graph shows the CO2 from each person in four countries from 1967 to 2007. Overall, the CO2 in the UK and Sweden went down, but Italy and Portugal went up. The UK was the highest in all years. In 1967, the UK started at about 11 tonnes and then it decreased to about 9 tonnes in 2007. Sweden went up from 9 to 10 tonnes in 1977, but after that it fell to about 6 tonnes. Italy increased from 4 to 8 tonnes and then stayed the same. Portugal also rose to about 5 tonnes.' },
+        { band: '6.5', answer: 'The line graph illustrates the amount of CO2 emitted by each person in four European countries from 1967 to 2007. Overall, while carbon dioxide emissions per person in the UK and Sweden experienced downward trends, the figures for Italy and Portugal increased over the years. Additionally, it is clear that the UK consistently recorded the highest figures throughout the period. In 1967, the amount of CO2 each person produced in the UK started at roughly 11 metric tonnes, which then reduced steadily to just under 9 metric tonnes in 2007. Meanwhile, the quantity of CO2 in Sweden recorded rapid growth from nearly 9 to just over 10 metric tonnes by 1977. However, there was a significant reduction to just under 6 metric tonnes at the end of the period. Regarding the remaining categories, CO2 emissions in Italy experienced a significant climb from around 4 to just under 8 metric tonnes and then remained unchanged. Similarly, the figure for Portugal rose considerably to approximately 5 metric tonnes.' },
+        { band: '7.0', answer: 'The line graph compares the average amount of CO2 produced per person in four European nations between 1967 and 2007. Overall, while per-capita emissions in the UK and Sweden declined over the period, those in Italy and Portugal climbed. A further striking feature is that the UK maintained the highest figures throughout. In 1967, each British citizen generated roughly 11 metric tonnes of CO2; this figure then fell gradually to just under 9 tonnes by the end of the period. Swedish emissions, by contrast, initially surged from nearly 9 to just over 10 tonnes by 1977, after which they dropped markedly to around 6 tonnes in the final year. Turning to the remaining countries, Italy witnessed a considerable rise from about 4 to almost 8 tonnes before levelling off towards the end, whereas Portugal experienced a more modest climb, edging up from roughly 2 to approximately 5 tonnes over the same period.' }
       ]
     },
     {
       question: 'Line graph: Quantities of goods transported in the UK (1974-2002) by 4 modes',
       bands: [
-        { band: '6.5', answer: 'The line graph illustrates the amount of goods transported in the UK by four means of transport, namely road, water, rail and pipeline, from 1974 to 2002. Overall, while the quantities of goods transported by road, water and pipeline experienced upward trends, the figure for rail fluctuated. In addition, road transport was far higher than all the categories. In 1974, goods transported by road started at 70 million tonnes, increasing steadily to 95 million tonnes in 2002. Similarly, water transport increased substantially from just under 40 to around 55 million tonnes, before falling and then rising to 65 million tonnes in 2002. Regarding the remaining categories, rail started at 40 million tonnes, hit its lowest point of 30 million tonnes in 1994, and grew back to just over 40 million tonnes. By contrast, pipeline transport experienced a steady climb from 5 to roughly 25 million tonnes.' }
+        { band: '5.0', answer: 'The line graph shows the goods moved in the UK by four transports from 1974 to 2002. Overall, road, water and pipeline went up, but rail went up and down. Road was the highest one. In 1974, road started at 70 million tonnes and went up to 95 million tonnes in 2002. Water also went up from 40 to 55 million tonnes, then it fell and rose to 65 million tonnes. Rail started at 40 million tonnes, fell to 30 million tonnes in 1994, and went back to 40 million tonnes. Pipeline went up from 5 to 25 million tonnes.' },
+        { band: '6.5', answer: 'The line graph illustrates the amount of goods transported in the UK by four means of transport, namely road, water, rail and pipeline, from 1974 to 2002. Overall, while the quantities of goods transported by road, water and pipeline experienced upward trends, the figure for rail fluctuated. In addition, road transport was far higher than all the categories. In 1974, goods transported by road started at 70 million tonnes, increasing steadily to 95 million tonnes in 2002. Similarly, water transport increased substantially from just under 40 to around 55 million tonnes, before falling and then rising to 65 million tonnes in 2002. Regarding the remaining categories, rail started at 40 million tonnes, hit its lowest point of 30 million tonnes in 1994, and grew back to just over 40 million tonnes. By contrast, pipeline transport experienced a steady climb from 5 to roughly 25 million tonnes.' },
+        { band: '7.0', answer: 'The line graph illustrates the volume of goods transported in the UK by four means — road, water, rail and pipeline — between 1974 and 2002. Overall, while the amounts carried by road, water and pipeline rose over the period, the figure for rail fluctuated. It is also evident that road haulage far exceeded every other mode throughout. At the start of the period, goods moved by road stood at 70 million tonnes and climbed steadily to 95 million tonnes by 2002. Water transport followed a similar upward path, increasing substantially from just under 40 to around 55 million tonnes before dipping and then recovering to 65 million tonnes in the final year. As for the remaining modes, rail began at 40 million tonnes, hit a low of 30 million tonnes in 1994 and subsequently grew back to just over 40 million tonnes, whereas pipeline transport underwent a gradual climb from a mere 5 to roughly 25 million tonnes.' }
       ]
     }
   ]
